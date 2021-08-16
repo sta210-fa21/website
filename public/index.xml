@@ -30,8 +30,8 @@ width: 65%;
   &lt;img src = &#34;img/sta210_sticker.png&#34;&gt;
 &lt;/div&gt;
 &lt;div class =&#34;pull-right&#34;&gt;
-&lt;h2 style = &#34;color: white&#34;&gt;STA 199: Intro to Data Science&lt;/h2&gt;
-&lt;p&gt;Intro to data science and statistical thinking. Learn to explore, visualize,and analyze data to understand natural phenomena, investigate patterns, model outcomes,and make predictions, and do so in a reproducible and shareable manner. Gain experience in data wrangling and munging, exploratory data analysis, predictive modeling, data visualization, and effectively communicating results. Work on problems and case studies inspired by and based on real-world questions and data. The course will focus on the R statistical computing language.&lt;/p&gt;
+&lt;h2 style = &#34;color: white&#34;&gt;STA 210: Regression Analysis&lt;/h2&gt;
+&lt;p&gt;Learn approaches for analyzing multivariate data sets, emphasizing analysis of variance, linear regression, and logistic regression. Learn techniques for checking the appropriateness of proposed models, such as residual analyses and case influence diagnostics, and techniques for selecting models. Gain experience dealing with the challenges that arise in practice through assignments that utilize real-world data. This class emphasizes data analysis over mathematical theory.&lt;/p&gt;
 &lt;/div&gt;</description>
   </item>
   
@@ -230,7 +230,7 @@ Go to &lt;a href=&#34;http://studentaffairs.duke.edu/dukereach&#34;&gt;studentaf
   </item>
   
 <item>
-  <title>STA 199 Final Project</title>
+  <title>STA 210 Final Project</title>
   <link>/project/</link>
   <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
   
@@ -580,14 +580,148 @@ knitr::opts_chunk$set(echo = FALSE,
                       message = FALSE)
 ```
 
+### Headers
+
+- Use headers to clearly label each section. Make sure there is a space between the last `#` and the title, so the header renders correctly. For example, `###Section Title` will not render as header, but `### Section Title` will. 
+
+### References 
+
+- Include all references in a section called &#34;References&#34; at the end of the report. 
+- This course does not have specific requirements for formatting citations and references.
+- See [Section 4.5](https://bookdown.org/yihui/rmarkdown-cookbook/bibliography.html) of the R Markdown Cookbook to learn about the citation functionality in R Markdown. 
+
+### Appendix
+
+- If you have additional work that does not fit or does not belong in the body of the report, you may put it at the end of the document in section called &#34;Appendix&#34;. 
+- The items in the appendix should be properly labeled. 
+- The appendix should only be for additional material. The reader should be able to fully understand your report without viewing content in the appendix.
+
+### Resize figures
+
+- Resize plots and figures, so you have more space for the narrative. 
+    - **Resize individual figures**: Use the code chunk header `{r plot1, fig.height = 3, fig.width = 5}`, replacing `plot1` with a meaningful label and the height and width with values appropriate for your write up.
+    - **Resize all figures**: Include the `fig_width` and `fig_height` options in your YAML header as shown below:
+
+```
+---
+title: &#34;Your Title&#34;
+author: &#34;Team Name + Group Members&#34;
+output: 
+  pdf_document:
+    fig_width: 5
+    fig_height: 3
+---
+```
+ 
+Replace the height and width values with values appropriate for your write up.
+
+### Arranging plots
+
+Arrange plots in a grid, instead of one after the other. This is especially useful when displaying plots for exploratory data analysis and to check assumptions. 
+
+- If you&#39;re using ggplot2 functions, the `patchwork` package makes it easy to arrange plots in a grid. See the documentation and examples [here](https://patchwork.data-imaginist.com/).
+
+- If you&#39;re using base R function, i.e. when using the `emplogit` functions, put the code `par(mfrow = c(rows,columns))` before the code to make the plots. For example, `par(mfrow = c(2,3))` will arrange plots in a grid with 2 rows and 3 columns.
+
+### Plot titles and axis labels
+
+Be sure all plot titles and axis labels are visible and easy to read. 
+
+- Use informative titles, &lt;u&gt;not&lt;/u&gt; variable names, for titles and axis labels.
+- Use `coord_flip()` to flip the *x* and *y* axes on the plot. This is useful if you a bar plot with an x-axis that is difficult to read due to overlapping text. 
+
+❌ **NO! The x-axis is hard to read because the names overlap.**
+
+
+```r
+ggplot(data = mpg, aes(x = manufacturer)) +
+  geom_bar()
+```
+
+&lt;img src=&#34;/project/index_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; /&gt;
+
+✅ **YES! Names are readable**
+
+
+```r
+ggplot(data = mpg, aes(x = manufacturer)) +
+  geom_bar() +
+  coord_flip()
+```
+
+&lt;img src=&#34;/project/index_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;672&#34; /&gt;
+
+### Do a little more to make the plot look professional!
+
+- Informative title and axis labels
+- Flipped coordinates to make names readable
+- Arranged bars based on count
+- Capitalized manufacturer names
+- *Optional: Added color - Use a coordinated color scheme throughout paper / presentation*
+- *Optional: Applied a theme - Use same theme throughout paper / presentation*
+
+
+```r
+mpg %&gt;%
+  count(manufacturer) %&gt;%
+  mutate(manufacturer = str_to_title(manufacturer)) %&gt;%
+  ggplot(aes(x = fct_reorder(manufacturer,n), y = n)) +
+  geom_bar(stat = &#34;identity&#34;, fill = &#34;steelblue&#34;) +
+  coord_flip() +
+  labs(x = &#34;Manufacturer&#34;, 
+       y = &#34;Count&#34;, 
+       title = &#34;The most common manufacturer is Dodge&#34;) +
+  theme_bw() 
+```
+
+&lt;img src=&#34;/project/index_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;672&#34; /&gt;
+
+
+### Tables and model output
+
+- Use the `kable` function from the knitr package to neatly output all tables and model output. This will also ensure all model coefficients are displayed. 
+  - Use the `digits` argument to display only 3 or 4 significant digits. 
+  - Use the `caption` argument to add captions to your table. 
 
 
 
+```r
+model &lt;- lm(mpg ~ hp, data = mtcars)
+tidy(model) %&gt;%
+  kable(digits = 3)
+```
 
 
 
+|term        | estimate| std.error| statistic| p.value|
+|:-----------|--------:|---------:|---------:|-------:|
+|(Intercept) |   30.099|     1.634|    18.421|       0|
+|hp          |   -0.068|     0.010|    -6.742|       0|
 
 
+### Guidelines for communicating results 
+
+- **Don&#39;t use variable names in your narrative!** Use descriptive terms, so the reader understands your narrative without relying on the codebook.
+  - ❌ There is a negative linear relationship between mpg and hp.
+  - ✅ There is a negative linear relationship between a car&#39;s fuel economy (in miles per gallon) and its horsepower.
+- **Know your audience:** Your report should be written for a general audience who has an understanding of statistics at the level of STA 199.
+- **Avoid subject matter jargon:** Don&#39;t assume the audience knows all of the specific terminology related to your subject area. If you must use jargon, include a brief definition the first time you introduce a term. 
+- **Tell the &#34;so what&#34;:** Your report and presentation should be more than a list of interpretations and technical definitions. Focus on what the results mean, i.e. what you want the audience to know about your topic after reading your report or viewing your presentation. 
+- **Tell a story:** All visualizations, tables, model output, and narrative should tell a cohesive story!
+- **Use one voice:** Though multiple people are writing the report, it should read as if it&#39;s from a single author. At least one team member should read through the report before submission to ensure it reads like a cohesive document.
+
+### Additional resources
+
+- [R for Data Science](https://r4ds.had.co.nz/)
+- [R Markdown Cookbook](https://bookdown.org/yihui/rmarkdown-cookbook/)
+- [Slides in R using Xaringan](https://slides.yihui.org/xaringan/#1)
+- Data visualization
+  - [ggplot2 Reference](https://ggplot2.tidyverse.org/reference/index.html)
+  - [ggplot2: Elegant Graphics for Data Analysis](https://ggplot2-book.org/)
+  - [Data Visualization: A Practice Introduction](https://socviz.co/index.html)
+  - [Patchwork R Package](https://patchwork.data-imaginist.com/index.html)
+
+--&gt;
 </description>
   </item>
   
