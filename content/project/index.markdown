@@ -1,7 +1,10 @@
 ---
-title: "Project: Showcase your inner data scientist!"
+title: "STA 210 Final Project"
 ---
 
+*More detail about the project will be released when the project is assigned.*
+
+<!--
 ## Timeline
 
 Proposal due **Friday, October 9**
@@ -403,7 +406,7 @@ ggplot(data = mpg, aes(x = manufacturer)) +
   geom_bar()
 ```
 
-<img src="/project/index_files/figure-html/unnamed-chunk-3-1.png" width="672" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-3-1.png" width="672" />
 
 ✅ **YES! Names are readable**
 
@@ -414,7 +417,7 @@ ggplot(data = mpg, aes(x = manufacturer)) +
   coord_flip()
 ```
 
-<img src="/project/index_files/figure-html/unnamed-chunk-4-1.png" width="672" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-4-1.png" width="672" />
 
 ### Do a little more to make the plot look professional!
 
@@ -439,7 +442,7 @@ mpg %>%
   theme_bw() 
 ```
 
-<img src="/project/index_files/figure-html/unnamed-chunk-5-1.png" width="672" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-5-1.png" width="672" />
 
 
 ### Tables and model output
@@ -486,7 +489,7 @@ tidy(model) %>%
   - [Data Visualization: A Practice Introduction](https://socviz.co/index.html)
   - [Patchwork R Package](https://patchwork.data-imaginist.com/index.html)
 
-
+-->
 
 
 
