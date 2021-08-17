@@ -1,19 +1,21 @@
-# Website for STA 199, Section 003 at Duke University (Fall 2021)
+# Website for STA 210 at Duke University (Fall 2021)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b5482937-2683-4da7-a16b-028071cd40f6/deploy-status)](https://app.netlify.com/sites/sta199-fa21-003/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/09b4769a-9ba0-44f8-8b3b-8ce933095dd6/deploy-status)](https://app.netlify.com/sites/sta210-fa21/deploys)
 
-:link: [sta199-fa21-003.netlify.app](https://sta199-fa21-003.netlify.app/)
+:link: [sta210-fa21.netlify.app](https://sta210-fa21.netlify.app/)
 
 ## Colors
 
-- primary color: #7A4183
-- main accent: #00b3b3
+- primary color: #338EA0
+- main accent: #871d89
+
+## Hugo 
+
+- Hugo version 0.87.0
 
 ## Attribution
 
 - The website design is derived from [tidymodels.org](https://www.tidymodels.org) with inspiration from [datavizm20](https://datavizm20.classes.andrewheiss.com) and [introds.org](https://introds.org/).
-
-- Many of the slides and assignments are adapted from [Data Science in a Box](https://datasciencebox.org/) by Mine &Ccedil;etinkaya-Rundel.
 
 <hr> 
 
