@@ -18,42 +18,32 @@ title: Syllabus
 
 Name    | Contact    | Office hours  |  <span></span>
 |-------------------|------------------|------------------|------------------ 
-| Meredith Brown| <a href="mailto:meredith.brown@duke.edu" title="email"><i class="fa fa-envelope"></i></a> | TBD | <span></span> |
-| Carson Garcia| <a href="mailto:carson.garcia@duke.edu" title="email"><i class="fa fa-envelope"></i></a> | TBD | <span></span> |
-| Rob Kravec| <a href="mailto:robert.kravec@duke.edu" title="email"><i class="fa fa-envelope"></i></a> | TBD | <span></span> |
-| Shirley Mathur| <a href="mailto:shirley.mathurc@duke.edu" title="email"><i class="fa fa-envelope"></i></a> | TBD | <span></span> |
-| Manny Mokel| <a href="mailto:emmanuel.mokel@duke.edu" title="email"><i class="fa fa-envelope"></i></a> | TBD | <span></span> |
-| Margaret Reed| <a href="mailto:margaret.reed@duke.edu" title="email"><i class="fa fa-envelope"></i></a> | TBD | <span></span> |
-| Yue Yu| <a href="mailto:yue.yu652@duke.edu" title="email"><i class="fa fa-envelope"></i></a> | TBD | <span></span> |
+| Sophie Dalldorf| <a href="mailto:sohpia.dalldorf@duke.edu" title="email"><i class="fa fa-envelope"></i></a> | TBD | <span></span> |
+| Emily Gentles| <a href="mailto:emily.gentles@duke.edu" title="email"><i class="fa fa-envelope"></i></a> | TBD | <span></span> |
+| Leslie Li| <a href="mailto:yunfei.li@duke.edu" title="email"><i class="fa fa-envelope"></i></a> | TBD | <span></span> |
+| Jose Pliego San Martin| <a href="mailto:jose.pliego.san.martin@duke.edu" title="email"><i class="fa fa-envelope"></i></a> | TBD | <span></span> |
+| Karam Oubari| <a href="mailto:karam.oubaril@duke.edu" title="email"><i class="fa fa-envelope"></i></a> | TBD | <span></span> |
+| Shari Tian| <a href="mailto:shari.tian@duke.edu" title="email"><i class="fa fa-envelope"></i></a> | TBD | <span></span> |
+| Grace Zhao| <a href="mailto:zhihui.zhao@duke.edu" title="email"><i class="fa fa-envelope"></i></a> | TBD | <span></span> |
 
 ## Course info 
 
  <span></span> | Day  |   Time   |  Location  | 
 |-------------------|------------------|------------------|------------------|
-Lectures | Mon & Wed | 1:45p - 3p | Soc Sci 136 |
-Lab 07 |Thu | 12p - 1:15p | Soc Sci 311 |
-Lab 08 |Thu | 3:30p - 4:45p | Perkins 071 (Link #5)|
-Lab 09 |Thu | 5:15p - 6:30p |  Perkins 071 (Link #5) |
-
-## Textbooks
-
-### Texts
-
-All books are freely available online. Hardcopies are also available for purchase.
-
- <span></span>     | <span></span> | <span></span> 
------------|---------------------------------|----------------------------------
-[R for Data Science](http://r4ds.had.co.nz/) | Grolemund, Wickham | O'Reilly, 1st edition, 2016
-[Introduction to Modern Statistics ](https://openintro-ims.netlify.app/) | Çetinkaya-Rundel, Hardin | OpenIntro Inc., 1st Edition, 2021
+Lectures | Mon & Wed | 3:30p - 4:45p | Soc Sci 139 |
+Lab 07 |Thu | 12p - 1:15p | Old Chem 101 |
+Lab 08 |Thu | 3:30p - 4:45p | Old Chem 101|
+Lab 09 |Thu | 5:15p - 6:30p |  Old Chem 101 |
 
 ## Course Learning Objectives
 
-By the end of the semester, you will...
+By the end of the semester, you will be able to...
 
--   learn to explore, visualize, and analyze data in a reproducible and shareable manner
--   gain experience in data wrangling and munging, exploratory data analysis, predictive modeling, and data visualization
--   work on problems and case studies inspired by and based on real-world questions and data
--   learn to effectively communicate results through written assignments and final project presentation
+- analyze real-world data to answer questions about multivariable relationships.
+- fit and evaluate linear and logistic regression models.
+- assess whether a proposed model is appropriate and describe its limitations.
+- use R Markdown to write reproducible reports and GitHub for version control and collaboration. 
+- communicate results from statistical analyses to a general audience.
 
 ## Course community
 
@@ -82,7 +72,7 @@ The [Student Disability Access Office (SDAO)](https://access.duke.edu/students) 
 
 ### Communication
 
-All lecture notes, assignment instructions, an up-to-date schedule, and other course materials may be found on the course website, <https://www.sta210-fa21-003.netlify.app> .
+All lecture notes, assignment instructions, an up-to-date schedule, and other course materials may be found on the course website, https://www.sta210-fa21-003.netlify.app .
 
 Announcements will be emailed through Sakai Announcements periodically. Please check your email regularly to ensure you have the latest announcements for the course.
 
@@ -104,9 +94,9 @@ The activities and assessments in this course are designed to help you successfu
 
 -   **Prepare**: Includes short videos, reading assignments, and a short quiz to introduce new concepts and ensure a basic comprehension of the material. The goal is to help you prepare for the in-class activities during lecture.
 
--   **Practice**: Includes in-class application exercises where you will begin to the concepts and methods introduced in the prepare assignment. the activities will graded for completion, as they are designed for you to gain experience with the statistical and computing techniques before working on graded assignments.
+-   **Practice**: Includes in-class application exercises where you will begin to the concepts and methods introduced in the prepare assignment. The activities will graded for completion, as they are designed for you to gain experience with the statistical and computing techniques before working on graded assignments.
 
--   **Perform**: Includes labs, homework, exams, and the final project. These assignments build upon the prepare and practice assignments and are the opportunity for you to demonstrate your understanding of the course material and how it is applied to analyze real-world data.
+-   **Perform**: Includes labs, homework, quizzes, and the final project. These assignments build upon the prepare and practice assignments and are the opportunity for you to demonstrate your understanding of the course material and how it is applied to analyze real-world data.
 
 ### Prep quizzes (Prepare)
 
@@ -134,9 +124,9 @@ One homework assignment will be dedicated to a *statistics experience*. The stat
 
 *The lowest homework grade will be dropped at the end of the semester.*
 
-### Exams (Perform)
+### Quizzes (Perform)
 
-There will be two, take-home, open-note exams. Through these exams you have the opportunity to demonstrate what you've learned in the course thus far. Each exam will include small analysis and computational tasks related to the content in the prepare, practice, and perform assignments. More details about the content and structure of the exams will be discussed during the semester.
+There will be three, take-home, open-note quizzes. Through these quizzes you have the opportunity to demonstrate what you've learned in the course thus far. The quizzes will focus on the conceptual understanding of the content, and they may also include small analysis and computational tasks. The content of the quiz will be related to the content in the prepare, practice, and perform assignments. More detail about the quizzes will be given during the semester.
 
 ### Final Project (Perform)
 
@@ -150,12 +140,13 @@ The final course grade will be calculated as follows:
 
 | Category              | Percentage |
 |-----------------------|------------|
-| Homework              | 25%        |
-| Labs                  | 15%        |
-| Final Project         | 15%        |
-| Exam 01               | 17.5%      |
-| Exam 02               | 17.5%      |
-| Prep quizzes          | 5%         |
+| Homework              | 30%        |
+| Final project         | 15%        |
+| Lab                   | 15%        |
+| Quiz 01               | 10%        |
+| Quiz 02               | 10%        |
+| Quiz 03               | 10%        |
+| Prep quizzes          | 5%        |
 | Application Exercises | 2.5%       |
 | Teamwork              | 2.5%       |
 
