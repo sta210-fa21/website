@@ -32,7 +32,7 @@ lessons:
   - date: "Wed, Sep 15"
     title: "SLR: Model diagnostics"
   - date: "Thu, Sep 16"
-    title: "Lab"
+    title: "Lab 04"
 
   - week: "Week 05"
     date: "Mon, Sep 20"
@@ -49,7 +49,7 @@ lessons:
   - date: "Wed, Sep 29"
     title: "MLR: Categorical predictors"
   - date: "Thu, Sep 30"
-    title: "Lab"
+    title: "Lab 05"
    
   - week: "Week 07"
     date: "Mon, Oct 04"
@@ -57,7 +57,7 @@ lessons:
   - date: "Wed, Oct 06"
     title: "MLR: Categorical predictors"
   - date: "Thu, Oct 07"
-    title: "Lab"
+    title: "Lab 06"
 
   - week: "Week 08"
     date: "Mon, Oct 11"
@@ -65,7 +65,7 @@ lessons:
   - date: "Wed, Oct 13"
     title: "MLR: Model selection"
   - date: "Thu, Oct 14"
-    title: "Lab 06"
+    title: "Lab 07"
 
   - week: "Week 09"
     date: "Mon, Oct 18"
@@ -97,7 +97,7 @@ lessons:
   - date: "Wed, Nov 10"
     title: "Multinomial logistic regression"
   - date: "Thu, Nov 11"
-    title: "Lab"
+    title: "Lab 10"
 
   - week: "Week 13"
     date: "Mon, Nov 15"

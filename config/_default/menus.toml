@@ -46,12 +46,12 @@
     weight = 70
     
 [[main]]
-    url = "https://www.github.com/sta199-fa21-003"
+    url = "https://www.github.com/sta210-fa21"
     name  = "<i class='fab fa-github fa-lg'></i>"
     weight = 80
     
 [[main]]
-    url = "https://edstem.org/us/courses/8027/discussion/"
+    url = "https://edstem.org/us/courses/8350/discussion/"
     name = "<i class=\"fas fa-comments fa-lg\"></i>"
     weight = 90
 
