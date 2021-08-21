@@ -16,20 +16,27 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ### Required 
 
-`r emo::ji("movie_camera")` Watch [Meet the Toolkit](https://warpwire.duke.edu/w/owkFAA/)
+`r emo::ji("movie_camera")` Watch [Simple Linear Regression: Introduction](https://warpwire.duke.edu/w/VykFAA/)
 
-- [Slides](sta210-fa21.netlify.app/slides/02-meet-toolkit.html)
+- [Slides](https://sta210-fa21.netlify.app/slides/03-slr-intro.html)
 
-`r emo::ji("movie_camera")` Watch [Exploring multivariable relationships](https://warpwire.duke.edu/w/zRkFAA/)
+### Optional 
 
-- [Slides](sta210-fa21.netlify.app/slides/02-multivar-relationships.html)
+`r emo::ji("memo")` Take Prep Quiz 00 under Tests & Quizzes in Sakai.
 
+- Going forward, prepare quizzes will be required. This quiz is optional to give you an opportunity to practice using Sakai quizzes. 
 
 ## For September 01
 
+`r emo::ji("movie_camera")` Watch [SLR: Foundation for inference](https://warpwire.duke.edu/w/1ywFAA/)
 
-### Required
+- [Slides](https://sta210-fa21.netlify.app/slides/04-slr-foundation.html)
 
-### Optional 
+
+`r emo::ji("movie_camera")` Watch [SLR: Inference for coefficients](https://warpwire.duke.edu/w/4SwFAA/)
+
+- [Slides](https://sta210-fa21.netlify.app/slides/04-slr-coef-inf.html)
+
+
 
 

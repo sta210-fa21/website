@@ -102,7 +102,7 @@ The activities and assessments in this course are designed to help you successfu
 
 -   **Practice**: Includes in-class application exercises where you will begin to the concepts and methods introduced in the prepare assignment. The activities will graded for completion, as they are designed for you to gain experience with the statistical and computing techniques before working on graded assignments.
 
--   **Perform**: Includes labs, homework, quizzes, and the final project. These assignments build upon the prepare and practice assignments and are the opportunity for you to demonstrate your understanding of the course material and how it is applied to analyze real-world data.
+-   **Perform**: Includes labs, homework, exams, and the final project. These assignments build upon the prepare and practice assignments and are the opportunity for you to demonstrate your understanding of the course material and how it is applied to analyze real-world data.
 
 ### Prep quizzes (Prepare)
 
@@ -130,9 +130,9 @@ One homework assignment will be dedicated to a *statistics experience*. The stat
 
 *The lowest homework grade will be dropped at the end of the semester.*
 
-### Quizzes (Perform)
+### Exams (Perform)
 
-There will be three, take-home, open-note quizzes. Through these quizzes you have the opportunity to demonstrate what you've learned in the course thus far. The quizzes will focus on the conceptual understanding of the content, and they may also include small analysis and computational tasks. The content of the quiz will be related to the content in the prepare, practice, and perform assignments. More detail about the quizzes will be given during the semester.
+There will be three, take-home, open-note exams. Through these exams you have the opportunity to demonstrate what you've learned in the course thus far. The exams will focus on the conceptual understanding of the content, and they may also include small analysis and computational tasks. The content of the exam will be related to the content in the prepare, practice, and perform assignments. More detail about the exams will be given during the semester.
 
 ### Final Project (Perform)
 
@@ -149,9 +149,9 @@ The final course grade will be calculated as follows:
 | Homework              | 30%        |
 | Final project         | 15%        |
 | Lab                   | 15%        |
-| Quiz 01               | 10%        |
-| Quiz 02               | 10%        |
-| Quiz 03               | 10%        |
+| Exam 01               | 10%        |
+| Exam 02               | 10%        |
+| Exam 03               | 10%        |
 | Prep quizzes          | 5%         |
 | Application Exercises | 2.5%       |
 | Teamwork              | 2.5%       |
