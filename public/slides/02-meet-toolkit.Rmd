@@ -4,7 +4,7 @@ author: "Prof. Maria Tackett"
 output:
   xaringan::moon_reader:
     mathjax: "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML"
-    css: "sta199-slides.css"
+    css: "sta210-slides.css"
     logo: img/sta199-sticker-icon.png
     lib_dir: libs/font-awesome
     nature:
@@ -15,19 +15,16 @@ output:
       ratio: "16:9"
 ---
 
-layout: true
-
-<div class="my-footer">
-<span>
-<a href="http://datasciencebox.org" target="_blank">datasciencebox.org</a>
-</span>
-</div> 
-
----
-
 ```{r packages, echo=FALSE, message=FALSE, warning=FALSE}
 library(tidyverse)
 ```
+
+
+class: middle, center
+
+## [Click for PDF of slides](02-meet-toolkit.pdf)
+
+---
 
 ## Topics
 
@@ -135,6 +132,8 @@ dataframe$var_name
 install.packages("package_name")
 library(package_name)
 ```
+
+]
 
 ---
 

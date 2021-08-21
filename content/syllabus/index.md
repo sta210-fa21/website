@@ -8,42 +8,42 @@ title: Syllabus
 
 **Instructor**
 
-  Name    |   Contact    |  Office hours  |  <span></span>
-|-------------------|------------------|------------------|------------------ 
-|[Prof. Maria Tackett](http://stat.duke.edu/~mt324/) | <a href="mailto:maria.tackett@duke.edu" title="email"><i class="fa fa-envelope"></i></a> &nbsp; <a href="https://github.com/matackett" title="GitHub"><i class="fab fa-github"></i></a> | TBD | Old Chem 118B
+| Name                                                | Contact                                                                                                                                                                            | Office hours |               |
+|-----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|---------------|
+| [Prof. Maria Tackett](http://stat.duke.edu/~mt324/) | <a href="mailto:maria.tackett@duke.edu" title="email"><i class="fa fa-envelope"></i></a>   <a href="https://github.com/matackett" title="GitHub"><i class="fab fa-github"></i></a> | TBD          | Old Chem 118B |
 
-<br> 
+<br>
 
 **Teaching Assistants**
 
-Name    | Contact    | Office hours  |  <span></span>
-|-------------------|------------------|------------------|------------------ 
-| Sophie Dalldorf| <a href="mailto:sohpia.dalldorf@duke.edu" title="email"><i class="fa fa-envelope"></i></a> | TBD | <span></span> |
-| Emily Gentles| <a href="mailto:emily.gentles@duke.edu" title="email"><i class="fa fa-envelope"></i></a> | TBD | <span></span> |
-| Leslie Li| <a href="mailto:yunfei.li@duke.edu" title="email"><i class="fa fa-envelope"></i></a> | TBD | <span></span> |
-| Jose Pliego San Martin| <a href="mailto:jose.pliego.san.martin@duke.edu" title="email"><i class="fa fa-envelope"></i></a> | TBD | <span></span> |
-| Karam Oubari| <a href="mailto:karam.oubaril@duke.edu" title="email"><i class="fa fa-envelope"></i></a> | TBD | <span></span> |
-| Shari Tian| <a href="mailto:shari.tian@duke.edu" title="email"><i class="fa fa-envelope"></i></a> | TBD | <span></span> |
-| Grace Zhao| <a href="mailto:zhihui.zhao@duke.edu" title="email"><i class="fa fa-envelope"></i></a> | TBD | <span></span> |
+| Name                   | Contact                                                                                           | Office hours |     |
+|------------------------|---------------------------------------------------------------------------------------------------|--------------|-----|
+| Sophie Dalldorf        | <a href="mailto:sohpia.dalldorf@duke.edu" title="email"><i class="fa fa-envelope"></i></a>        | TBD          |     |
+| Emily Gentles          | <a href="mailto:emily.gentles@duke.edu" title="email"><i class="fa fa-envelope"></i></a>          | TBD          |     |
+| Leslie Li              | <a href="mailto:yunfei.li@duke.edu" title="email"><i class="fa fa-envelope"></i></a>              | TBD          |     |
+| Jose Pliego San Martin | <a href="mailto:jose.pliego.san.martin@duke.edu" title="email"><i class="fa fa-envelope"></i></a> | TBD          |     |
+| Shari Tian             | <a href="mailto:shari.tian@duke.edu" title="email"><i class="fa fa-envelope"></i></a>             | TBD          |     |
+| Aaditya Warrier | <a href="mailto:aaditya.warrier@duke.edu" title="email"><i class="fa fa-envelope"></i></a>             | TBD          |     |
+| Grace Zhao             | <a href="mailto:zhihui.zhao@duke.edu" title="email"><i class="fa fa-envelope"></i></a>            | TBD          |     |
 
-## Course info 
+## Course info
 
- <span></span> | Day  |   Time   |  Location  | 
-|-------------------|------------------|------------------|------------------|
-Lectures | Mon & Wed | 3:30p - 4:45p | Soc Sci 139 |
-Lab 07 |Thu | 12p - 1:15p | Old Chem 101 |
-Lab 08 |Thu | 3:30p - 4:45p | Old Chem 101|
-Lab 09 |Thu | 5:15p - 6:30p |  Old Chem 101 |
+|          | Day       | Time          | Location     |
+|----------|-----------|---------------|--------------|
+| Lectures | Mon & Wed | 3:30p - 4:45p | Soc Sci 139  |
+| Lab 07   | Thu       | 12p - 1:15p   | Old Chem 101 |
+| Lab 08   | Thu       | 3:30p - 4:45p | Old Chem 101 |
+| Lab 09   | Thu       | 5:15p - 6:30p | Old Chem 101 |
 
 ## Course Learning Objectives
 
 By the end of the semester, you will be able to...
 
-- analyze real-world data to answer questions about multivariable relationships.
-- fit and evaluate linear and logistic regression models.
-- assess whether a proposed model is appropriate and describe its limitations.
-- use R Markdown to write reproducible reports and GitHub for version control and collaboration. 
-- communicate results from statistical analyses to a general audience.
+-   analyze real-world data to answer questions about multivariable relationships.
+-   fit and evaluate linear and logistic regression models.
+-   assess whether a proposed model is appropriate and describe its limitations.
+-   use R Markdown to write reproducible reports and GitHub for version control and collaboration.
+-   communicate results from statistical analyses to a general audience.
 
 ## Course community
 
@@ -70,9 +70,15 @@ If there is any portion of the course that is not accessible to you due to chall
 
 The [Student Disability Access Office (SDAO)](https://access.duke.edu/students) is available to ensure that students are able to engage with their courses and related assignments. Students should be in touch with the Student Disability Access Office to [request or update accommodations](https://access.duke.edu/requests) under these circumstances.
 
+### Attendance Policy Related to COVID Symptoms, Exposure, or Infection
+
+Student health, safety, and well-being are the university's top priorities. To help ensure your well-being and the well-being of those around you, **please do not come to class if you have symptoms related to COVID-19, have had a known exposure to COVID-19, or have tested positive for COVID-19.** If any of these situations apply to you, you must follow university guidance related to the ongoing COVID-19 pandemic and current health and safety protocols.
+
+If you are experiencing any COVID-19 symptoms, contact student health at 919-681-9355. To keep the university community as safe and healthy as possible, you will be expected to follow these guidelines. Please reach out to me and your academic dean as soon as possible if you need to quarantine or isolate so that we can discuss arrangements for your continued participation in class.  
+
 ### Communication
 
-All lecture notes, assignment instructions, an up-to-date schedule, and other course materials may be found on the course website, https://www.sta210-fa21-003.netlify.app .
+All lecture notes, assignment instructions, an up-to-date schedule, and other course materials may be found on the course website, <https://www.sta210-fa21-003.netlify.app> .
 
 Announcements will be emailed through Sakai Announcements periodically. Please check your email regularly to ensure you have the latest announcements for the course.
 
@@ -146,7 +152,7 @@ The final course grade will be calculated as follows:
 | Quiz 01               | 10%        |
 | Quiz 02               | 10%        |
 | Quiz 03               | 10%        |
-| Prep quizzes          | 5%        |
+| Prep quizzes          | 5%         |
 | Application Exercises | 2.5%       |
 | Teamwork              | 2.5%       |
 

@@ -14,27 +14,24 @@ If you have a question during lecture or lab, feel free to ask it! There are lik
 
 The teaching team is here to help you be successful in the course. You are encouraged to attend office hours during the times posted on the home page to ask questions about the course content and assignments. A lot of questions are most effectively answered in-person, so office hours are a valuable resource. Please use them!
 
-Join using the Zoom link in [Sakai](https://sakai.duke.edu). You can find the office hours schedule on the [homepage](https://sta199-fa20-002.netlify.app/) and in Sakai. 
+You can find the schedule for office hours and associated links for online office hours in Sakai.
 
-## Piazza
+## Ed Discussion
 
-Outside of class and office hours, any general questions about course content or assignments should be posted on [Piazza](https://piazza.com/class/kdtl7z2npb07ds). There is a chance another student has already asked a similar question, so please check the other posts on Piazza before adding a new question. If you know the answer to a question posted on Piazza, I encourage you to respond! 
+Outside of class and office hours, any general questions about course content or assignments should be posted on [Ed Discussion](https://edstem.org/us/courses/8350/discussion/). There is a chance another student has already asked a similar question, so please check the other posts on Ed Discussion before adding a new question. If you know the answer to a question that is posted, I encourage you to respond! 
 
 ## Email 
 
 If you have questions about personal matters that are not appropriate for the public forum on Piazza (e.g. illness, accommodations, etc.), you may email Professor Tackett at [maria.tackett@duke.edu](mailto:maria.tackett@duke.edu). 
 
-Please do not email about course content questions but rather post those on Piazza.
 
-## Resources for the course
+## Additional resources
 
-- [OpenIntro Statistics 4th ed](https://leanpub.com/openintro-statistics) by David Diez, Mine &Ccedil;etinkaya-Rundel, and Christopher Barr
-  
 - [R for Data Science](https://r4ds.had.co.nz/) by Garret Grolemund and Hadley Wickham
 
-- [Statistical Inference via Data Science: A ModernDive into R and the Tidyverse](https://moderndive.com/) by Chester Ismay and Albert Kim
+- [Beyond Multiple Linear Regression](https://bookdown.org/roback/bookdown-BeyondMLR/) by Paul Roback and Julie Legler
 
-- [Modern Data Science with R](https://beanumber.github.io/mdsr2e/) by Ben Baumer, Daniel Kaplan, and Nick Horton
+- [Stat2: Modeling with Regression and ANOVA](https://www.amazon.com/STAT2-Modeling-Regression-Ann-Cannon-ebook-dp-B07K6Y99J3/dp/B07K6Y99J3/ref=mt_other?_encoding=UTF8&me=&qid=1629580711) by Ann Cannon et al. 
 
 ## Resources for mental health and wellness
 
