@@ -20,4 +20,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - [Slides](sta210-fa21.netlify.app/slides/02-meet-toolkit.html)
 
+`r emo::ji("movie_camera")` Watch [Exploring multivariable relationships](https://warpwire.duke.edu/w/zRkFAA/)
+
+- [Slides](sta210-fa21.netlify.app/slides/02-multivar-relationships.html)
 

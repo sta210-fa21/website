@@ -1,5 +1,5 @@
 ---
-title: "Prepare: Week 01"
+title: "Prepare: Week 02"
 output: 
   html_document:
     css: "prepare.css"
@@ -10,7 +10,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-## For August 25
+## For August 30
 
 **Note:** All required prepare activities are due **<u>by the beginning of class (3:30p)</u>** on the specified date.
 
@@ -23,4 +23,13 @@ knitr::opts_chunk$set(echo = TRUE)
 `r emo::ji("movie_camera")` Watch [Exploring multivariable relationships](https://warpwire.duke.edu/w/zRkFAA/)
 
 - [Slides](sta210-fa21.netlify.app/slides/02-multivar-relationships.html)
+
+
+## For September 01
+
+
+### Required
+
+### Optional 
+
 
