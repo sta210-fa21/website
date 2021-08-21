@@ -8,7 +8,7 @@ lessons:
   - date: "Wed, Aug 25"
     title: "Meet the Toolkit"
     prepare: "week-01.html"
-    slides: "02-meet-toolkit.hml"
+    slides: "02-meet-toolkit.html"
   - title: "Exploring multivariable relationships"
     slides: "02-multivar-relationships.html"
   - date: "Thu, Aug 26"
