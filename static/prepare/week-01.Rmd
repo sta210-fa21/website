@@ -20,8 +20,4 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - [Slides](sta210-fa21.netlify.app/slides/02-meet-toolkit.html)
 
-`r emo::ji("movie_camera")` Watch [Meet the Toolkit - Version Control and Collaboration](https://youtu.be/124DQasLyNQ)  
-
-- [Slides](https://rstudio-education.github.io/datascience-box/course-materials/slides/u1-d03-toolkit-git/u1-d03-toolkit-git.html#1)
-
 
