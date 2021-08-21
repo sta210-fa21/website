@@ -18,7 +18,7 @@ title: Syllabus
 
 | Name                   | Contact                                                                                           | Office hours |     |
 |------------------------|---------------------------------------------------------------------------------------------------|--------------|-----|
-| Sophie Dalldorf        | <a href="mailto:sohpia.dalldorf@duke.edu" title="email"><i class="fa fa-envelope"></i></a>        | TBD          |     |
+| Sophie Dalldorf        | <a href="mailto:sophia.dalldorf@duke.edu" title="email"><i class="fa fa-envelope"></i></a>        | TBD          |     |
 | Emily Gentles          | <a href="mailto:emily.gentles@duke.edu" title="email"><i class="fa fa-envelope"></i></a>          | TBD          |     |
 | Leslie Li              | <a href="mailto:yunfei.li@duke.edu" title="email"><i class="fa fa-envelope"></i></a>              | TBD          |     |
 | Jose Pliego San Martin | <a href="mailto:jose.pliego.san.martin@duke.edu" title="email"><i class="fa fa-envelope"></i></a> | TBD          |     |
