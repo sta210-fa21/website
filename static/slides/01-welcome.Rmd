@@ -72,9 +72,9 @@ knitr::include_graphics("img/01/education.jpg")
 
 ---
 
-## Check in on Ed Discussion - UPDATE LINK!!!
+## Check in on Ed Discussion!
 
-- Go to the class Ed Discussion: [edstem.org/us/courses/8027/discussion](https://edstem.org/us/courses/8027/discussion/)
+- Go to the class Ed Discussion: [edstem.org/us/courses/8350/discussion/565405](https://edstem.org/us/courses/8350/discussion/565405)
 
 - Answer the poll question: **How are you doing?**
 

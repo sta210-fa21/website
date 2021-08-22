@@ -29,16 +29,6 @@
             </td>
             {{- end }}
             
-            {{- if .ae }}
-            <td align="center" style="width:8%;text-align:center"><a
-                    href="{{ .Site.baseurl }}/appex/{{ .ae }}">
-                    <i class="fas fa-users fa-lg"></i></a></td>
-            {{- else }}
-            <td align="center" style="width:8%;text-align:center">
-                <font color="f1f1f1">
-                    <i class="fas fa-users fa-lg"></i></font>
-            </td>
-            {{- end }}
 
 
              {{- if .slides }}
@@ -49,6 +39,17 @@
             <td align="center" style="width:8%;text-align:center">
                 <font color="f1f1f1">
                     <i class="fas fa-laptop fa-lg"></i></font>
+            </td>
+            {{- end }}
+
+           {{- if .ae }}
+            <td align="center" style="width:8%;text-align:center"><a
+                    href="{{ .Site.baseurl }}/appex/{{ .ae }}">
+                    <i class="fas fa-users fa-lg"></i></a></td>
+            {{- else }}
+            <td align="center" style="width:8%;text-align:center">
+                <font color="f1f1f1">
+                    <i class="fas fa-users fa-lg"></i></font>
             </td>
             {{- end }}
 
