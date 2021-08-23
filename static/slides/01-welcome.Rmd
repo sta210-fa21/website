@@ -332,9 +332,14 @@ countdown::countdown(minutes = 5, seconds = 0)
 
 - Watch videos for [Prepare: Week 01](https://sta210-fa21.netlify.app/prepare/week-01.html)
 
-- Complete the [Get to Know You survey](https://duke.qualtrics.com/jfe/form/SV_eyUiuqZKsJaqHWK) 
-
+- Reserve an .vocab[STA210] RStudio container. 
+  - Go to https://vm-manage.oit.duke.edu/containers
+  - Click **Reserve Container** for the STA210 container
+  
 - Submit your [GitHub username](https://bit.ly/sta210-fa21-github)
 
 - Bring laptop/tablet/Chromebook to class 
+
+- Complete the [Get to Know You survey](https://duke.qualtrics.com/jfe/form/SV_eyUiuqZKsJaqHWK) (by Wed, Sep 01)
+
 
