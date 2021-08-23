@@ -24,3 +24,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - [Slides](sta210-fa21.netlify.app/slides/02-multivar-relationships.html)
 
+
+`r emo::ji("computer")` Reserve an STA210 RStudio container. 
+
+  - Go to https://vm-manage.oit.duke.edu/containers
+  - Click **Reserve Container** for the STA210 container
+
