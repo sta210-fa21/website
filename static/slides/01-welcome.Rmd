@@ -293,7 +293,7 @@ class: middle, center
 ## Create a GitHub account
 
 .question[
-<midi>Go to https://github.com/, and create an account, if needed. Then, go to <a href = "https://bit.ly/sta199-fa21-github">bit.ly/sta199-fa21-github</a> and enter your Duke email address (NETID@duke.edu) and GitHub username.</midi>
+<midi>Go to https://github.com/, and create an account, if needed. Then, go to <a href = "https://bit.ly/sta210-fa21-github">bit.ly/sta210-fa21-github</a> and enter your Duke email address (NETID@duke.edu) and GitHub username.</midi>
 ]
 
 <small>
