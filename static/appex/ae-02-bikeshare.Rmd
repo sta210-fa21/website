@@ -15,47 +15,70 @@ knitr::opts_chunk$set(warning = FALSE,
                       fig.align = "center")
 ```
 
-## Class announcements
+## Questions about the course? 
 
-- Office hours start this week
-- See this week's schedule: [Week 02](https://sta210-sp21.netlify.app/schedule/week-02/)
-  - [Lab 01](https://sta210-sp21.netlify.app/labs/lab-01-ikea.html) due Sun, Jan 31 at 11:59P
-  - Complete [All About You survey](https://duke.qualtrics.com/jfe/form/SV_czLvjD7M9XkcZKK) by Sun, Jan 31 at 11:59p
-- Check Sakai announcements + email for weekly updates
+## Questions from the prepare assignment?
 
-## Introductions 
+## Tour of R and RStudio 
 
-## Meet your classmates! (~ 5 minutes)
+Let's take a tour of R and RStudio. Go to [vm-manage.oit.duke.edu](https://vm-manage.oit.duke.edu) and open the **STA198-199** Docker containers. 
 
-- Go to a breakout room
-- Introduce yourself!
-  - Name
-  - Year
-  - What is something you're looking forward to this semester (either in this class or in general)?
+- Tour of RStudio interface 
 
-## Questions about the class
+- **Console:** Use R as a calculator by typing the following in the console: 
 
-## Questions from Lab 01
-
-## Questions from video
-
-## Bike rentals in DC
-
-```{r warning = FALSE, message = FALSE}
-library(tidyverse)
+```{r eval = F}
+3 * 5 + 10
 ```
 
+```{r eval = F}
+x <- 3
+x + x^2
+```
 
-"Bike sharing systems are new generation of traditional bike rentals where whole process from membership, rental and return back has become automatic. Through these systems, user is able to easily rent a bike from a particular position and return back at another position. Currently, there are about over 500 bike-sharing programs around the world which is composed of over 500 thousands bicycles. Today, there exists great interest in these systems due to their important role in traffic, environmental and health issues."
+```{r eval = F}
+x <- 1:10
+x*7
+```
 
-- From [UCI Machine Learning Repository - Bike Sharing Dataset](http://archive.ics.uci.edu/ml/datasets/Bike+Sharing+Dataset)
+- Environment
+- Loading and viewing a data frame
+- Accessing a variable in a data frame
+- R functions
 
-## Exercises (~ 15 minutes)
+## AE-02: Bikeshare Analysis
 
-- Go to the [STA 210 course organization](https://www.github.com/sta210-sp21) on GitHub.
+- Run the following code in the **console** to download the data and Rmd file for today's application exercise. (Note: You will learn how to clone a GitHub repo in tomorrow's lab.) Your RStudio may refresh, and you will see the R Markdown files and data set. 
 
-- Clone the **ae-02-** repo and start a new project in RStudio.
+```{r eval = F}
+usethis::use_course("sta210-fa21/ae-02")
+```
 
-- Be sure to push your changes periodically as you work on the AE. 
+### Understanding the R Project & R Markdown 
 
-- Write your breakout room's answer on the Google Slide. Link will be posted in chat.
+- R Project 
+- R Markdown file 
+
+### R Markdown vs. Console 
+
+- Run the following in the **console**
+
+```{r eval = F}
+x <- 2
+x * 3
+```
+
+- Then add the following in an R code chunk in your R Markdown file. 
+
+```{r eval = F}
+x * 3
+```
+
+- What happens? Why the error? 
+- Let's fix it! 
+
+### Bikeshare analysis
+
+## Submission
+
+**There is nothing to submit for today's AE. Starting Monday, you will submit push your AE to your GitHub repo.**

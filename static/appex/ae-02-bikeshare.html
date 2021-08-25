@@ -10,7 +10,7 @@
 
 
 
-<meta name="date" content="2021-03-25" />
+<meta name="date" content="2021-08-24" />
 
 <title>AE 02: Bike rentals in DC</title>
 
@@ -166,63 +166,72 @@ pre code {
 
 <h1 class="title toc-ignore">AE 02: Bike rentals in DC</h1>
 <h3 class="subtitle">Exploring multivariable relationships</h3>
-<h4 class="date">2021-03-25</h4>
+<h4 class="date">2021-08-24</h4>
 
 </div>
 
 
-<div id="class-announcements" class="section level2">
-<h2>Class announcements</h2>
+<div id="questions-about-the-course" class="section level2">
+<h2>Questions about the course?</h2>
+</div>
+<div id="questions-from-the-prepare-assignment" class="section level2">
+<h2>Questions from the prepare assignment?</h2>
+</div>
+<div id="tour-of-r-and-rstudio" class="section level2">
+<h2>Tour of R and RStudio</h2>
+<p>Let’s take a tour of R and RStudio. Go to <a href="https://vm-manage.oit.duke.edu">vm-manage.oit.duke.edu</a> and open the <strong>STA198-199</strong> Docker containers.</p>
 <ul>
-<li>Office hours start this week</li>
-<li>See this week’s schedule: <a href="https://sta210-sp21.netlify.app/schedule/week-02/">Week 02</a>
+<li><p>Tour of RStudio interface</p></li>
+<li><p><strong>Console:</strong> Use R as a calculator by typing the following in the console:</p></li>
+</ul>
+<pre class="r"><code>3 * 5 + 10</code></pre>
+<pre class="r"><code>x &lt;- 3
+x + x^2</code></pre>
+<pre class="r"><code>x &lt;- 1:10
+x*7</code></pre>
 <ul>
-<li><a href="https://sta210-sp21.netlify.app/labs/lab-01-ikea.html">Lab 01</a> due Sun, Jan 31 at 11:59P</li>
-<li>Complete <a href="https://duke.qualtrics.com/jfe/form/SV_czLvjD7M9XkcZKK">All About You survey</a> by Sun, Jan 31 at 11:59p</li>
-</ul></li>
-<li>Check Sakai announcements + email for weekly updates</li>
+<li>Environment</li>
+<li>Loading and viewing a data frame</li>
+<li>Accessing a variable in a data frame</li>
+<li>R functions</li>
 </ul>
 </div>
-<div id="introductions" class="section level2">
-<h2>Introductions</h2>
-</div>
-<div id="meet-your-classmates-5-minutes" class="section level2">
-<h2>Meet your classmates! (~ 5 minutes)</h2>
+<div id="ae-02-bikeshare-analysis" class="section level2">
+<h2>AE-02: Bikeshare Analysis</h2>
 <ul>
-<li>Go to a breakout room</li>
-<li>Introduce yourself!
+<li>Run the following code in the <strong>console</strong> to download the data and Rmd file for today’s application exercise. (Note: You will learn how to clone a GitHub repo in tomorrow’s lab.) Your RStudio may refresh, and you will see the R Markdown files and data set.</li>
+</ul>
+<pre class="r"><code>usethis::use_course(&quot;sta210-fa21/ae-02&quot;)</code></pre>
+<div id="understanding-the-r-project-r-markdown" class="section level3">
+<h3>Understanding the R Project &amp; R Markdown</h3>
 <ul>
-<li>Name</li>
-<li>Year</li>
-<li>What is something you’re looking forward to this semester (either in this class or in general)?</li>
-</ul></li>
+<li>R Project</li>
+<li>R Markdown file</li>
 </ul>
 </div>
-<div id="questions-about-the-class" class="section level2">
-<h2>Questions about the class</h2>
-</div>
-<div id="questions-from-lab-01" class="section level2">
-<h2>Questions from Lab 01</h2>
-</div>
-<div id="questions-from-video" class="section level2">
-<h2>Questions from video</h2>
-</div>
-<div id="bike-rentals-in-dc" class="section level2">
-<h2>Bike rentals in DC</h2>
-<pre class="r"><code>library(tidyverse)</code></pre>
-<p>“Bike sharing systems are new generation of traditional bike rentals where whole process from membership, rental and return back has become automatic. Through these systems, user is able to easily rent a bike from a particular position and return back at another position. Currently, there are about over 500 bike-sharing programs around the world which is composed of over 500 thousands bicycles. Today, there exists great interest in these systems due to their important role in traffic, environmental and health issues.”</p>
+<div id="r-markdown-vs.-console" class="section level3">
+<h3>R Markdown vs. Console</h3>
 <ul>
-<li>From <a href="http://archive.ics.uci.edu/ml/datasets/Bike+Sharing+Dataset">UCI Machine Learning Repository - Bike Sharing Dataset</a></li>
+<li>Run the following in the <strong>console</strong></li>
+</ul>
+<pre class="r"><code>x &lt;- 2
+x * 3</code></pre>
+<ul>
+<li>Then add the following in an R code chunk in your R Markdown file.</li>
+</ul>
+<pre class="r"><code>x * 3</code></pre>
+<ul>
+<li>What happens? Why the error?</li>
+<li>Let’s fix it!</li>
 </ul>
 </div>
-<div id="exercises-15-minutes" class="section level2">
-<h2>Exercises (~ 15 minutes)</h2>
-<ul>
-<li><p>Go to the <a href="https://www.github.com/sta210-sp21">STA 210 course organization</a> on GitHub.</p></li>
-<li><p>Clone the <strong>ae-02-</strong> repo and start a new project in RStudio.</p></li>
-<li><p>Be sure to push your changes periodically as you work on the AE.</p></li>
-<li><p>Write your breakout room’s answer on the Google Slide. Link will be posted in chat.</p></li>
-</ul>
+<div id="bikeshare-analysis" class="section level3">
+<h3>Bikeshare analysis</h3>
+</div>
+</div>
+<div id="submission" class="section level2">
+<h2>Submission</h2>
+<p><strong>There is nothing to submit for today’s AE. Starting Monday, you will submit push your AE to your GitHub repo.</strong></p>
 </div>
 
 
