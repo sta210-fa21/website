@@ -11,6 +11,7 @@ lessons:
     title: "Meet the Toolkit"
     prepare: "week-01.html"
     slides: "02-meet-toolkit.html"
+ #   ae: "ae-02-bikeshare.html"
   - title: "Exploring multivariable relationships"
     slides: "02-multivar-relationships.html"
   - date: "Thu, Aug 26"
