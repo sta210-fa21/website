@@ -130,11 +130,11 @@ Then, try to create a project again and it should work.
 
 Below are the components of the RStudio IDE.
 
-![](img/01/r-example-1.png)
+![](img/01/rstudio-panes.png)
 
 Below are the components of an R Markdown (.Rmd) file.
 
-![](img/01/VisualEditor.png)
+![](img/01/rmarkdown.jpg)
 
 ## Warm up
 
@@ -390,7 +390,7 @@ ggplot(data = _____, aes(x = width, y = _____)) +
 10. Color the points of the scatterplot by category. Describe how the relationship between price and width of Ikea furniture differs by category, if at all. 
 
 ::: {.commit}
-`r emo::ji("yarn")` `r emo::ji("white_check_mark")` `r emo::ji("arrow_up")` You're done and ready to submit your work! Knit, commit, and push all remaining changes. You can use the commit message "Done with Lab 1!", and make sure you have pushed all the files to GitHub (your Git pane in RStudio should be empty) and that<u>all</u> documents are updated in your repo on GitHub. The PDF document you submit to Gradescope should be identical to the one in your GitHub repo. 
+`r emo::ji("yarn")` `r emo::ji("white_check_mark")` `r emo::ji("arrow_up")` You're done and ready to submit your work! Knit, commit, and push all remaining changes. You can use the commit message "Done with Lab 1!", and make sure you have pushed all the files to GitHub (your Git pane in RStudio should be empty) and that <u>all</u> documents are updated in your repo on GitHub. The PDF document you submit to Gradescope should be identical to the one in your GitHub repo. 
 :::
 
 See the instructions below to submit your work on Gradescope.
@@ -419,14 +419,16 @@ To submit your assignment:
 
 # Grading (50 pts)
 
+<br>
+
 | Component | Points |
 |:----------|:-------|
 | Ex 1 - 10     | 45      |
-| Workflow & formatting     | 5    |
+| Workflow & formatting     | 5    
 
 **Grading notes**:
 
--   The "Workflow & formatting" grade is to assess the reproducible workflow.t This includes having at least 3 informative commit messages and updating the name and date in the YAML.
+-   The "Workflow & formatting" grade is to assess the reproducible workflow. This includes having at least 3 informative commit messages and updating the name and date in the YAML.
 
 # Resources for additional practice (optional)
 
