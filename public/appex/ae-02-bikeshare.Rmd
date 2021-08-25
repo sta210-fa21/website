@@ -31,7 +31,7 @@ knitr::opts_chunk$set(warning = FALSE,
 
 ## Tour of R and RStudio 
 
-Let's take a tour of R and RStudio. Go to [vm-manage.oit.duke.edu](https://vm-manage.oit.duke.edu) and open the **STA198-199** Docker containers. 
+Let's take a tour of R and RStudio. Go to [vm-manage.oit.duke.edu](https://vm-manage.oit.duke.edu) and open the **STA210** Docker containers. 
 
 - Tour of RStudio interface 
 
