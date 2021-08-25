@@ -15,12 +15,15 @@ knitr::opts_chunk$set(warning = FALSE,
                       fig.align = "center")
 ```
 
-## Announcement 
+## Announcements
 
 - Professor Tackett will have office hours **Thursday, August 26,9:30a - 11:30a** on Zoom. 
   - Zoom Link: https://duke.zoom.us/j/96752208722
   - Need your Duke NetID & password to join. 
   - Full office hours start August 30.
+
+- We'll use the "August 25 Lecture" thread pinned to the top of Ed Discussion: https://edstem.org/us/courses/8350/discussion/
+
 
 ## Questions about the course? 
 
