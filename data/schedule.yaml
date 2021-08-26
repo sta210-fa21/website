@@ -15,7 +15,9 @@ lessons:
   - title: "Exploring multivariable relationships"
     slides: "02-multivar-relationships.html"
   - date: "Thu, Aug 26"
-    title: "Lab 01"
+    title: "Lab 01: Getting Started with R!"
+    slides: "lab-01-slides.html"
+    lab: "lab-01-ikea.html"
 
   - week:  "Week 02"
     date:  "Mon, Aug 30"

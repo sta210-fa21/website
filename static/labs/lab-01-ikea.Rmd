@@ -81,14 +81,14 @@ Type the following lines of code in the **console** in RStudio filling in your n
 
 ```{r eval=FALSE}
 usethis::use_git_config(user.name = "GitHub username", 
-               user.email="your email")
+               user.email = "your email")
 ```
 
 For example, mine would be 
 
 ```{r eval=FALSE}
-usethis::use_git_config(user.name="matackett",
-               user.email="maria.tackett@duke.edu")
+usethis::use_git_config(user.name = "matackett",
+               user.email = "maria.tackett@duke.edu")
 ```
 
 You are now ready interact between GitHub and RStudio!
@@ -103,7 +103,12 @@ You are now ready interact between GitHub and RStudio!
 
 -   Click on the green **CODE** button, select **Use SSH** (this might already be selected by default, and if it is, you'll see the text **Clone with SSH**). Click on the clipboard icon to copy the repo URL.
 
-![How to Clone using SSH in GitHub](img/01/github-example.png)
+![](img/01/github-example.png)
+
+```{marginfigure}
+If you get an error message that begins with *WARNING: UNPROTECTED PRIVATE KEY FILE!* then this can be fixed by clicking on "Terminal" (the tab next to the console) and pasting in `chmod 400 ~/.ssh/id_rsa` and hitting enter.
+Then, try to create a project again and it should work.
+```
 
 -   Go to <https://vm-manage.oit.duke.edu/containers> and login with your Duke NetID and Password.
 
@@ -114,17 +119,14 @@ You are now ready interact between GitHub and RStudio!
 
 -   Copy and paste the URL of your assignment repo into the dialog box *Repository URL*. Again, please make sure to have *SSH* highlighted under *Clone* when you copy the address.
 
-![Version Control and Cloning Repo](img/01/github-example-2.png)
+![](img/01/github-example-2.png)
 
 -   Click *Create Project*, and the files from your GitHub repo will be displayed in the *Files* pane in RStudio.
 
 -   Click *lab-01-ikea.Rmd* to open the template R Markdown file.
     This is where you will write up your code and narrative for the lab.
 
-```{marginfigure}
-If you get an error message that begins with *WARNING: UNPROTECTED PRIVATE KEY FILE!* then this can be fixed by clicking on "Terminal" (the tab next to the console) and pasting in `chmod 400 ~/.ssh/id_rsa` and hitting enter.
-Then, try to create a project again and it should work.
-```
+
 
 ## R and R Studio
 
@@ -140,7 +142,7 @@ Below are the components of an R Markdown (.Rmd) file.
 
 Before we introduce the data, let's warm up with some simple exercises.
 
-We're going to go through our first **commit** and **push**.
+We're going to go through our first **knit**, **commit**, and **push**.
 
 ## YAML
 
@@ -175,17 +177,16 @@ You should commit states that are *meaningful to you* for inspection, comparison
 In the first few assignments we will tell you exactly when to commit and in some cases, what commit message to use.
 As the semester progresses we will let you make these decisions.
 
+
+Now let's make sure all the changes went to GitHub. Go to your GitHub repo and refresh the page. You should see your commit message next to the updated files. If you see this, all your changes are on GitHub and you're good to go! 
+
+
 ## Pushing changes
 
 Now that you have made an update and committed this change, it's time to push these changes to your repo on GitHub.
 
 In order to push your changes to GitHub, you must have **staged** your **commit** to be pushed.
 click on **Push**.
-
-```{=html}
-<!--This will prompt a dialogue box where you first need to enter your user name, and then your password.
-Don't worry, we will soon teach you how to save your password so you don't have to enter it every time, but for now assignment you'll have to manually enter each time you push in order to gain some experience with the process.-->
-```
 
 To get more details about the RStudio project, RMarkdown file, and just R in general, read [Getting Started](https://socviz.co/gettingstarted.html#gettingstarted) in *Data Visualization* by Kieran Healy.
 
@@ -196,35 +197,6 @@ We will use the following package in today's lab.
 ```{r load-packages}
 library(tidyverse)
 ```
-
-
-## YAML 
-
-```{marginfigure}
-The top portion of your R Markdown file (between the three dashed lines) is called YAML. It stands for "YAML Ain't Markup Language". It is a human friendly data serialization standard for all programming languages. All you need to know is that this area is called the YAML (we will refer to it as such) and that it contains meta information about your document.
-```
-
-Before we introduce the data, let's update the name and date in the YAML. 
-
-Open the R Markdown (Rmd) file in your project, input your name for the author name and today's date for the date, and knit the document.
-
-## Committing changes:
-
-Next, go to the *Git* pane in RStudio. 
-
-If you have made changes to your Rmd file, you should see it listed here. Click on it to select it in this list and then click on **Diff**. This shows you the difference between the last committed state of the document and its current state with your changes. If you're happy with these changes, write "Update author name" in the **Commit message** box and click **Commit**.
-
-You don't have to commit after every change, this would get quite cumbersome. You should consider committing states that are *meaningful to you* for inspection, comparison, or restoration. In the first few assignments, we will provide some guidance on when to commit and an example commit message.
-
-## Pushing changes: 
-
-Now that you have made an update and committed this change, it's time to push these changes to the web! Or more specifically, to your repo on GitHub. Why? So that others can see your changes. And by others, we mean the course teaching team. (Your repos in this course are private and can only be seen by you and the teaching team.)
-
-In order to push your changes to GitHub, click **Push**. This will prompt a dialogue box where you first need to enter your user name, and then your password. This might feel cumbersome. Bear with me... We *will* teach you how to save your password so you don't have to enter it every time. But for this one assignment you'll have to manually enter each time you push in order to gain some experience with it.
-
-The *Git* pane should be empty after you push. If it's not, click the box next to the remaining files, write an informative commit message, and push.
-
-Now let's make sure all the changes went to GitHub. Go to your GitHub repo and refresh the page. You should see your commit message next to the updated files. If you see this, all your changes are on GitHub and you're good to go! 
 
 
 # Data: Ikea furniture
@@ -390,7 +362,7 @@ ggplot(data = _____, aes(x = width, y = _____)) +
 10. Color the points of the scatterplot by category. Describe how the relationship between price and width of Ikea furniture differs by category, if at all. 
 
 ::: {.commit}
-`r emo::ji("yarn")` `r emo::ji("white_check_mark")` `r emo::ji("arrow_up")` You're done and ready to submit your work! Knit, commit, and push all remaining changes. You can use the commit message "Done with Lab 1!", and make sure you have pushed all the files to GitHub (your Git pane in RStudio should be empty) and that <u>all</u> documents are updated in your repo on GitHub. The PDF document you submit to Gradescope should be identical to the one in your GitHub repo. 
+`r emo::ji("yarn")` `r emo::ji("white_check_mark")` `r emo::ji("arrow_up")` You're done and ready to submit your work! Knit, commit, and push all remaining changes. You can use the commit message "Done with Lab 1!", and make sure you have pushed all the files to GitHub (your Git pane in RStudio should be empty) and that <u>all</u> documents are updated in your repo on GitHub. The PDF document you submit to Gradescope should be identical to the one in your GitHub repo.
 :::
 
 See the instructions below to submit your work on Gradescope.
