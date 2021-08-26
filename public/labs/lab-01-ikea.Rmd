@@ -387,7 +387,7 @@ To submit your assignment:
 
 - Mark the pages associated with each exercise. All of the pages of your lab should be associated with at least one question (i.e., should be "checked"). 
 
-- Select the first page of your .PDF submission to be associated with the *"Overall"* section.
+- Select the first page of your .PDF submission to be associated with the *"Workflow & formatting"* section.
 
 # Grading (50 pts)
 
