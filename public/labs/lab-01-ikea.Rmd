@@ -265,9 +265,9 @@ ggplot(data = ikea, aes(x = price_usd)) +
   geom_histogram()
 ```
 
-    - Use the visualization to describe the distribution of price. In your narrative, include description of the shape, approximate center, approximate spread, and any presence of outliers. 
+  - Use the visualization to describe the distribution of price. In your narrative, include description of the shape, approximate center, approximate spread, and any presence of outliers. 
 
-    - Briefly explain why the median is more representative of the center of this distribution than the mean.
+  - Briefly explain why the median is more representative of the center of this distribution than the mean.
 
 3. When we make visualizations, we want them to be clear and suitable for a professional audience. This means that, at a minimum, each visualization should have **an informative title** and **informative axis labels**. Let's modify the plot from the previous question to make it suitable for a professional audience. Complete the code below to include an informative title and informative axis labels. 
 
