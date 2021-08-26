@@ -337,7 +337,7 @@ Recreate the density plot using a more suitable alpha level, so we can more easi
 
 7. Overlapping density plots are not the only way to visualize the relationship between a quantitative and categorical variable. Use a different type of plot to visualize the relationship between `price_usd` and `category`. Include an informative title and informative axis labels.
 
-You can use the [ggplot2 cheatsheet](https://rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf) and [from Data to Viz](https://www.data-to-viz.com/#ridgeline) for inspiration. 
+You can use the [ggplot2 cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/data-visualization.pdf) and [from Data to Viz](https://www.data-to-viz.com/#ridgeline) for inspiration. 
 
 8. Compare and contrast your plots from the previous exercise to the overlapping density plots from Exercise 5. What features are apparent in the plot from the previous exercise that aren't in the overlapping density plots? What features are apparent in the overlapping density plots that aren't in the plot from the previous exercise? What features are apparent in both? 
 
