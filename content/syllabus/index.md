@@ -6,6 +6,8 @@ title: Syllabus
 
 ## Teaching team & office hours
 
+[Click here](https://prodduke-my.sharepoint.com/:x:/g/personal/mt324_duke_edu/ERNucGDiMEVJndMqlcDu2bYBKITA2hfXKRY2k_hbde5efw?e=Bue98k) for office hours Zoom links.
+
 **Instructor**
 
 | Name                                                | Contact                                                                                                                                                                            | Office hours |               |
@@ -17,7 +19,6 @@ title: Syllabus
 
 **Teaching Assistants**
 
-[Click here](https://prodduke-my.sharepoint.com/:x:/g/personal/mt324_duke_edu/ERNucGDiMEVJndMqlcDu2bYBKITA2hfXKRY2k_hbde5efw?e=Bue98k) for office hours Zoom links.
 
 | Name                   | Contact                                                                                           | Office hours |     |
 |------------------------|---------------------------------------------------------------------------------------------------|--------------|-----|
