@@ -1,0 +1,41 @@
+---
+title: "Prepare: Week 03"
+output: 
+  html_document:
+    css: "prepare.css"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## For September 06
+
+**Note:** All required prepare activities are due **<u>by the beginning of class (3:30p)</u>** on the specified date.
+
+### Required 
+
+`r emo::ji("movie_camera")` Watch [SLR: Conditions](https://warpwire.duke.edu/w/WTYFAA/)
+
+- [Slides]()
+
+
+`r emo::ji("memo")` Take Prep Quiz 00 under Tests & Quizzes in Sakai.
+
+- Going forward, prepare quizzes will be required. This quiz is optional to give you an opportunity to practice using Sakai quizzes. 
+
+### Optional 
+
+- [Introduction to Modern Statistics (IMS): Checking Model Conditions](https://openintro-ims.netlify.app/inference-reg.html#tech-cond-linmod)
+
+
+## For September 08
+
+`r emo::ji("movie_camera")` Watch [SLR: Prediction](https://warpwire.duke.edu/w/XzYFAA/)
+
+- [Slides]()
+
+
+
+
