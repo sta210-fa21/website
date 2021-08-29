@@ -18,7 +18,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 `r emo::ji("movie_camera")` Watch [SLR: Conditions](https://warpwire.duke.edu/w/WTYFAA/)
 
-- [Slides]()
+- [Slides](https://sta210-fa210.netlify.app/slides/06-slr-conditions.html)
 
 
 `r emo::ji("memo")` Take Prep Quiz 00 under Tests & Quizzes in Sakai.
@@ -34,7 +34,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 `r emo::ji("movie_camera")` Watch [SLR: Prediction](https://warpwire.duke.edu/w/XzYFAA/)
 
-- [Slides]()
+- [Slides](https://sta210-fa210.netlify.app/slides/07-slr-prediction.html)
 
 
 
