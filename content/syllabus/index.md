@@ -10,7 +10,8 @@ title: Syllabus
 
 | Name                                                | Contact                                                                                                                                                                            | Office hours |               |
 |-----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|---------------|
-| [Prof. Maria Tackett](http://stat.duke.edu/~mt324/) | <a href="mailto:maria.tackett@duke.edu" title="email"><i class="fa fa-envelope"></i></a>   <a href="https://github.com/matackett" title="GitHub"><i class="fab fa-github"></i></a> | TBD          | Old Chem 118B |
+| [Prof. Maria Tackett](http://stat.duke.edu/~mt324/) | <a href="mailto:maria.tackett@duke.edu" title="email"><i class="fa fa-envelope"></i></a>| Thu 10a - 11a        | Zoom |
+|  | | or by appointment        |  |
 
 <br>
 
