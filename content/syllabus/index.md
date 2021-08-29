@@ -16,15 +16,21 @@ title: Syllabus
 
 **Teaching Assistants**
 
+[Click here](https://prodduke-my.sharepoint.com/:x:/g/personal/mt324_duke_edu/ERNucGDiMEVJndMqlcDu2bYBKITA2hfXKRY2k_hbde5efw?e=Bue98k) for office hours Zoom links.
+
 | Name                   | Contact                                                                                           | Office hours |     |
 |------------------------|---------------------------------------------------------------------------------------------------|--------------|-----|
-| Sophie Dalldorf        | <a href="mailto:sophia.dalldorf@duke.edu" title="email"><i class="fa fa-envelope"></i></a>        | TBD          |     |
-| Emily Gentles          | <a href="mailto:emily.gentles@duke.edu" title="email"><i class="fa fa-envelope"></i></a>          | TBD          |     |
-| Leslie Li              | <a href="mailto:yunfei.li@duke.edu" title="email"><i class="fa fa-envelope"></i></a>              | TBD          |     |
-| Jose Pliego San Martin | <a href="mailto:jose.pliego.san.martin@duke.edu" title="email"><i class="fa fa-envelope"></i></a> | TBD          |     |
-| Shari Tian             | <a href="mailto:shari.tian@duke.edu" title="email"><i class="fa fa-envelope"></i></a>             | TBD          |     |
-| Aaditya Warrier | <a href="mailto:aaditya.warrier@duke.edu" title="email"><i class="fa fa-envelope"></i></a>             | TBD          |     |
-| Grace Zhao             | <a href="mailto:zhihui.zhao@duke.edu" title="email"><i class="fa fa-envelope"></i></a>            | TBD          |     |
+| Sophie Dalldorf        | <a href="mailto:sophia.dalldorf@duke.edu" title="email"><i class="fa fa-envelope"></i></a>        | Wed 9a - 11a          |   Zoom   |
+| Emily Gentles          | <a href="mailto:emily.gentles@duke.edu" title="email"><i class="fa fa-envelope"></i></a>          | Fri 11a - 12p          |  Old Chem 203B   |
+|      |   | Fri 12p - 1p        | Zoom   |
+| Leslie Li              | <a href="mailto:yunfei.li@duke.edu" title="email"><i class="fa fa-envelope"></i></a>              | Tue 3p - 5p         |    Zoom  |
+| Jose Pliego San Martin | <a href="mailto:jose.pliego.san.martin@duke.edu" title="email"><i class="fa fa-envelope"></i></a> | Tue  10a - 11a       |  Zoom    |
+|  |  |Wed 12p - 1p       |  Old Chem 025  |
+| Shari Tian             | <a href="mailto:shari.tian@duke.edu" title="email"><i class="fa fa-envelope"></i></a>             | Tue 6p - 7p         |  Old Chem 203B   |
+|     | | Tue 7p - 8p       | Zoom   |
+| Aaditya Warrier | <a href="mailto:aaditya.warrier@duke.edu" title="email"><i class="fa fa-envelope"></i></a>             | Mon 12p - 1p         |   Zoom  |
+||   | Wed 11a -  12p       |  Old Chem 203B  |
+| Grace Zhao             | <a href="mailto:zhihui.zhao@duke.edu" title="email"><i class="fa fa-envelope"></i></a>            | Mon 9a - 11a          |  Zoom   |
 
 ## Course info
 
