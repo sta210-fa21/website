@@ -24,6 +24,7 @@ lessons:
     title: "Simple linear regression (SLR)"
     prepare: "week-02.html"
     slides: "03-slr-intro.html"
+    ae: "ae-03-porsche.html"
   - date:  "Wed, Sep 01"
     title: "SLR: Inference for coefficients"
     prepare: "week-02.html"
