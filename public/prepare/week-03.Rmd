@@ -20,7 +20,6 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - [Click here](https://sta210-fa21.netlify.app/slides/06-slr-conditions.html) for slides
 
-`r emo::ji("memo")` Take Prep Quiz 01 under Tests & Quizzes in Sakai.
 
 ### Optional 
 
@@ -32,6 +31,9 @@ knitr::opts_chunk$set(echo = TRUE)
 `r emo::ji("movie_camera")` Watch [SLR: Prediction](https://warpwire.duke.edu/w/XzYFAA/)
 
 - [Click here](https://sta210-fa21.netlify.app/slides/07-slr-prediction.html) for slides
+
+`r emo::ji("memo")` Take Prep Quiz 01 under Tests & Quizzes in Sakai by Sep 08 at 3:30p
+
 
 
 
