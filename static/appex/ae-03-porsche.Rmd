@@ -69,7 +69,7 @@ See [Mathematics in R Markdown](https://rpruim.github.io/s341/S19/from-class/Mat
 
 ##  AE 03: Simple linear regression 
 
-- Go to the ae-03-[GITHUB USERNAME] rep in the GitHub course organization: https://github.com/sta210-fa21
+- Go to the ae-03-[GITHUB USERNAME] repo in the GitHub course organization: https://github.com/sta210-fa21
 
 - Access the RStudio Docker containers at https://vm-manage.oit.duke.edu/containers
 

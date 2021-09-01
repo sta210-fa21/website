@@ -30,6 +30,7 @@ lessons:
     prepare: "week-02.html"
     slides: "04-slr-coef-inf.html"
   - title: "SLR: Foundation for inference"
+    ae: "ae-04-slr-inf.html"
     slides: "04-slr-foundation.html"
   - date:  "Thu, Sep 02"
     title: "Lab 02"
