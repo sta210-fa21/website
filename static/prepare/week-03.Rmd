@@ -20,10 +20,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - [Click here](https://sta210-fa21.netlify.app/slides/06-slr-conditions.html) for slides
 
-
-`r emo::ji("memo")` Take Prep Quiz 00 under Tests & Quizzes in Sakai.
-
-- Going forward, prepare quizzes will be required. This quiz is optional to give you an opportunity to practice using Sakai quizzes. 
+`r emo::ji("memo")` Take Prep Quiz 01 under Tests & Quizzes in Sakai.
 
 ### Optional 
 
