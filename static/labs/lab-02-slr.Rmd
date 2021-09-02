@@ -22,32 +22,16 @@ knitr::opts_chunk$set(echo = TRUE,
 
 # Introduction
 
-```{marginfigure}
-R is the name of the programming language itself and RStudio is a convenient interface.
-```
+In today’s lab, you’ll use simple linear regression to analyze the relationship between the admissions rate and total cost for colleges and universities in the United States.
 
-This lab will go through much of the same workflow we've demonstrated in class.
-The main goal is to reinforce our demo of R and RStudio, which we will be using throughout the course both to learn the statistical concepts discussed in the course and to analyze real data and come to informed conclusions.
+## Learning goals
 
-```{marginfigure}
-git is a version control system (like “Track Changes” features from Microsoft Word but more powerful) and GitHub is the home for your Git-based projects on the internet (like DropBox but much better).
-```
+By the end of the lab you will…
 
-An additional goal is to reinforce git and GitHub, the collaboration and version control system that we will be using throughout the course.
-
-As the labs progress, you are encouraged to explore beyond what the labs dictate; a willingness to experiment will make you a much better programmer.
-Before we get to that stage, however, you need to build some basic fluency in R.
-Today we begin with the fundamental building blocks of R and RStudio: the interface, reading in data, and basic commands.
-
-To make versioning simpler, this and the next lab are solo labs. In the future, you'll learn about collaborating on GitHub and producing a single lab report for your lab team, but for now, concentrate on getting the basics down.
-
-## Learning goals 
-
-By the end of the lab, you will...
-
-- Be familiar with the workflow using RStudio and GitHub
-- Gain practice writing a reproducible report using RMarkdown
-- Practice version control using GitHub## Getting started 
+- Be able to fit a simple linear regression model using R.
+- Be able to interpret the slope and intercept for the model.
+- Be able to use statistical inference to draw conclusions about the slope
+- Continue developing a workflow for reproducible data analysis
 
 # Getting started 
 
@@ -57,7 +41,7 @@ By the end of the lab, you will...
 
 ## Packages
 
-We will use the following packages in today’s lab.
+The follow packages are used in the lab.
 
 ```{r eval = F}
 library(tidyverse)
@@ -70,7 +54,7 @@ library(knitr)
 
 The data for this lab is from the `scorecard` data set in the **rcfss** R package. It includes information originally obtained from the [U.S. Department of Education’s College Scorecard](https://collegescorecard.ed.gov/data/) for 1753 colleges and universities during the 2018 - 2019 academic year. 
 
-We will use the following variables in this lab: 
+The lab focuses on the following variables:
 
 - `admrate`: Undergraduate admissions rate (from 0-100%)
 - `cost`: The average annual total cost of attendance, including tuition and fees, books and supplies, and living expenses
@@ -87,6 +71,8 @@ scorecard <- read_csv("data/scorecard.csv")
 
 # Exercises
 
+**Note: Include axis labels and an informative title for all plots. Use the `kable` function to neatly print tables and regression output.**
+
 1. Create a histogram to examine the distribution of `admrate` and calculate summary statistics for the center (mean and median) and the spread (standard deviation and IQR). 
 
 2. Use the results from the previous exercise to describe the distribution of `admrate`. Include the shape, center, spread, and if there are potential outliers. 
@@ -97,40 +83,27 @@ scorecard <- read_csv("data/scorecard.csv")
 4. The goal of this analysis is to fit a regression model that can be used to understand the variability in the cost of college based on the admission rate. Before fitting the model, let's look at the relationship between the two variables. Create a scatterplot to display the relationship between cost and admissions rate. Use the scatterplot to describe the relationship between the two variables.
 
 
-5. Does the relationship between cost and admissions rate differ by type of college? Modify the plot from the previous exercise to explore the relationship by type of college. Describe two new observations from this scatterplot that you didn’t see in the previous plot.
+5. Does the relationship between cost and admissions rate differ by type of college? Modify the plot from the previous exercise to explore the relationship by type of college. 
 
 6. Describe two new observations from the scatterplot in Exercise 5 that you didn't see in the scatterplot from Exercise 4. 
 
 
-7. Use the lm() function to fit a simple linear regression model to describe the relationship between a college’s admission rate and cost. Use the code below to assign your model a name, and use the tidy() and kable() functions to neatly display the model output. Replace X and Y with the appropriate variable names.
+7. Fit a linear regression model that can be used  to describe the relationship between a college’s admission rate and cost. Use the `kable` function to neatly display the results. 
 
-```{r eval = F}
-_____ <- lm(Y ~ X, data = _____)
+8. Consider the model from the previous exercise. 
+    - Interpret the slope in the context of the problem.
+    - Does the intercept have a meaningful interpretation? If so, write the interpretation in the context of the problem. Otherwise, explain why the interpretation is not meaningful.
 
-tidy(_____) %>% # output model
+9. Does the data provide evidence of a statistically significant linear relationship between cost and admissions rate? Conduct a hypothesis test to answer this question. In your response 
 
-  kable(format = "markdown", digits = 3) # format model output
-```
+    - State the null and alternative hypotheses used to answer this question in words and in mathematical notation.
+    - What is the test statistic? State with the test statistic means in context.
+    - What distribution was used to calculate the p-value?
+    - State your conclusion for the test in context.
 
-8. Let's interpret the coefficients of the model from the previous exercise. 
-  - Interpret the slope in the context of the problem.
-  - Does the intercept have a meaningful interpretation? If so, write the interpretation in the context of the problem. Otherwise, explain why the interpretation is not meaningful.
-
-9. Is the linear relationship between cost and admissions rate and statistically significant? In your response
-
-- State the null and alternative hypotheses used to answer this question in words and in mathematical notation.
-
-- What is the test statistic? Write the equation used to calculate the test statistic.
-
-- What distribution was used to calculate the p-value?
-
-- State your conclusion for the test in the context of the data.
-
-10. Interpret the 95% confidence interval for the slope in the context of the data.
+10. Interpret the 95% confidence interval for the slope in context. Then indicate whether or not it is consistent with the results of the hypothesis test fron the previous exercise. Briefly explain your reponse. 
 
 # Submission
-
-In this class, we'll be submitting PDF documents to Gradescope.
 
 **Before you wrap up the assignment, make sure all documents are updated on your GitHub repo. We will be checking these to make sure you have been practicing how to commit and push changes.**
 

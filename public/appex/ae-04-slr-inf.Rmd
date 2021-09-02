@@ -33,6 +33,7 @@ library(patchwork)
 
 - Lab 01 accepted until Sep 02 at 11:59p with no late penalty
 
+
 ## Questions about logistics? 
 
 ## Questions from prepare assignment?

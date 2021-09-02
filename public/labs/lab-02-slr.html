@@ -150,25 +150,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="#exercises">Exercises</a></li>
 <li><a href="#submission">Submission</a></li>
 <li><a href="#grading-50-pts">Grading (50 pts)</a></li>
-<li><a href="#resources-for-additional-practice-optional">Resources for additional practice (optional)</a></li>
 </ul>
 </div>
 
 <div id="introduction" class="section level1">
 <h1>Introduction</h1>
-<p><label for="tufte-mn-1" class="margin-toggle">⊕</label><input type="checkbox" id="tufte-mn-1" class="margin-toggle"><span class="marginnote"><span style="display: block;">R is the name of the programming language itself and RStudio is a convenient interface.</span></span></p>
-<p>This lab will go through much of the same workflow we’ve demonstrated in class. The main goal is to reinforce our demo of R and RStudio, which we will be using throughout the course both to learn the statistical concepts discussed in the course and to analyze real data and come to informed conclusions.</p>
-<p><label for="tufte-mn-2" class="margin-toggle">⊕</label><input type="checkbox" id="tufte-mn-2" class="margin-toggle"><span class="marginnote"><span style="display: block;">git is a version control system (like “Track Changes” features from Microsoft Word but more powerful) and GitHub is the home for your Git-based projects on the internet (like DropBox but much better).</span></span></p>
-<p>An additional goal is to reinforce git and GitHub, the collaboration and version control system that we will be using throughout the course.</p>
-<p>As the labs progress, you are encouraged to explore beyond what the labs dictate; a willingness to experiment will make you a much better programmer. Before we get to that stage, however, you need to build some basic fluency in R. Today we begin with the fundamental building blocks of R and RStudio: the interface, reading in data, and basic commands.</p>
-<p>To make versioning simpler, this and the next lab are solo labs. In the future, you’ll learn about collaborating on GitHub and producing a single lab report for your lab team, but for now, concentrate on getting the basics down.</p>
+<p>In today’s lab, you’ll use simple linear regression to analyze the relationship between the admissions rate and total cost for colleges and universities in the United States.</p>
 <div id="learning-goals" class="section level2">
 <h2>Learning goals</h2>
-<p>By the end of the lab, you will…</p>
+<p>By the end of the lab you will…</p>
 <ul>
-<li>Be familiar with the workflow using RStudio and GitHub</li>
-<li>Gain practice writing a reproducible report using RMarkdown</li>
-<li>Practice version control using GitHub## Getting started</li>
+<li>Be able to fit a simple linear regression model using R.</li>
+<li>Be able to interpret the slope and intercept for the model.</li>
+<li>Be able to use statistical inference to draw conclusions about the slope</li>
+<li>Continue developing a workflow for reproducible data analysis</li>
 </ul>
 </div>
 </div>
@@ -180,7 +175,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 <div id="packages" class="section level2">
 <h2>Packages</h2>
-<p>We will use the following packages in today’s lab.</p>
+<p>The follow packages are used in the lab.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(broom)</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(knitr)</span></code></pre></div>
@@ -188,7 +183,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="the-data" class="section level2">
 <h2>The Data</h2>
 <p>The data for this lab is from the <code>scorecard</code> data set in the <strong>rcfss</strong> R package. It includes information originally obtained from the <a href="https://collegescorecard.ed.gov/data/">U.S. Department of Education’s College Scorecard</a> for 1753 colleges and universities during the 2018 - 2019 academic year.</p>
-<p>We will use the following variables in this lab:</p>
+<p>The lab focuses on the following variables:</p>
 <ul>
 <li><code>admrate</code>: Undergraduate admissions rate (from 0-100%)</li>
 <li><code>cost</code>: The average annual total cost of attendance, including tuition and fees, books and supplies, and living expenses</li>
@@ -201,43 +196,32 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="exercises" class="section level1">
 <h1>Exercises</h1>
+<p><strong>Note: Include axis labels and an informative title for all plots. Use the <code>kable</code> function to neatly print tables and regression output.</strong></p>
 <ol style="list-style-type: decimal">
 <li><p>Create a histogram to examine the distribution of <code>admrate</code> and calculate summary statistics for the center (mean and median) and the spread (standard deviation and IQR).</p></li>
 <li><p>Use the results from the previous exercise to describe the distribution of <code>admrate</code>. Include the shape, center, spread, and if there are potential outliers.</p></li>
 <li><p>Plot the distribution of <code>cost</code> and calculate the appropriate summary statistics. Describe the distribution of <code>cost</code> (shape, center, and spread, and outliers) using the plot and appropriate summary statistics.</p></li>
 <li><p>The goal of this analysis is to fit a regression model that can be used to understand the variability in the cost of college based on the admission rate. Before fitting the model, let’s look at the relationship between the two variables. Create a scatterplot to display the relationship between cost and admissions rate. Use the scatterplot to describe the relationship between the two variables.</p></li>
-<li><p>Does the relationship between cost and admissions rate differ by type of college? Modify the plot from the previous exercise to explore the relationship by type of college. Describe two new observations from this scatterplot that you didn’t see in the previous plot.</p></li>
+<li><p>Does the relationship between cost and admissions rate differ by type of college? Modify the plot from the previous exercise to explore the relationship by type of college.</p></li>
 <li><p>Describe two new observations from the scatterplot in Exercise 5 that you didn’t see in the scatterplot from Exercise 4.</p></li>
-<li><p>Use the lm() function to fit a simple linear regression model to describe the relationship between a college’s admission rate and cost. Use the code below to assign your model a name, and use the tidy() and kable() functions to neatly display the model output. Replace X and Y with the appropriate variable names.</p></li>
-</ol>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>_____ <span class="ot">&lt;-</span> <span class="fu">lm</span>(Y <span class="sc">~</span> X, <span class="at">data =</span> _____)</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">tidy</span>(_____) <span class="sc">%&gt;%</span> <span class="co"># output model</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable</span>(<span class="at">format =</span> <span class="st">&quot;markdown&quot;</span>, <span class="at">digits =</span> <span class="dv">3</span>) <span class="co"># format model output</span></span></code></pre></div>
-<ol start="8" style="list-style-type: decimal">
-<li>Let’s interpret the coefficients of the model from the previous exercise.</li>
-</ol>
+<li><p>Fit a linear regression model that can be used to describe the relationship between a college’s admission rate and cost. Use the <code>kable</code> function to neatly display the results.</p></li>
+<li><p>Consider the model from the previous exercise.</p>
 <ul>
 <li>Interpret the slope in the context of the problem.</li>
 <li>Does the intercept have a meaningful interpretation? If so, write the interpretation in the context of the problem. Otherwise, explain why the interpretation is not meaningful.</li>
-</ul>
-<ol start="9" style="list-style-type: decimal">
-<li>Is the linear relationship between cost and admissions rate and statistically significant? In your response</li>
-</ol>
+</ul></li>
+<li><p>Does the data provide evidence of a statistically significant linear relationship between cost and admissions rate? Conduct a hypothesis test to answer this question. In your response</p>
 <ul>
-<li><p>State the null and alternative hypotheses used to answer this question in words and in mathematical notation.</p></li>
-<li><p>What is the test statistic? Write the equation used to calculate the test statistic.</p></li>
-<li><p>What distribution was used to calculate the p-value?</p></li>
-<li><p>State your conclusion for the test in the context of the data.</p></li>
-</ul>
-<ol start="10" style="list-style-type: decimal">
-<li>Interpret the 95% confidence interval for the slope in the context of the data.</li>
+<li>State the null and alternative hypotheses used to answer this question in words and in mathematical notation.</li>
+<li>What is the test statistic? State with the test statistic means in context.</li>
+<li>What distribution was used to calculate the p-value?</li>
+<li>State your conclusion for the test in context.</li>
+</ul></li>
+<li><p>Interpret the 95% confidence interval for the slope in context. Then indicate whether or not it is consistent with the results of the hypothesis test fron the previous exercise. Briefly explain your reponse.</p></li>
 </ol>
 </div>
 <div id="submission" class="section level1">
 <h1>Submission</h1>
-<p>In this class, we’ll be submitting PDF documents to Gradescope.</p>
 <p><strong>Before you wrap up the assignment, make sure all documents are updated on your GitHub repo. We will be checking these to make sure you have been practicing how to commit and push changes.</strong></p>
 <p><strong>Remember – you must turn in a PDF file to the Gradescope page before the submission deadline for full credit.</strong></p>
 <p>To submit your assignment:</p>
@@ -275,24 +259,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li>The “Workflow &amp; formatting” grade is to assess the reproducible workflow. This includes having at least 3 informative commit messages and updating the name and date in the YAML.</li>
 </ul>
-</div>
-<div id="resources-for-additional-practice-optional" class="section level1">
-<h1>Resources for additional practice (optional)</h1>
-<ul>
-<li><p><a href="https://socviz.co/gettingstarted.html#work-in-plain-text-using-rmarkdown">Chapter 2: Get Started</a> <em>Data Visualization by Kieran Healy</em></p></li>
-<li><p><a href="https://r4ds.had.co.nz/data-visualisation.html">Chapter 3: Data visualization</a> in <em>R for Data Science</em> by Hadley Wickham</p></li>
-<li><p>RStudio Cloud Primers</p>
-<ul>
-<li>Visualization Basics: <a href="https://rstudio.cloud/learn/primers/1.1" class="uri">https://rstudio.cloud/learn/primers/1.1</a></li>
-<li>Work with Data: <a href="https://rstudio.cloud/learn/primers/2" class="uri">https://rstudio.cloud/learn/primers/2</a></li>
-<li>Visualize Data: <a href="https://rstudio.cloud/learn/primers/3" class="uri">https://rstudio.cloud/learn/primers/3</a></li>
-</ul></li>
-</ul>
-<br><br>
-<hr>
-<div class="footer">
-<p>This lab was adapted from <a href="https://rstudio-education.github.io/datascience-box/course-materials/lab-instructions/lab-02/lab-02-plastic-waste.html">Data Science in a Box</a>.</p>
-</div>
 </div>
 
 
