@@ -80,15 +80,14 @@ scorecard <- read_csv("data/scorecard.csv")
 3.  Plot the distribution of `cost` and calculate the appropriate summary statistics. Describe the distribution of `cost` (shape, center, and spread, and outliers) using the plot and appropriate summary statistics.
 
 
-4. The goal of this analysis is to fit a regression model that can be used to understand the variability in the cost of college based on the admission rate. Before fitting the model, let's look at the relationship between the two variables. Create a scatterplot to display the relationship between cost and admissions rate. Use the scatterplot to describe the relationship between the two variables.
+4. The goal of this analysis is to fit a regression model that can be used to understand the variability in the cost of college based on the admission rate. Before fitting the model, let's look at the relationship between the two variables. Create a scatterplot to display the relationship between cost and admissions rate. Describe the relationship between the two variables based on the plot.
 
 
-5. Does the relationship between cost and admissions rate differ by type of college? Modify the plot from the previous exercise to explore the relationship by type of college. 
+5. Does the relationship between cost and admissions rate differ by type of college? Modify the plot from the previous exercise visualize the relationship by type of college. 
 
 6. Describe two new observations from the scatterplot in Exercise 5 that you didn't see in the scatterplot from Exercise 4. 
 
-
-7. Fit a linear regression model that can be used  to describe the relationship between a college’s admission rate and cost. Use the `kable` function to neatly display the results. 
+7. Fit the linear regression model. Display the confidence interval for the coefficients in the output. Use the `kable` function to neatly display the results. 
 
 8. Consider the model from the previous exercise. 
     - Interpret the slope in the context of the problem.
@@ -101,7 +100,7 @@ scorecard <- read_csv("data/scorecard.csv")
     - What distribution was used to calculate the p-value?
     - State your conclusion for the test in context.
 
-10. Interpret the 95% confidence interval for the slope in context. Then indicate whether or not it is consistent with the results of the hypothesis test fron the previous exercise. Briefly explain your reponse. 
+10. Interpret the 95% confidence interval for the slope in context. Then indicate whether or not it is consistent with the results of the hypothesis test from the previous exercise. Briefly explain your response. 
 
 # Submission
 
