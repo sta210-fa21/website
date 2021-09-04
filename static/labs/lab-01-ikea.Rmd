@@ -307,7 +307,7 @@ Use the code below to create a new data frame that only includes the furniture c
 
 ```{r}
 ikea_sub <- ikea %>%
-  filter(category %in% c("Tables & desks", "Bed", 
+  filter(category %in% c("Tables & desks", "Beds", 
                          "Bookcases & shelving units", 
                          "Sofas & armchairs", "Children's furniture"))
 ```
