@@ -23,7 +23,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ### Optional 
 
-- [Introduction to Modern Statistics (IMS): Checking Model Conditions](https://openintro-ims.netlify.app/inference-reg.html#tech-cond-linmod)
+- [Introduction to Modern Statistics (IMS): Checking Model Conditions (Section 24.6)](https://openintro-ims.netlify.app/inf-model-slr.html)
 
 
 ## For September 08
