@@ -41,6 +41,7 @@ lessons:
     title: "SLR: Conditions"
     slides: "06-slr-conditions.html"
     prepare: "week-03.html"
+    ae: 'ae-05-slr-conditions.html'
   - date: "Wed, Sep 08"
     title: "SLR: Prediction"
     slides: "07-slr-prediction.html"
