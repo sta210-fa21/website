@@ -53,9 +53,12 @@ lessons:
 
   - week: "Week 04"
     date: "Mon, Sep 13"
+    prepare: "week-04.html"
     title: "SLR: Partitioning variability"
+    slides: "08-partition-var.html"
   - date: "Wed, Sep 15"
     title: "SLR: Model diagnostics"
+    prepare: "week-04.html"
   - title: "HW 02 released"
     hw: "hw-02.html"
   - date: "Thu, Sep 16"
