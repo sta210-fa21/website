@@ -27,7 +27,7 @@ library(patchwork)
 
 - HW 01 **due Wed, Sep 15 at 11:59p**
 
-- Lab online this week,  back to in-person next Thursday
+- Look out for email about this week's lab
 
 ## Workflow tips
 
