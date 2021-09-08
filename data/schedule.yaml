@@ -45,6 +45,7 @@ lessons:
   - date: "Wed, Sep 08"
     title: "SLR: Prediction"
     slides: "07-slr-prediction.html"
+    ae: "ae-06-slr-prediction.html"
     prepare: "week-03.html"
   - title: "HW 01 released"    
     hw: "hw-01.html"
