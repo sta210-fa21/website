@@ -24,7 +24,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - [Introduction to Modern Statistics (IMS): Describing strength of fit (Section 7.2.5)](https://openintro-ims.netlify.app/model-slr.html#r-squared)
 
-## For September 16
+## For September 15
 
 `r emo::ji("movie_camera")` Model diagnostics
 - Check back soon for link to video and slides
