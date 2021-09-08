@@ -46,6 +46,8 @@ lessons:
     title: "SLR: Prediction"
     slides: "07-slr-prediction.html"
     prepare: "week-03.html"
+  - title: "HW 01 released"    
+    hw: "hw-01.html"
   - date: "Thu, Sep 09"
     title: "Lab 03"
 
@@ -54,6 +56,8 @@ lessons:
     title: "SLR: Partitioning variability"
   - date: "Wed, Sep 15"
     title: "SLR: Model diagnostics"
+  - title: "HW 02 released"
+    hw: "hw-02.html"
   - date: "Thu, Sep 16"
     title: "Lab 04"
 
@@ -63,8 +67,9 @@ lessons:
   - date: "Wed, Sep 22"
     title: "Quiz 01 review"
   - date: "Thu, Sep 23"
-    title: "NO LAB: Work on Quiz 01"
-  - title: "Quiz 01 released"
+    title: "NO LAB: Work on Exam 1"
+  - title: "Exam 01 released"
+    exam: "exam-01.html"
 
   - week: "Week 06"
     date: "Mon, Sep 27"
@@ -79,6 +84,8 @@ lessons:
     title: "NO CLASS: Fall break"
   - date: "Wed, Oct 06"
     title: "MLR: Categorical predictors"
+  - title:  "HW 03 released"
+    hw: "hw-03.html"  
   - date: "Thu, Oct 07"
     title: "Lab 06"
 
@@ -96,7 +103,9 @@ lessons:
   - date: "Wed, Oct 20"
     title: "Quiz 02 review"
   - date: "Thu, Oct 21"
-    title: "NO LAB: Work on Quiz 02"
+    title: "NO LAB: Work on Exam 02"
+  - title: "Exam 02 released"
+    exam: "exam-02.html"
     
   - week: "Week 10"
     date: "Mon, Oct 25"
@@ -111,6 +120,8 @@ lessons:
     title: "Logistic regression"
   - date: "Wed, Nov 03"
     title: "Logistic regression: Inference"
+  - title: "HW 04 released"
+    hw: "hw-04.html"
   - date: "Thu, Nov 04"
     title: "Lab 09"
 
@@ -128,7 +139,9 @@ lessons:
   - date: "Wed, Nov 17"
     title: "Quiz 03 review"
   - date: "Thu, Nov 18"
-    title: "NO LAB: Work on Quiz 03"
+    title: "NO LAB: Work on Exam 03"
+  - title: "Exam 03 released"
+    exam: "exam-03.html"
   
   - week: "Week 14"
     date: "Mon, Nov 22"
@@ -138,7 +151,6 @@ lessons:
   - date: "Thu, Nov 25"
     title: "NO LAB: Thanksgiving break"
   
-
   - week: "Week 15"
     date: "Mon, Nov 29"
     title: "Special topics"
