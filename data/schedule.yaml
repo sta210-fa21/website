@@ -51,6 +51,7 @@ lessons:
     hw: "hw-01.html"
   - date: "Thu, Sep 09"
     title: "Lab: Work on HW 01"
+    slides: "09-09-lab.html"
 
   - week: "Week 04"
     date: "Mon, Sep 13"
