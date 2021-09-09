@@ -98,9 +98,6 @@ ggplot() +
        title = "_____") +
   scale_fill_viridis() 
 ```
-
-
-
     
 3. Create a visualization of the relationship between `inperson_pct` and `pctTrump_2016`. Use the visualization to describe the relationship between the two variables. 
 
@@ -116,7 +113,7 @@ ggplot() +
 7. The last condition we need to check is **independence**. To do so, we will examine a map of the counties in North Carolina with the color filled based on the value of the residuals. 
 
     - Briefly explain why we may want to view the residuals on a map to assess independence. 
-    - Briefly explain what pattern (if any) we would expect to observe on the map if the independence condition is satisified. 
+    - Briefly explain what pattern (if any) we would expect to observe on the map if the independence condition is satisfied. 
 
 8. Fill in the name of your model in the code below to calculate the residuals and add them to `election_map_data`. Then, a map with the color of each county filled in based on the value of the residual. *Hint: Start with the code from Exercise 2.* 
     - Is the independence condition satisfied? Briefly explain based on what you observe from the plot.  
