@@ -25,6 +25,14 @@ Outside of class and office hours, any general questions about course content or
 If you have questions about personal matters that are not appropriate for the public forum on Piazza (e.g. illness, accommodations, etc.), you may email Professor Tackett at [maria.tackett@duke.edu](mailto:maria.tackett@duke.edu). 
 
 
+## RStudio Containers
+
+If you're having trouble with your RStudio container...
+
+- First try opening the RStudio container using a different web browser. 
+- If you're still having issues, next try restarting the container. [Click here](https://www.introds.org/Restart_Docker_Container.pdf) for instructions on restarting. 
+- Lastly, if the issues persist, submit a ticket to OIT and they can look into the issue further. [Click here](https://duke.qualtrics.com/jfe/form/SV_6s3DOsiCIzNya9w) to submit the ticket.
+
 ## Additional resources
 
 - [R for Data Science](https://r4ds.had.co.nz/) by Garret Grolemund and Hadley Wickham
