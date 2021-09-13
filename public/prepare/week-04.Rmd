@@ -30,7 +30,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - [Click here](https://sta210-fa21.netlify.app/slides/08-model-diagnostics.html) for slides
 
-`r emo::ji("memo")` Take Prep Quiz 02 under Tests & Quizzes in Sakai by Sep 16 at 3:30p
+`r emo::ji("memo")` Take Prep Quiz 02 under Tests & Quizzes in Sakai by Sep 15 at 3:30p
 
 
 
