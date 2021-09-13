@@ -57,6 +57,7 @@ lessons:
     date: "Mon, Sep 13"
     prepare: "week-04.html"
     title: "SLR: Partitioning variability"
+    ae: "ae-07-partition-var.html"
     slides: "08-partition-var.html"
   - date: "Wed, Sep 15"
     title: "SLR: Model diagnostics"
