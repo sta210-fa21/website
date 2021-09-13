@@ -27,7 +27,8 @@ knitr::opts_chunk$set(echo = TRUE)
 ## For September 15
 
 `r emo::ji("movie_camera")` Model diagnostics
-- Check back soon for link to video and slides
+
+- [Click here](https://sta210-fa21.netlify.app/slides/08-model-diagnostics.html) for slides
 
 `r emo::ji("memo")` Take Prep Quiz 02 under Tests & Quizzes in Sakai by Sep 16 at 3:30p
 
