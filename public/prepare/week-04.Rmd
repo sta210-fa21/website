@@ -26,7 +26,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## For September 15
 
-`r emo::ji("movie_camera")` Model diagnostics
+`r emo::ji("movie_camera")` Watch [Model diagnostics](https://warpwire.duke.edu/w/ow8GAA/)
 
 - [Click here](https://sta210-fa21.netlify.app/slides/08-model-diagnostics.html) for slides
 

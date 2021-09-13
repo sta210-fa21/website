@@ -321,22 +321,21 @@ autoplot(sat_model, which = 5, ncol = 1)
 Observations that have standardized residuals of large magnitude are outliers, since they don't fit the pattern determined by the regression model 
 
 .alert[
-An observation is a *potential outlier** if its standardized residual is beyond $\pm 3$.
+An observation is a *potential outlier* if its standardized residual is beyond $\pm 3$.
 ]
 
 --
 
-.vocab[Make residual plots with standardized residuals to make it easier to identify outliers and check constant variance condition.]
+.vocab[Make residual plots with standardized residuals to make it easier to identify outliers]
 
 ---
 
-## SAT: Standardized residuals vs. predicted
+## SAT: sqrt(Standardized residuals) vs. fitted
 
 .midi[
 ```{r echo = T}
-autoplot(sat_model, which = 5, ncol = 1) + 
-  geom_hline(yintercept = 0,color = "red") +
-  geom_hline(yintercept = c(-3,3),color = "red",linetype = "dotted")
+autoplot(sat_model, which = 3, ncol = 1) + 
+  geom_hline(yintercept = sqrt(3),color = "red",linetype = "dotted")
   
 ```
 ]
