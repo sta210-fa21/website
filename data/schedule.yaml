@@ -70,6 +70,7 @@ lessons:
   - week: "Week 05"
     date: "Mon, Sep 20"
     title: "ANOVA"
+  - title: "Mutliple comparisons"
   - date: "Wed, Sep 22"
     title: "Quiz 01 review"
   - date: "Thu, Sep 23"
