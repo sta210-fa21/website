@@ -22,7 +22,7 @@ editor_options:
 
 class: middle, center
 
-## [Click here for PDF of slides](09-model-diagnostics.pdf)
+## [Click here for PDF of slides](08-model-diagnostics.pdf)
 
 ---
 
@@ -40,6 +40,8 @@ library(knitr)
 library(broom)
 library(patchwork)
 library(kableExtra)
+library(ggfortify)
+library(viridis)
 ```
 
 ---
@@ -106,7 +108,7 @@ Use the .vocab[`augment`] function in the broom package to output the model diag
 - `.hat`: leverage
 - `.sigma`: estimate of residual standard deviation when the corresponding observation is dropped from model
 - `.cooksd`: Cook's distance
-- `.std.resid`: standardized residuals]
+- `.std.resid`: standardized residuals
 
 ---
 
@@ -114,11 +116,9 @@ Use the .vocab[`augment`] function in the broom package to output the model diag
 
 - This data set contains the average SAT score (out of 1600) and other variables that may be associated with SAT performance for each of the 50 U.S. states. The data is based on test takers for the 1982 exam.
 
-- Response variable:
-  + .vocab[`SAT`]: average total SAT score
+- **Response** - .vocab[`SAT`]: average total SAT score
 
-- Predictor variable: 
-  + .vocab[`Takers`]: percentage of high school seniors who took exam
+- **Predictor** - .vocab[`Public`]: percentage of test-takers who attended public high schools
   
   
 .footnote[Data comes from `case1201` data set in the `Sleuth3` package]
@@ -126,11 +126,11 @@ Use the .vocab[`augment`] function in the broom package to output the model diag
 
 ## Model
 
-```{r}
+```{r echo = T}
 sat_scores <- Sleuth3::case1201
 ```
 
-```{r}
+```{r echo = T}
 sat_model <- lm(SAT ~ Public, data = sat_scores)
 tidy(sat_model) %>%
   kable(digits = 3)
@@ -140,7 +140,7 @@ tidy(sat_model) %>%
 ## SAT: Augmented Data
 
 .midi[
-```{r}
+```{r echo = T}
 sat_aug <- augment(sat_model) %>%
   #add observation number for plots
   mutate(obs_num = row_number()) 
@@ -148,7 +148,7 @@ sat_aug <- augment(sat_model) %>%
 ]
 
 .midi[
-```{r}
+```{r echo = T}
 glimpse(sat_aug)
 ```
 ]
@@ -182,20 +182,15 @@ class: middle, center
 $$h_i =  \frac{1}{n} + \frac{(x_i - \bar{x})^2}{\sum_{j=1}^{n}(x_j-\bar{x})^2}$$
 ]
 
---
 
-.vocab[Multiple Regression:] leverage of the $i^{th}$ observation is the $i^{th}$ diagonal  of
-$$\mathbf{H} = \mathbf{X}(\mathbf{X}^T\mathbf{X})^{-1}\mathbf{X}^T$$
-
---
-
-- *Note*: Leverage only depends on values of the **<u>predictor</u>** variables
+- *Note*: Leverage only depends on values of the **<u>predictor</u>** variable(s)
 
 ---
 
 ## High Leverage
 
 The sum of the leverages for all points is $p + 1$
+- $p$ is the number of predictors
 - In the case of SLR $\sum_{i=1}^n h_i = 2$
 
 --
@@ -229,25 +224,18 @@ Just because a point has high leverage does not necessarily mean it will have a 
 
 ## SAT: Leverage
 
-```{r}
-leverage_threshold <- 2*(1+1)/nrow(sat_aug)
+.midi[
+```{r echo = T}
+(leverage_threshold <- 2*(1+1)/nrow(sat_aug))
 ```
+]
 
-High leverage if $h_i > \frac{2 * (1 + 1)}{50} = 0.08$
-
-```{r, fig.width = 8}
+.midi[
+```{r echo = T, fig.height = 2}
 autoplot(sat_model,which = 5, ncol = 1) + 
   geom_vline(xintercept = leverage_threshold, color = "red")
 ```
-
-
-```{r fig.height = 3, echo = F}
-ggplot(data = sat_aug, aes(x = obs_num, y = .hat)) + 
-  geom_point(alpha = 0.7) + 
-  geom_hline(yintercept = leverage_threshold, color = "red")+
-  labs(x = "Observation Number",y = "Leverage",title = "Leverage") +
-  geom_text(aes(label=ifelse(.hat > leverage_threshold, as.character(obs_num), "")), nudge_x = 4)
-```
+]
 
 ---
 
@@ -255,8 +243,7 @@ ggplot(data = sat_aug, aes(x = obs_num, y = .hat)) +
 
 ```{r}
 sat_aug %>% filter(.hat > leverage_threshold) %>% 
-  select(obs_num, Public) %>%
-  kable()
+  select(obs_num, Public)
 ```
 
 .question[
@@ -268,34 +255,24 @@ Why do you think these observations have high leverage?
 ## Let's dig into the data
 
 ```{r echo = F, fig.height = 3}
-p1 <- sat_aug %>%
-  mutate(public_outlier = if_else(obs_num == 22, "Y", "N")) %>%
+sat_aug %>%
+  mutate(public_outlier = if_else(obs_num %in% c(13, 22), "Y", "N")) %>%
   ggplot(aes(x = Public)) +
   geom_dotplot(aes(fill = public_outlier)) + 
-  labs(x = "Takers", title = "Louisiana (22) has a low Takers", 
+  labs(x = "% test-takers in public schools", title = "LA and TN low % test-takers in public school", 
        y = "") +
-  theme(legend.position = "none")
-
-p2 <- sat_aug %>%
-  mutate(expend_outlier = if_else(obs_num == 29, "Y", "N")) %>%
-  ggplot(aes(x = Expend)) +
-  geom_dotplot(aes(fill = expend_outlier)) + 
-  labs(x = "Expenditure", title = "Alaska (29) has a high Expend", 
-       y= "") +
-  theme(legend.position = "none")
-
-p1  + p2
+  theme(legend.position = "none") + 
+  scale_fill_viridis(discrete = T, end = 0.9)
 ```
 
 ---
 
 class: middle, center 
 
-## Standardized & Studentized Residuals
-
+## Standardized residuals
 ---
 
-## Standardized & Studentized Residuals
+## Standardized residuals
 
 - What is the best way to identify outliers (points that don't fit the pattern from the regression line)? 
   
@@ -313,7 +290,7 @@ class: middle, center
 
 ---
 
-## Standardized & Studentized residuals
+## Standardized residuals
 
 --
 
@@ -323,40 +300,28 @@ $$std.res_i = \frac{y_i - \hat{y}_i}{\hat{\sigma}_\epsilon\sqrt{1-h_i}}$$
 where $\hat{\sigma}_\epsilon$ is the regression standard error
 ]
 
---
-.alert[
-$$stud.res_i = \frac{y_i - \hat{y}_i}{\hat{\sigma}_{(i)}\sqrt{1-h_i}}$$
-where $\hat{\sigma}_{(i)}$ is the regression standard error from fitting the model with the $i^{th}$ point removed
+- Standardized residuals are produced by `augment` in the column `.std.resid`
+
+---
+
+## Standardized residuals
+
+Observations with high leverage tend to have low values of standardized residuals because they pull the regression line towards them 
+
+.midi[
+```{r echo = T, fig.height = 2}
+autoplot(sat_model, which = 5, ncol = 1)
+```
 ]
 
 ---
 
-## Standardized & Studentized residuals
-
-- Observations with high leverage tend to have low values of standardized residuals because they pull the regression line towards them 
-
---
-
-- This issue is avoided using the studentized residuals, since the regression standard error is calculated without the possible influential point.
-
---
-
-- Standardized residuals are produced by `augment` in the column `.std.resid`
-
---
-
-- Studentized residuals can be calculated using `.sigma`, `.resid`, and `.hat` produced by `augment`
-
----
-
-## Using standardized & studentized residuals
+## Using standardized residuals
 
 Observations that have standardized residuals of large magnitude are outliers, since they don't fit the pattern determined by the regression model 
 
 .alert[
-An observation is a **moderate outlier** if its standardized residual is beyond $\pm 2$.
-
-An observation is a **serious outlier** if its standardized residual is beyond $\pm 3$.
+An observation is a *potential outlier** if its standardized residual is beyond $\pm 3$.
 ]
 
 --
@@ -367,18 +332,14 @@ An observation is a **serious outlier** if its standardized residual is beyond $
 
 ## SAT: Standardized residuals vs. predicted
 
-```{r fig.height = 3, echo = F}
-ggplot(data = sat_aug, aes(x = .fitted,y = .std.resid)) +
-  geom_point(alpha = 0.7) + 
+.midi[
+```{r echo = T}
+autoplot(sat_model, which = 5, ncol = 1) + 
   geom_hline(yintercept = 0,color = "red") +
-  geom_hline(yintercept = -2,color = "black",linetype = "dotted") +
-  geom_hline(yintercept = 2,color = "black",linetype = "dotted") +
-    geom_hline(yintercept = -3,color = "red",linetype = "dotted") +
-  geom_hline(yintercept = 3,color = "red",linetype = "dotted") +
-  labs(x ="Predicted",y ="Standardized Residuals",title = "Standardized Residuals vs. Predicted") +
-  geom_text(aes(label = ifelse(abs(.std.resid) > 2,as.character(obs_num),"")), nudge_x = 4) +
-  theme_bw()
+  geom_hline(yintercept = c(-3,3),color = "red",linetype = "dotted")
+  
 ```
+]
 
 ---
 
@@ -392,7 +353,7 @@ class: middle, center
 
 An observation's influence on the regression line depends on 
 
-- How close it lies to the general trend of the data - $std.resid_i$
+- How close it lies to the general trend of the data - (Standardized residual)
 
 - Its leverage - $h_i$
 
@@ -424,60 +385,17 @@ An observation with
 
 ## Cook's Distance
 
-```{r fig.height = 3}
-ggplot(data = sat_aug, aes(x = obs_num, y = .cooksd)) + 
-  geom_point(alpha = 0.7) + 
+.midi[
+```{r echo = T}
+autoplot(sat_model, which = 4, ncol = 1) + 
   geom_hline(yintercept = 0.5, color = "red", lty = 2) +
-  geom_hline(yintercept = 1,color = "red") +
-  labs(x= "Observation Number",y = "Cook's Distance",title = "Cook's Distance") +
-  geom_text(aes(label = ifelse(.cooksd > 1,as.character(obs_num),"")), nudge_x = 2)
-```
-
----
-
-## Influential point: Alaska
-
-```{r echo = F}
-sat_aug %>% filter(.cooksd > 1) %>% 
-  select(obs_num, Takers, Income, Years, Public, Expend, Rank)
-```
-
---
-
-- high leverage `r sat_aug$.hat[29]`
-- large magnitude standardized residual `r sat_aug$.std.resid[29]`
-
----
-
-## Model with and without Alaska
-
-.pull-left[
-**With Alaska**
-
-```{r echo = F}
-orig_data <- Sleuth3::case1201 %>%
-  select(-State) 
-  lm(SAT ~ ., data = orig_data) %>%
-    tidy() %>% 
-    select(term, estimate) %>%
-    kable(format = "markdown", digits = 3)
+  geom_hline(yintercept = 1,color = "red") 
 ```
 ]
 
 --
 
-.pull-right[
-**Without Alaska**
-```{r echo = F}
-new_data <- Sleuth3::case1201 %>%
-  filter(State != "Alaska") %>%
-  select(-State)
-  lm(SAT ~ ., data = new_data) %>%
-    tidy() %>%
-    select(term, estimate) %>%
-    kable(format = "markdown", digits = 3)
-```
-]
+There are no influential points.
 
 ---
 
@@ -517,7 +435,7 @@ In either instance, you can try building the model with and without the outliers
 
 class: middle
 
-See the supplemental notes [Details on Model Diagnostics](https://github.com/sta210-sp20/supplemental-notes/blob/master/model-diagnostics-matrix.pdf) for more details about standardized residuals, leverage points, and Cook's distance.
+See the supplemental notes [Details on Model Diagnostics](https://github.com/sta210-sp20/supplemental-notes/blob/master/model-diagnostics-matrix.pdf) for more mathematical details about standardized residuals, leverage points, and Cook's distance.
 
 ---
 

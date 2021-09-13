@@ -62,6 +62,7 @@ lessons:
   - date: "Wed, Sep 15"
     title: "SLR: Model diagnostics"
     prepare: "week-04.html"
+    slides: "08-model-diagnostics.html"
   - title: "HW 02 released"
     hw: "hw-02.html"
   - date: "Thu, Sep 16"
