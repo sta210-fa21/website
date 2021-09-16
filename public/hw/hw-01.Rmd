@@ -26,8 +26,6 @@ In this assignment, you will...
 - Create and interpret spatial data visualizations using R.
 - Continue developing a workflow for reproducible data analysis.
 
-# Getting started 
-
 # Packages
 
 The following packages will be used in this assignment: 

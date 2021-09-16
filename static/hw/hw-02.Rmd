@@ -1,10 +1,127 @@
 ---
-title: "HW 02"
-subtitle: ""
+title: "HW 02: Lemurs"
+subtitle: "due Wednesday, September 22 at 11:59p"
 output: 
-  html_document:
-    toc: true
+  tufte::tufte_html:
     css: "sta210-hw.css"
+    tufte_variant: "envisioned"
+    highlight: pygments
+    fig_height: 4
+    fig_width: 6
+    toc: true
+    toc_depth: 1
+link-citations: yes
 ---
 
-Instructions will be posted when the HW is assigned. 
+# Introduction 
+
+In this assignment, you'll use regression analysis to explore the growth rate for young adult lemurs at the Duke Lemur Center. 
+
+## Learning goals
+
+In this assignment, you will...
+
+- practice the regression analysis workflow - from exploratory data analysis through drawing conclusions 
+- write results and conclusions in narrative form. 
+- gain experience analyzing data through an open-ended analysis process.
+
+# Getting started 
+
+-   Go to the [**sta210-fa21**](https://www.github.com/sta210-fa21) organization on GitHub. Click on the repo with the prefix **hw-02**. It contains the starter documents you need to complete the lab.
+
+- Clone the repo and start a new project in RStudio. See the [Lab 01 instructions](https://sta210-fa21.netlify.app/labs/lab-01-ikea.html) for details on cloning a repo, starting a new R project and configuring git. 
+
+# Packages
+
+The following packages will be used in this assignment: 
+
+```{r eval = FALSE}
+library(tidyverse)
+library(knitr)
+library(ggfortify)
+library(broom)
+library(viridis)
+```
+
+# Data: Lemurs 
+
+The data set `lemurs-pcoq-ya.csv` is a subset of the original Duke Lemur data set available in the [#TidyTuesday GitHub repo](https://github.com/rfordatascience/tidytuesday/blob/master/data/2021/2021-08-24/readme.md). This data includes information on "young adult" lemurs from the [Coquerel’s sifaka species](https://lemur.duke.edu/discover/meet-the-lemurs/coquerels-sifaka/), the largest species at Duke Lemur Center. The analysis will focus on the following variables:
+
+- `weight_g`: Animal weight, in grams. Weights under 500g generally to nearest 0.1-1g; Weights >500g generally to the nearest 1-20g.
+- `age_at_wt_mo`: Age of the animal when the weight was taken, in months (((Weight_Date-DOB)/365)*12)
+
+[Click here](https://github.com/rfordatascience/tidytuesday/blob/master/data/2021/2021-08-24/readme.md) for the full list of variables and their definitions. 
+
+
+# Exercises
+
+The goal of this analysis is to use a linear regression model to describe the growth rate for young adult lemurs from the Coquerel’s sifaka species. The exercises will put together what we've learned thus far to walk through a regression analysis workflow. 
+
+**For each section...**
+
+- Show all relevant code, output, tables, and visualizations.
+- Display all tables neatly using the 3 digits, and include clear title and axis labels on all visualizations. 
+- Write all interpretations and conclusions in a meaningful way in the context of the data.
+- Write your narrative as a short paragraph (about 3 - 5 sentences) for each section, as needed.
+
+## Exploratory data analysis
+
+- Conduct univariate and bivariate exploratory data analysis. 
+- Include any visualizations and/or summary statistics used to explore the data.
+- Describe the distribution of the response and predictor variables and the relationship between the two. 
+
+## Regression model 
+
+- Fit and display the linear regression model. 
+- Write the regression equation. 
+
+
+## Model conditions 
+
+- Comment on each model condition. Include statistics and/or visualizations used to support your response. 
+
+## Model diagnostics 
+
+- Comment on the model diagnostics, noting any potential outliers or influential points. Include statistics and/or visualizations used to support your response. 
+- If there are influential points, comment on whether you will keep them in the model or refit the model without these points. 
+
+## Interpretations & conclusions
+
+- Describe the growth rate using your model, incorporating results from the statistical inference if appropriate. 
+- Interpret $R^2$ and comment on what it says about the usefulness of the model.
+
+# Submission
+
+**Before you wrap up the assignment, make sure all documents are updated on your GitHub repo. We will be checking these to make sure you have been practicing how to commit and push changes.**
+
+**Remember -- you must turn in a PDF file to the Gradescope page before the submission deadline for full credit.** 
+
+To submit your assignment: 
+
+- Go to http://www.gradescope.com and click *Log in* in the top right corner. 
+
+- Click *School Credentials* `r emo::ji("arrow_right")` *Duke NetID* and log in using your NetID credentials.
+
+- Click on your *STA 210* course. 
+
+- Click on the assignment, and you'll be prompted to submit it.
+
+- Mark the pages associated with each exercise. All of the pages of your assignment should be associated with at least one question (i.e., should be "checked"). 
+
+- Select the first page of your .PDF submission to be associated with the *"Workflow & formatting"* section.
+
+
+# Grading (50 pts)
+
+|  |  |
+|-------------------------------------------------------------|:--:|
+| EDA |  8 |
+| Regression | 5 |
+| Model conditions | 10 |
+| Model diagnostics | 12 |
+| Interpretations & conclusions | 10 |
+| Workflow & formatting | 5|
+
+
+-  The "Workflow & formatting" grade is to assess the reproducible workflow. This includes having at least 3 informative commit messages, updating the name and date in the YAML, and submitting a PDF document that is neatly formatted with easily readable code and narrative.
+
