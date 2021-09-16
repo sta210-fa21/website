@@ -67,7 +67,9 @@ lessons:
   - title: "HW 02 released"
     hw: "hw-02.html"
   - date: "Thu, Sep 16"
-    title: "Lab 04"
+    title: "Lab 03: Coffee ratings"
+    slides: "lab-03-slides.html"
+    lab: "lab-03-coffee.html"
 
   - week: "Week 05"
     date: "Mon, Sep 20"
