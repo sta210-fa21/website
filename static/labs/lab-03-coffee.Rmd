@@ -157,8 +157,8 @@ Type the team's response to Exercises 1 - 2.
 6. Lastly, let's analyze Cook's D to determine if there are influential points in the data. 
 
     - Based on Cook's D, are there any influential points in our data? Briefly explain, including any output, graphs, etc. you used to determine the response. 
-    - If there are influential points, briefly explain why they are influential based on the results from the previous exercises. 
-    - If there are influential points, would you recommend removing these points from the data and refitting the model? Briefly explain why or why not.  
+    - If there are influential points, briefly explain why they are outliers, ie. not in the trend of the rest of the data. 
+    - If there are influential points, would you recommend removing these points from the data and refitting the model? Briefly explain why or why not. Additionally, briefly explain potential impacts your choice has on inferential conclusions and/or predictions.
     
 ::: {.commit}
 `r emo::ji("yarn")` `r emo::ji("white_check_mark")` `r emo::ji("arrow_up")` **Team member 4**: Knit, commit and push your changes to GitHub with an informative commit message. Make sure to commit and push all changed files so that your Git pane is empty afterwards.
