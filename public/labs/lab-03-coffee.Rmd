@@ -134,7 +134,7 @@ Type the team's response to Exercises 1 - 2.
 4. We will proceed assuming the model conditions hold, so let's focus on the model diagnostics. We'll start by examining if there are any points with high leverage in the data. 
 
     - What threshold will you use to determine if there are points with high leverage? 
-    - Are there any points with high leverage in the data? Briefly explain, including any output, graphs, etc. you used to determine the response. 
+    - Are there any observations with high leverage? If so, how many? Briefly explain, including any output, graphs, etc. you used to determine the response. 
     
 ::: {.commit}
 `r emo::ji("yarn")` `r emo::ji("white_check_mark")` `r emo::ji("arrow_up")` **Team member 2**: Knit, commit and push your changes to GitHub with an informative commit message. Make sure to commit and push all changed files so that your Git pane is empty afterwards.
