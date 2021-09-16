@@ -145,10 +145,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <div id="TOC">
 <ul>
-<li><a href="#introduction---update">Introduction - UPDATE</a></li>
+<li><a href="#introduction">Introduction</a></li>
 <li><a href="#meet-your-team">Meet your team!</a></li>
-<li><a href="#getting-started">Getting Started</a></li>
-<li><a href="#getting-started---update-with-team-work">Getting started - UPDATE with TEAM WORK!</a></li>
+<li><a href="#getting-started">Getting started</a></li>
 <li><a href="#workflow-using-git-and-github-as-a-team">Workflow: Using git and GitHub as a team</a></li>
 <li><a href="#exercises">Exercises</a></li>
 <li><a href="#submission">Submission</a></li>
@@ -156,45 +155,51 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 </div>
 
-<div id="introduction---update" class="section level1">
-<h1>Introduction - UPDATE</h1>
-<p>In today’s lab, you’ll use simple linear regression to analyze the relationship between the admissions rate and total cost for colleges and universities in the United States.</p>
-<div id="learning-goals---update" class="section level2">
-<h2>Learning goals - UPDATE</h2>
+<div id="introduction" class="section level1">
+<h1>Introduction</h1>
+<p>In today’s lab you will analyze data from over 1,000 different coffees to explore the relationship between a coffee’s aroma and it’s overall quality. You will also begin working with your team and practicing a collaborative data analysis workflow.</p>
+<div id="learning-goals" class="section level2">
+<h2>Learning goals</h2>
 <p>By the end of the lab you will…</p>
 <ul>
-<li>Be able to fit a simple linear regression model using R.</li>
-<li>Be able to interpret the slope and intercept for the model.</li>
-<li>Be able to use statistical inference to draw conclusions about the slope</li>
-<li>Continue developing a workflow for reproducible data analysis</li>
+<li>create plots and calculate associated statistics to assess model diagnostics.</li>
+<li>practice collaborating with others using a single Github repo.</li>
 </ul>
 </div>
 </div>
 <div id="meet-your-team" class="section level1">
 <h1>Meet your team!</h1>
 <p><a href="https://prodduke-my.sharepoint.com/:x:/g/personal/mt324_duke_edu/EcxaeUdU8mRIiJHzEee-UBgBDpLfk1uNAgsnoEe4L2EdjQ?e=X4ndeQ">Click here</a> to see the team assignments for STA 210. This will be your team for labs and the final project.</p>
-<p>Before you get started on the lab assignment, your TA will walk you through</p>
+<p>This will be your team for labs and the final project.</p>
+<p>Before you get started on the lab, your TA will walk you through the following:</p>
+<p>✅ Icebreaker activity to get to know your teammates.</p>
+<p>✅ Come up with a team name. You can’t use the same name as another team, so I encourage you to be creative! Your TA will get your team name by the end of lab.</p>
+<p>✅ Fill out the team agreement. This will help you figure out a plan for communication,and working together during labs and outside of lab times. You can find the team agreement in the GitHub repo <strong>team-agreement-[github_team_name]</strong>.</p>
 <ul>
-<li>An icebreaker activity to get to know your teammates</li>
-<li>The workflow when using GitHub as a team.</li>
+<li>Have <strong>one person</strong> from the team clone the repo and start a new RStudio project. This person will type the team’s responses as you discuss the sections of the agreement. No one else in the team should type at this point but should be contributing to the discussion.</li>
+<li>Be sure to push the completed agreement to GitHub. Each team member can refer to the document in this repo or download the PDF of the agreement for future reference. <em>You do <u>not</u> need to submit the agreement on Gradescope.</em></li>
 </ul>
-<p>By the end of the lab session, you should come up with a new team name. You can’t use the same team name as another team, so be creative! Your TA will come around to record your team name by the end of lab.</p>
 </div>
 <div id="getting-started" class="section level1">
-<h1>Getting Started</h1>
-<p>A repository has already been created for you and your teammates. Everyone in your team has access to the same repo.</p>
+<h1>Getting started</h1>
 <ul>
-<li><p>Go to <a href="https://www.github.com/sta210-fa21">STA 210 course organization</a> on GitHub.</p></li>
-<li><p>In addition to your private individual repositories, you should now see a repo named <strong>lab-03</strong>. Go to that repository.</p></li>
+<li><p>A repository has already been created for you and your teammates. Everyone in your team has access to the same repo.</p></li>
+<li><p>Go to the <a href="https://www.github.com/sta210-fa21">sta210-fa21 course organization</a> on GitHub.</p></li>
+<li><p>You should see a repo with the <strong>lab-03</strong> prefix.</p></li>
 <li><p>Each person on the team should clone the repository and open a new project in RStudio. <strong>Do not make any changes to the .Rmd file until the instructions tell you do to so.</strong></p></li>
 </ul>
 </div>
-<div id="getting-started---update-with-team-work" class="section level1">
-<h1>Getting started - UPDATE with TEAM WORK!</h1>
-<ul>
-<li><p>Go to the <a href="https://www.github.com/sta210-fa21">sta210-fa21</a> organization on GitHub. Click on the repo with the prefix <strong>lab-03</strong>. It contains the starter documents you need to complete the lab.</p></li>
-<li><p>Clone the repo and start a new project in RStudio. See the <a href="https://sta210-fa21.netlify.app/labs/lab-01-ikea.html">Lab 01 instructions</a> for details on cloning a repo, starting a new R project and configuring git.</p></li>
-</ul>
+<div id="workflow-using-git-and-github-as-a-team" class="section level1">
+<h1>Workflow: Using git and GitHub as a team</h1>
+<p><strong>Assign each person on your team a number 1 through 4. For teams of three, Team Member 1 can take on the role of Team Member 4.</strong></p>
+<p>The following exercises must be done in order. <strong>Only one person should type in the .Rmd file and push updates at a time.</strong> When it is not your turn to type, you should still share ideas and contribute to the team’s discussion.</p>
+<div id="update-yaml" class="section level2">
+<h2>Update YAML</h2>
+<div class="commit">
+<p><strong>Team Member 1: Change the author to your team name and include each team member’s name in the <code>author</code> field of the YAML in the following format. <code>Team Name: Member 1, Member 2, Member 3, Member 4</code>. Knit, commit, and push the changes to GitHub.</strong></p>
+<p><strong>Team Members 2, 3, 4: Click the </strong>Pull** button in the Git pane to get the updated document. You should see the updated name in the .Rmd file.**</p>
+</div>
+</div>
 <div id="packages" class="section level2">
 <h2>Packages</h2>
 <p>The follow packages are used in the lab.</p>
@@ -205,20 +210,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="the-data" class="section level2">
 <h2>The Data</h2>
-<p>[ADD DESCRIPTION OF THE DATA]</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>coffe <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&quot;data/coffee-ratings.csv&quot;</span>)</span></code></pre></div>
+<p>The dataset for this lab comes from the <a href="https://github.com/jldbc/coffee-quality-database">Coffee Quality Database</a> and was obtained from the <a href="https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-07-07/readme.md">#TidyTuesday GitHub repo</a>. It includes information about the origin, producer, measures of various characteristics, and the quality measure for over 1000 coffees.</p>
+<p>This lab will focus on the following variables:</p>
+<ul>
+<li><code>aroma</code>: Aroma grade, 0 - 10 scale</li>
+<li><code>total_cup_points</code>: Measure of quality, 0 - 100 scale</li>
+</ul>
+<p>You can find the definitions for all variables in the data set <a href="https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-07-07/readme.md">here</a>. <a href="http://www.scaa.org/?page=resources&amp;d=cupping-protocols&amp;mod=article_inline">Click here</a> for more details about how these measures are obtained.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>coffee <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&quot;data/coffee-ratings.csv&quot;</span>)</span></code></pre></div>
 </div>
-</div>
-<div id="workflow-using-git-and-github-as-a-team" class="section level1">
-<h1>Workflow: Using git and GitHub as a team</h1>
-<p>**Assign each person on your team a number 1 through 4. For teams with 3 students, Team Member 1 can take on the role of “Team Member 4”.</p>
-<p>The following exercises must be done in order. <strong>Only one person should type in the .Rmd file and push updates at a time.</strong> When it is not your turn to type, you should still share ideas and contribute to the team’s discussion.</p>
 </div>
 <div id="exercises" class="section level1">
 <h1>Exercises</h1>
 <p><strong>Note: Include axis labels and an informative title for all plots. Use the <code>kable</code> function to neatly print tables and regression output. Write all interpretations in the context of the data.</strong></p>
+<p><strong>Do the following exercises in order, following each step carefully.</strong></p>
+<p><strong>Only one person at a time should type in the <code>.Rmd</code> file and push updates.</strong></p>
+<p><strong>If you are working on any portion of the lab virtually, the person working should share their screen and the others should follow along.</strong></p>
 <div class="commit">
-<p>🧶 ✅ ⬆️ <strong>Team Member 1:</strong> Change the author to your team name and include each team member’s name in the <code>author</code> field of the YAML in the following format. <code>Team Name: Team member 1, Team member 2, Team member 3, Team member 4</code>.</p>
 <p>Type the team’s response to Exercises 1 - 2.</p>
 </div>
 <ol style="list-style-type: decimal">
@@ -247,7 +255,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><strong>Team Member 3</strong>: It’s your turn! Type the team’s response to exercise 5.</p>
 </div>
 <ol start="5" style="list-style-type: decimal">
-<li>Next, let’s examine if there are any points with standardized residuals with large magnitude. Are there any points with high leverage in the data? Briefly explain, including any output, graphs, etc. you used to determine the response.</li>
+<li>Next, let’s examine if there are any points with standardized residuals that have large magnitude. Are there any such points in the data? Briefly explain, including any output, graphs, etc. you used to determine the response.</li>
 </ol>
 <div class="commit">
 <p>🧶 ✅ ⬆️ <strong>Team member 3</strong>: Knit, commit and push your changes to GitHub with an informative commit message. Make sure to commit and push all changed files so that your Git pane is empty afterwards.</p>
@@ -264,11 +272,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ol>
 <div class="commit">
 <p>🧶 ✅ ⬆️ <strong>Team member 4</strong>: Knit, commit and push your changes to GitHub with an informative commit message. Make sure to commit and push all changed files so that your Git pane is empty afterwards.</p>
-<p><strong>All other team members</strong>: <strong>Pull</strong> to get the updated documents from GitHub. Click on the .Rmd file, and you should see the team’s completed lab1</p>
+<p><strong>All other team members</strong>: <strong>Pull</strong> to get the updated documents from GitHub. Click on the .Rmd file, and you should see the team’s completed lab!</p>
 </div>
 <div id="wrapping-up" class="section level2">
 <h2>Wrapping up</h2>
-<p>Go back through your write up to make sure you followed the coding style guidelines we discussed in class (e.g. no long lines of code)</p>
 <div class="commit">
 <p><strong>Team Member 2:</strong> Make any edits as needed. Then knit, commit, and push the updated documents to GitHub if you made any changes.</p>
 <p>All other team members can click to pull the finalized document.</p>
