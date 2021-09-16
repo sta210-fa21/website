@@ -144,7 +144,7 @@ Type the team's response to Exercises 1 - 2.
 **Team Member 3**: It's your turn! Type the team's response to exercise 5.
 :::
 
-5. Next, let's examine if there are any points with standardized residuals that have large magnitude.  Are there any such points in the data? Briefly explain, including any output, graphs, etc. you used to determine the response. 
+5. Next, let's examine if there are any points with standardized residuals that have large magnitude.  Are there any such points in the data? If so, how many? Briefly explain, including any output, graphs, etc. you used to determine the response. 
 
 ::: {.commit}
 `r emo::ji("yarn")` `r emo::ji("white_check_mark")` `r emo::ji("arrow_up")` **Team member 3**: Knit, commit and push your changes to GitHub with an informative commit message. Make sure to commit and push all changed files so that your Git pane is empty afterwards.
