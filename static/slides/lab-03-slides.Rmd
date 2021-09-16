@@ -1,5 +1,5 @@
 ---
-title: "STA Lab"
+title: "STA 210 Lab"
 subtitle: "09.16.21"
 author: ""
 output:
@@ -27,9 +27,9 @@ editor_options:
 
 - Ice breaker / get to know your team 
 
-- Team contract
+- Team agreement
 
-- Lab 03
+- Lab 03: Coffee ratings
 
 ---
 
@@ -52,7 +52,7 @@ editor_options:
   - Not clothes (e.g. we're all wearing shoes)! 
   - Not body parts, (e.g. we all have a nose.)!
 
-```{r}
+```{r echo = FALSE}
 library(countdown)
 countdown(minutes = 5, seconds = 0)
 ```
@@ -70,7 +70,34 @@ countdown(minutes = 5, seconds = 0)
   - Make a plan for working outside of lab. 
   
 
+---
 
+## Demo: 
+
+- Collaboration using a single GitHub repo
+- **Pull** work from GitHub into RStudio
+
+---
+
+## Team workflow 
+
+- Only one team member should type at a time. There are markers in today's lab to help you determine who's turn it is to type. 
+
+  - Every team member should still be engaged in discussion for all questions, even if it's not your turn type. 
+  
+- Don't forget to **pull** to get your teammates' updates before making changes to the .Rmd file 
+
+- Only **one** submission for the team on Gradescope.
+
+---
+
+## Tips for working on a team
+
+- Do not pressure each other to finish early; use the time wisely to really learn the material and produce a quality report.
+
+- The labs are structured to help you learn the steps of a data analysis. Do not split up the lab among the team members; work on it together in its entirety.
+
+- Everyone has something to contribute! Use the lab groups as an opportunity to share ideas and learn from each other.
 
 
 
