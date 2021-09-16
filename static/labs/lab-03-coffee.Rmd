@@ -190,7 +190,7 @@ All other team members can click to pull the finalized document.
 
 | Component | Points |
 |:----------|:-------|
-| Ex 1 - 10     | 42   |
+| Ex 1 - 6    | 42   |
 | Workflow & formatting     | 5 |   
 | Complete team contract     | 3  |  
 
