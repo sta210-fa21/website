@@ -25,6 +25,16 @@ library(countdown)
 ```
 
 ```{r echo = F}
+countdown(minutes = 1, seconds = 0,
+          top = 0, bottom = 0,
+          left = 0, right = 0,
+          margin = "5%", 
+          font_size = "6em")
+```
+
+---
+
+```{r echo = F}
 countdown(minutes = 3, seconds = 0,
           top = 0, bottom = 0,
           left = 0, right = 0,
@@ -42,4 +52,15 @@ countdown(minutes = 5, seconds = 0,
           font_size = "6em")
 ```
 
+---
+
+
+
+```{r echo = F}
+countdown(minutes = 8, seconds = 0,
+          top = 0, bottom = 0,
+          left = 0, right = 0,
+          margin = "5%", 
+          font_size = "6em")
+```
 
