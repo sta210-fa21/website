@@ -1,0 +1,47 @@
+---
+title: "AE 09: Analysis of variance"
+subtitle: "Duke Lemurs"
+date: "`r Sys.Date()`"
+output: 
+  html_document: 
+    fig_height: 3
+    fig_width: 6
+    theme: readable
+---
+
+```{r setup, echo = F}
+knitr::opts_chunk$set(warning = FALSE, 
+                      message = FALSE, 
+                      fig.align = "center")
+```
+
+```{r load-packages, include = FALSE}
+library(tidyverse)
+library(broom)
+library(patchwork)
+```
+
+## Announcements
+
+- Ed Discussion for today's lecture: 
+
+- Lab 03 **due today at 11:59p**
+
+- HW 02 **due Wednesday, Sep 22 at 11:59p** 
+
+- Exam 01 open *Thursday, Sep 23 at 9a - Friday, Sep 24 at 11:59p*
+  - No lab Thursday Sep 23
+
+- Exam 01 review Wednesday 
+  - [Click here](https://forms.gle/4bJbKSUWtNn8E18t8) to submit questions. 
+
+## Question about HW or lab? 
+
+##  AE 09: ANOVA with Duke lemurs
+
+- Go to the ae-09-[GITHUB USERNAME] repo in the GitHub course organization: https://github.com/sta210-fa21
+
+- Access the RStudio Docker containers at https://vm-manage.oit.duke.edu/containers
+
+- See the [Lab 01 instructions](https://sta210-fa21.netlify.app/labs/lab-01-ikea.html) for details on cloning the repo and starting a new project in RStudio.
+
