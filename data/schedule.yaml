@@ -77,6 +77,7 @@ lessons:
     title: "ANOVA"
     slides: "09-anova.html"
   - title: "Mutliple comparisons"
+    slides: "09-multiple-comparisons.html"
   - date: "Wed, Sep 22"
     title: "Exam 01 review"
     prepare: "week-05.html"

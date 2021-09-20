@@ -33,7 +33,8 @@ library(kableExtra)
 ```
 
 ```{r}
-aldrin <- read_csv("data/aldrin.csv")
+aldrin <- read.csv("data/aldrin.csv") %>%
+  as_tibble()
 ```
 
 ---
