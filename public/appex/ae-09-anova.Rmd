@@ -23,7 +23,7 @@ library(patchwork)
 
 ## Announcements
 
-- Ed Discussion for today's lecture: 
+- Ed Discussion for today's lecture: https://edstem.org/us/courses/8350/discussion/627393
 
 - Lab 03 **due today at 11:59p**
 
