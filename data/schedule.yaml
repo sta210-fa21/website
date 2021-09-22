@@ -82,6 +82,7 @@ lessons:
   - date: "Wed, Sep 22"
     title: "Exam 01 review"
     prepare: "week-05.html"
+    ae: "ae-10-review.html"
   - date: "Thu, Sep 23"
     title: "NO LAB: Work on Exam 01"
   - title: "Exam 01 released"
