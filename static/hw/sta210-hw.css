@@ -7,7 +7,7 @@
 /* Tufte CSS styles */
 
 html {
-	font-size: 15px;
+	font-size: 18px;
 }
 
 body {
@@ -16,11 +16,11 @@ body {
 	background-color: #fefefe;
 	color: #222;
 	counter-reset: li;
-	font-size: 15px;
+	font-size: 18px;
 }
 
 p {
-  font-sizez: 15px;
+  font-sizez: 18px;
 }
 
 h1.title {
