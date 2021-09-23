@@ -37,20 +37,21 @@ By taking this exam, you pledge to uphold the Duke Community Standard:
 
 -   This is an individual assignment. Everything in your repository is for your eyes only.
 -   You may not collaborate or communicate anything about this exam to **anyone** except the instructor. For example, you may not communicate with other students, the TAs, or post/solicit help on the internet, email or via any other method of communication.
-    
-- The exam is open-book, open-note, so you may use any materials from class as you take th exam.
-
-- No TA office hours will be held Thur, Sep 23 - Fri, Sep 24 
-- You may not discuss the exam during TA office hours, or email the TAs questions about the exam.
+- The exam is open-book, open-note, so you may use any materials from class as you take the exam.
+- No TA office hours will be held Thu, Sep 23 - Fri, Sep 24 
+- You may not email the TAs questions about the exam.
 - Ed Discussion will be inactive Thu, Sep 23 - Fri, Sep 24.
-- If you have questions, email me with  "STA 210 Exam" in the subject line or attend my office hours (Thursday, 10a - 11a).
+- If you have questions, email Professor Tackett with  "STA 210 Exam" in the subject line or attend Professor Tackett's office hours (Thursday, 10a - 11a).
 
 # Submission
 
-`r emo::ji("white_check_mark")` The answers to the multiple choice/short answer questions should be submitted under the Test & Quizzes in Sakai (like a prep quiz.)
+`r emo::ji("white_check_mark")` The answers to the multiple choice/short answer questions should be submitted under *Test & Quizzes* in Sakai (same place you take prep quizzes)
 
 `r emo::ji("white_check_mark")` The PDF document for the data analysis portion must be uploaded to Gradescope. 
 
 - Mark the pages associated with each section. If
-any answer for a section spans multiple pages, mark all pages. - Make sure to associate the “Workflow & formatting" section with the first page. **Failure to mark the pages in Gradescope may result in point deductions.**
+any answer for a section spans multiple pages, mark all pages. 
+
+- Make sure to associate the “Workflow & formatting" section with the first page. **Failure to mark the pages in Gradescope may result in point deductions.**
+
 -  Make sure that your uploaded PDF document matches your `.Rmd` and the PDF in your GitHub repository exactly. Points will be deducted for documents that are not reproducible. 
