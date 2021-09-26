@@ -16,7 +16,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 `r emo::ji("movie_camera")` Watch [Multiple linear regression](https://warpwire.duke.edu/w/Q00FAA/)
 
-- [Click here]() for slides
+- [Click here](https://sta210-fa21.netlify.app/slides/11-mlr-intro.html) for slides
 
 `r emo::ji("movie_camera")` Watch [MLR: Inference](https://warpwire.duke.edu/w/RU0FAA/)
 
@@ -28,7 +28,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Watch [MLR: Types of predictors](https://warpwire.duke.edu/w/v1kFAA/)
 
-- [Click here]() for slides
+- [Click here](https://sta210-fa21.netlify.app/slides/12-mlr-predictor-types.html) for slides
 
 
 
