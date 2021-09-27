@@ -23,7 +23,7 @@ knitr::opts_chunk$set(echo = TRUE)
 - [Click here](https://sta210-fa21.netlify.app/slides/11-mlr-inference.html) for slides
 
 ## For September 29
-
+ 
 `r emo::ji("memo")` Take Prep Quiz 03
 
 Watch [MLR: Types of predictors](https://warpwire.duke.edu/w/v1kFAA/)
