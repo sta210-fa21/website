@@ -92,6 +92,7 @@ lessons:
     date: "Mon, Sep 27"
     title: "Multiple linear regression (MLR)"
     slides: "11-mlr-intro.html"
+    ae: "ae-11-mlr.html"
     prepare: "week-06.html"
   - title: "MLR: Inference"
     slides: "11-mlr-inference.html"
