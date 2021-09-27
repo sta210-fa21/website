@@ -32,6 +32,17 @@ Watch [MLR: Types of predictors](https://warpwire.duke.edu/w/v1kFAA/)
 
 
 
+### Optional 
+
+`r emo::ji("book")` *Handbook of Regression Analysis* Chapter 1 
+
+- You can skip the matrix notation for regression in sections 1.2.2 and 1.3.3. 
+
+**Notes on using this book:** 
+
+- This book is available under the "Solutions/Textbook" tab in Sakai 
+- This book is made available to us through Duke Library and should **not** be shared. 
+
 
 
 
