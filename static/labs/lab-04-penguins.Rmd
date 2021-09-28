@@ -1,0 +1,128 @@
+---
+title: "Lab 04: ANOVA with Palmer Penguins" 
+subtitle: "due Thu, Oct 7 at 11:59pm"
+output: 
+  tufte::tufte_html:
+    css: "./sta210-labs.css"
+    tufte_variant: "envisioned"
+    highlight: pygments
+    fig_height: 10
+    toc: true
+    toc_depth: 1
+link-citations: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(eval = FALSE)
+```
+
+This lab will focus on Analysis of Variance. You will do a short individual ANOVA activit y Sakai, then as a group, you will use ANOVA to analyze data about penguins in the Palmer Archipelago near Palmer Station. 
+
+# Learning goals
+
+By the end of the lab you will be able to...
+
+- Use Analysis of Variance to compare means for multiple groups
+- Calculate confidence intervals to estimate differences between groups
+- Account for multiple comparisons using the Bonferroni correction 
+
+# ANOVA Activity (~ 10 - 15 minutes)
+
+- Follow the instructions explained by your TA. You will also receive the instructions via email before your lab. 
+- Complete the short assessment on Sakai individually. 
+  - This assessment will be graded for completion and will be part of your Lab 04 grade.
+ 
+# Getting started
+
+## Clone assignment repo + start new project - UPDATE
+
+A repository has already been created for you and your teammates. Everyone in your team has access to the same repo.
+
+- Go to [course organization](https://www.github.com/sta210-sp21) on GitHub.
+
+- In addition to your private individual repositories, you should now see a repo named **lab-04-**. Go to that repository.
+  
+- Each person on the team should clone the repository and open a new project in RStudio.
+
+## Workflow: Using git and GitHub as a team
+
+Now that you have had some experience collaborating as a team on GitHub, it will be up to your team to decide who types the responses to each question. Every team member should contribute to the discussion about each lab exercise even if they are not the one typing the team's responses. 
+
+**Every team member should have at least one meaningful commit to the repo on GitHub.**
+
+# Packages + data
+
+## Packages
+
+We'll use the following packages in this lab. 
+
+```{r load-packages, message=FALSE, eval=TRUE}
+library(tidyverse)
+library(knitr)
+library(broom)
+# add more packages as needed
+```
+
+# Data: Palmer penguins
+
+The data is the `penguins` data set from the [palmerpenguins R package](https://allisonhorst.github.io/palmerpenguins/) maintained by Dr. Allison Horst. This data set contains measurements and other characteristics for 344 penguins observed near Palmer Station in Antarctica. The data were originally collected by Dr. Kristen Gorman. 
+
+The data set is in `penguins.csv` located in the `data` folder. 
+
+The following variables are in the `penguins` data set. 
+
+|variable          |class   |description |
+|:----------|:-------|:-----------|
+|species           |integer | Penguin species (Adelie, Gentoo, Chinstrap) |
+|island            |integer | Island where recorded (Biscoe, Dream, Torgersen) |
+|bill_length_mm    |double  | Bill length in millimeters (also known as culmen length) |
+|bill_depth_mm     |double  | Bill depth in millimeters (also known as culmen depth) |
+|flipper_length_mm |integer | Flipper length in mm |
+|body_mass_g       |integer | Body mass in grams |
+|sex               |integer | sex of the animal |
+|year              |integer | year recorded |
+
+
+# Exercises
+
+Can we differentiate penguin species based on their flipper length? To analyze this question we will use Analysis of Variance to compare the mean flipper length for  Adelie, Gentoo, Chinstrap penguins found near the Palmer Station in Antarctica. 
+
+::: {.commit}
+
+As you complete the lab 
+
+- Use informative axis labels and title for all visualizations. 
+- Neatly display all tables using 3 digits for numeric values and include an informative caption. 
+- Write all narrative in complete sentences. 
+- Write all narrative in the context of the data and use the appropriate units, when applicable. 
+
+:::
+
+1. Let's take a look at the `flipper_length_mm` based on the `species`. Create a visualization to explore the relationship between the two variables. Interpret the visualization in the context of the data. 
+
+2. We'd like to use ANOVA to assess if there's a relationship between flipper length and species. Write the null and alternative hypotheses for the ANOVA test (a) using mathematical notation (b) using words.
+
+3. Before conducting the test, let's check the conditions for ANOVA. For each condition write whether or not it is satisfied. Briefly explain your response for each condition, including  any plots, summary statistics, etc. used to make your determination.
+
+4. Use R to calculate the ANOVA table. Display the table from R. 
+
+5. Use the ANOVA table to answer the following: 
+  - What is the variance of the distribution of flipper lengths within each penguin species? 
+  - What is the test statistic? Briefly explain what this value means in the context of the data. 
+  - What distribution was used to calculate the p-value? 
+
+6. What is the conclusion from the ANOVA test? State the conclusion in the context of the data. 
+
+7. Let's dive into the data further and use pairwise comparisons to understand how flipper length compares across species. We want the probability of making a family-wise Type I error to be 0.1. Briefly explain what this means in the context of the data. 
+
+8. To achieve the desired family-wise Type I error rate from the previous question, what confidence level should be used for the individual confidence intervals? Briefly explain your response.
+
+9. Calculate the pairwise confidence intervals. 
+
+10. How does the flipper length compare across the species of penguins? In your description, include numerical and inferential conclusions based on your analysis. 
+
+## Submission
+
+**One team member:** Upload the team's PDF to Gradescope. Be sure to include every team member's name in the Gradescope submission Associate the "Overall" graded section with the first page of your PDF, and mark where each answer is to the exercises. If any answer spans multiple pages, then mark all pages.
+
+There should only be <u>one</u> submission per team on Gradescope.
