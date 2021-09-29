@@ -166,7 +166,7 @@ pairwiseCI(_____ ~ _____, data = _____)
 | Component | Points |
 |:----------|:-------|
 | Ex 1 - 10    | 40   |
-| ANOVA Lab Activity | 5 |
+| Complete ANOVA Lab Activity | 5 |
 | Workflow & formatting     | 5 |   
 
 **Grading notes**:
