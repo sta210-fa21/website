@@ -148,13 +148,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="#learning-goals">Learning goals</a></li>
 <li><a href="#anova-activity-10---15-minutes">ANOVA Activity (~ 10 - 15 minutes)</a></li>
 <li><a href="#getting-started">Getting started</a></li>
-<li><a href="#packages-data">Packages + data</a></li>
+<li><a href="#workflow-using-git-and-github-as-a-team">Workflow: Using git and GitHub as a team</a></li>
 <li><a href="#data-palmer-penguins">Data: Palmer penguins</a></li>
 <li><a href="#exercises">Exercises</a></li>
+<li><a href="#submission">Submission</a></li>
+<li><a href="#grading-50-pts">Grading (50 pts)</a></li>
 </ul>
 </div>
 
-<p>This lab will focus on Analysis of Variance. You will do a short individual ANOVA activit y Sakai, then as a group, you will use ANOVA to analyze data about penguins in the Palmer Archipelago near Palmer Station.</p>
+<p>This lab will focus on Analysis of Variance. You will do a short individual ANOVA activity in Sakai, then as a group, you will use ANOVA to analyze data about penguins in the Palmer Archipelago near Palmer Station.</p>
 <div id="learning-goals" class="section level1">
 <h1>Learning goals</h1>
 <p>By the end of the lab you will be able to…</p>
@@ -166,33 +168,28 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="anova-activity-10---15-minutes" class="section level1">
 <h1>ANOVA Activity (~ 10 - 15 minutes)</h1>
-<ul>
-<li>Follow the instructions explained by your TA. You will also receive the instructions via email before your lab.</li>
-<li>Complete the short assessment on Sakai individually.
-<ul>
-<li>This assessment will be graded for completion and will be part of your Lab 04 grade.</li>
-</ul></li>
-</ul>
+<p>You will work individually for this portion of the lab. The assessment on Sakai will be graded for completion and will be included as part of the Lab 04 grade. Your TA will explain the instructions. You also should have received an email with instructions about this activity earlier in the day.</p>
+<p><strong>You should complete the assessment before working on the group portion of lab.</strong></p>
 </div>
 <div id="getting-started" class="section level1">
 <h1>Getting started</h1>
-<div id="clone-assignment-repo-start-new-project---update" class="section level2">
-<h2>Clone assignment repo + start new project - UPDATE</h2>
-<p>A repository has already been created for you and your teammates. Everyone in your team has access to the same repo.</p>
 <ul>
-<li><p>Go to <a href="https://www.github.com/sta210-sp21">course organization</a> on GitHub.</p></li>
-<li><p>In addition to your private individual repositories, you should now see a repo named <strong>lab-04-</strong>. Go to that repository.</p></li>
-<li><p>Each person on the team should clone the repository and open a new project in RStudio.</p></li>
+<li><p>A repository has already been created for you and your teammates. Everyone in your team has access to the same repo.</p></li>
+<li><p>Go to the <a href="https://www.github.com/sta210-fa21">sta210-fa21 course organization</a> on GitHub.</p></li>
+<li><p>You should see a repo with the <strong>lab-04</strong> prefix.</p></li>
+<li><p>Each person on the team should clone the repository and open a new project in RStudio. <strong>Do not make any changes to the .Rmd file until the instructions tell you do to so.</strong></p></li>
 </ul>
 </div>
-<div id="workflow-using-git-and-github-as-a-team" class="section level2">
-<h2>Workflow: Using git and GitHub as a team</h2>
-<p>Now that you have had some experience collaborating as a team on GitHub, it will be up to your team to decide who types the responses to each question. Every team member should contribute to the discussion about each lab exercise even if they are not the one typing the team’s responses.</p>
-<p><strong>Every team member should have at least one meaningful commit to the repo on GitHub.</strong></p>
+<div id="workflow-using-git-and-github-as-a-team" class="section level1">
+<h1>Workflow: Using git and GitHub as a team</h1>
+<p>There are no Team Member markers in this lab; however, you should use a similar workflow as in lab 03. Only one person should type in the group’s .Rmd file at a time. Once that person has finished typing the group’s responses, they should <em>knit, commit, and push</em> the changes to GitHub. All other teammates can <em>pull</em> to see the updates in RStudio.</p>
+<div id="update-yaml" class="section level2">
+<h2>Update YAML</h2>
+<div class="commit">
+<p><strong>One team member:</strong> Change the author to your team name and include each team member’s name in the <code>author</code> field of the YAML in the following format. <code>Team Name: Member 1, Member 2, Member 3, Member 4</code>. Knit, commit, and push the changes to GitHub.**</p>
+<p><strong>All other team members:</strong> Click the <strong>Pull</strong> button in the Git pane to get the updated document. You should see the updated name in the .Rmd file.**</p>
 </div>
 </div>
-<div id="packages-data" class="section level1">
-<h1>Packages + data</h1>
 <div id="packages" class="section level2">
 <h2>Packages</h2>
 <p>We’ll use the following packages in this lab.</p>
@@ -279,27 +276,76 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ol style="list-style-type: decimal">
 <li><p>Let’s take a look at the <code>flipper_length_mm</code> based on the <code>species</code>. Create a visualization to explore the relationship between the two variables. Interpret the visualization in the context of the data.</p></li>
 <li><p>We’d like to use ANOVA to assess if there’s a relationship between flipper length and species. Write the null and alternative hypotheses for the ANOVA test (a) using mathematical notation (b) using words.</p></li>
-<li><p>Before conducting the test, let’s check the conditions for ANOVA. For each condition write whether or not it is satisfied. Briefly explain your response for each condition, including any plots, summary statistics, etc. used to make your determination.</p></li>
-<li><p>Use R to calculate the ANOVA table. Display the table from R.</p></li>
-<li><p>Use the ANOVA table to answer the following:</p></li>
-</ol>
+<li><p>Before conducting the test, we can check the conditions for ANOVA. For each condition (normality, constant variance, independence) and write whether or not it is satisfied. Briefly explain your response for each condition, including any plots, summary statistics, etc. used to make your determination.</p></li>
+<li><p>Use R to calculate and display the ANOVA table.</p></li>
+<li><p>Use the ANOVA table to answer the following:</p>
 <ul>
-<li>What is the variance of the distribution of flipper lengths within each penguin species?</li>
 <li>What is the test statistic? Briefly explain what this value means in the context of the data.</li>
 <li>What distribution was used to calculate the p-value?</li>
-</ul>
-<ol start="6" style="list-style-type: decimal">
+</ul></li>
 <li><p>What is the conclusion from the ANOVA test? State the conclusion in the context of the data.</p></li>
-<li><p>Let’s dive into the data further and use pairwise comparisons to understand how flipper length compares across species. We want the probability of making a family-wise Type I error to be 0.1. Briefly explain what this means in the context of the data.</p></li>
-<li><p>To achieve the desired family-wise Type I error rate from the previous question, what confidence level should be used for the individual confidence intervals? Briefly explain your response.</p></li>
-<li><p>Calculate the pairwise confidence intervals.</p></li>
-<li><p>How does the flipper length compare across the species of penguins? In your description, include numerical and inferential conclusions based on your analysis.</p></li>
+<li><p>Let’s dive into the data further and use pairwise comparisons to understand how flipper length compares across species. We know at least species has a different mean flipper length, and we can do further analysis to see how the means compare. To do so, we will look at confidence intervals for the difference in the mean weight between groups. The confidence interval for the difference in means between groups <span class="math inline">\(i\)</span> and <span class="math inline">\(j\)</span> is. The confidence interval for the difference in means between groups <span class="math inline">\(i\)</span> and <span class="math inline">\(j\)</span> is</p>
+<p><span class="math display">\[(\bar{y}_i-\bar{y}_j) \pm t^* \sqrt{MSE\Big(\frac{1}{n_i}+\frac{1}{n_j}\Big)}\]</span> Where <span class="math inline">\(MSE\)</span> is the variance of distribution of flipper length within each group, and <span class="math inline">\(t^*\)</span> is calculated from a t distribution with the degrees of freedom associated with the within group variability?</p>
+<p>How many such comparisons do we need to make for this data?</p></li>
+<li><p>When we calculate multiple confidence intervals or conduct multiple hypothesis tests, there are different levels of error that we can make:</p>
+<ul>
+<li><p><strong>Type I error</strong>: Incorrectly conclude two groups have unequal means (i.e. incorrectly reject <span class="math inline">\(H_0\)</span>)</p></li>
+<li><p><strong>Individual Type I error</strong>: Incorrectly reject <span class="math inline">\(H_0\)</span> for <strong>one specific</strong> comparison of group means. P(Type I error) = <span class="math inline">\(\alpha = 1 - C\)</span>, where <span class="math inline">\(C\)</span> is the confidence level</p></li>
+<li><p><strong>Family-wise Type I error</strong>: Incorrectly reject <span class="math inline">\(H_0\)</span> for <strong>at least one</strong> comparison of group means</p></li>
+</ul>
+<p>Even if the probability of making an individual Type I error is low, the probability of making a family-wise Type I error becomes much larger when we make multiple comparisons. Therefore, when we make multiple comparisons, we will select the critical value <span class="math inline">\(t^*\)</span> to control for the probability of making a <strong>family-wise Type I error</strong>. Thus, if we want the family-wise error Type I error to be <span class="math inline">\(\alpha\)</span>, we will choose <span class="math inline">\(t^*\)</span> such that the probability of making a Type I error for any individual confidence interval is <span class="math inline">\(\frac{\alpha}{m}\)</span> (confidence level = <span class="math inline">\(1 - \alpha/m\)</span>), where <span class="math inline">\(m\)</span> is the number of comparisons.This is called the <strong>Bonferroni correction.</strong></p>
+<p>Suppose we want a family-wise Type I error rate for this analysis to be 0.1. What confidence level should we use for each individual confidence interval of the difference in means between two groups? Briefly explain your response.</p></li>
 </ol>
-<div id="submission" class="section level2">
-<h2>Submission</h2>
-<p><strong>One team member:</strong> Upload the team’s PDF to Gradescope. Be sure to include every team member’s name in the Gradescope submission Associate the “Overall” graded section with the first page of your PDF, and mark where each answer is to the exercises. If any answer spans multiple pages, then mark all pages.</p>
-<p>There should only be <u>one</u> submission per team on Gradescope.</p>
+<p><label for="tufte-mn-1" class="margin-toggle">⊕</label><input type="checkbox" id="tufte-mn-1" class="margin-toggle"><span class="marginnote"><span style="display: block;"><a href="https://www.rdocumentation.org/packages/pairwiseCI/versions/0.1-27/topics/pairwiseCI">Click here</a> to read more about the <code>pairwiseCI</code> function.</span></span></p>
+<ol start="9" style="list-style-type: decimal">
+<li>Calculate the pairwise confidence intervals using the confidence level from the previous question. We can quickly calculate the pairwise confidence interval using the <code>pariwiseCI</code> function in the <strong>pairwiseCI</strong> R package. Fill in the code below to calculate the intervals.</li>
+</ol>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">pairwiseCI</span>(_____ <span class="sc">~</span> _____, <span class="at">data =</span> _____) </span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>           conf.level <span class="ot">=</span> ______, var.equal <span class="ot">=</span> <span class="cn">TRUE</span><span class="er">)</span> <span class="sc">%&gt;%</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable</span>(<span class="at">digits =</span> <span class="dv">3</span>)</span></code></pre></div>
+<ol start="10" style="list-style-type: decimal">
+<li>How does the flipper length compare across the species of penguins? Briefly explain your response in 2 - 3 sentences, using results from the previous exercise to support your conclusions.</li>
+</ol>
 </div>
+<div id="submission" class="section level1">
+<h1>Submission</h1>
+<ul>
+<li><strong>Select <u>one</u> team member to upload the team’s PDF submission to Gradescope.</strong></li>
+<li>Be sure to mark every team member’s name on Gradescope.</li>
+<li>Associate the “Workflow &amp; formatting” graded section with the first page of your PDF, and mark the page associated with each exercise. If any answer spans multiple pages, then mark all pages.</li>
+</ul>
+<p><strong>There should only be <u>one</u> submission per team on Gradescope.</strong></p>
+</div>
+<div id="grading-50-pts" class="section level1">
+<h1>Grading (50 pts)</h1>
+<p><br></p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Component</th>
+<th align="left">Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Ex 1 - 10</td>
+<td align="left">40</td>
+</tr>
+<tr class="even">
+<td align="left">ANOVA Lab Activity</td>
+<td align="left">5</td>
+</tr>
+<tr class="odd">
+<td align="left">Workflow &amp; formatting</td>
+<td align="left">5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Grading notes</strong>:</p>
+<ul>
+<li>The “Workflow &amp; formatting” grade is to assess the reproducible workflow and team work. This includes having at least one meaningful commit by each team member and updating the name and date in the YAML.</li>
+</ul>
+<p>There should only be <u>one</u> submission per team on Gradescope.</p>
 </div>
 
 
