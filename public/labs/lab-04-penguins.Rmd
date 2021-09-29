@@ -16,7 +16,7 @@ link-citations: yes
 knitr::opts_chunk$set(eval = FALSE)
 ```
 
-This lab will focus on Analysis of Variance. You will do a short individual ANOVA activit y Sakai, then as a group, you will use ANOVA to analyze data about penguins in the Palmer Archipelago near Palmer Station. 
+This lab will focus on Analysis of Variance. You will do a short individual ANOVA activity in Sakai, then as a group, you will use ANOVA to analyze data about penguins in the Palmer Archipelago near Palmer Station. 
 
 # Learning goals
 
@@ -28,29 +28,33 @@ By the end of the lab you will be able to...
 
 # ANOVA Activity (~ 10 - 15 minutes)
 
-- Follow the instructions explained by your TA. You will also receive the instructions via email before your lab. 
-- Complete the short assessment on Sakai individually. 
-  - This assessment will be graded for completion and will be part of your Lab 04 grade.
- 
-# Getting started
+You will work individually for this portion of the lab. The assessment on Sakai will be graded for completion and will be included as part of the Lab 04 grade. Your TA will explain the instructions. You also should have received an email with instructions about this activity earlier in the day. 
 
-## Clone assignment repo + start new project - UPDATE
+**You should complete the assessment before working on the group portion of lab.**
 
-A repository has already been created for you and your teammates. Everyone in your team has access to the same repo.
 
-- Go to [course organization](https://www.github.com/sta210-sp21) on GitHub.
+# Getting started 
 
-- In addition to your private individual repositories, you should now see a repo named **lab-04-**. Go to that repository.
+- A repository has already been created for you and your teammates. Everyone in your team has access to the same repo.
+
+- Go to the [sta210-fa21 course organization](https://www.github.com/sta210-fa21) on GitHub.
+
+- You should see a repo with the **lab-04** prefix. 
   
-- Each person on the team should clone the repository and open a new project in RStudio.
+- Each person on the team should clone the repository and open a new project in RStudio. **Do not make any changes to the .Rmd file until the instructions tell you do to so.**
 
-## Workflow: Using git and GitHub as a team
 
-Now that you have had some experience collaborating as a team on GitHub, it will be up to your team to decide who types the responses to each question. Every team member should contribute to the discussion about each lab exercise even if they are not the one typing the team's responses. 
+# Workflow: Using git and GitHub as a team
 
-**Every team member should have at least one meaningful commit to the repo on GitHub.**
+There are no Team Member markers in this lab; however, you should use a similar workflow as in lab 03. Only one person should type in the group's .Rmd file at a time. Once that person has finished typing the group's responses, they should *knit, commit, and push* the changes to GitHub. All other teammates can *pull* to see the updates in RStudio. 
 
-# Packages + data
+## Update YAML 
+
+:::{.commit}
+**One team member:** Change the author to your team name and include each team member's name in the `author` field of the YAML in the following format. `Team Name: Member 1, Member 2, Member 3, Member 4`. Knit, commit, and push the changes to GitHub.**
+
+**All other team members:** Click the **Pull** button in the Git pane to get the updated document. You should see the updated name in the .Rmd file.**
+:::
 
 ## Packages
 
@@ -102,27 +106,71 @@ As you complete the lab
 
 2. We'd like to use ANOVA to assess if there's a relationship between flipper length and species. Write the null and alternative hypotheses for the ANOVA test (a) using mathematical notation (b) using words.
 
-3. Before conducting the test, let's check the conditions for ANOVA. For each condition write whether or not it is satisfied. Briefly explain your response for each condition, including  any plots, summary statistics, etc. used to make your determination.
+3. Before conducting the test, we can check the conditions for ANOVA. For each condition (normality, constant variance, independence) and write whether or not it is satisfied. Briefly explain your response for each condition, including  any plots, summary statistics, etc. used to make your determination.
 
-4. Use R to calculate the ANOVA table. Display the table from R. 
+4. Use R to calculate and display the ANOVA table.
 
 5. Use the ANOVA table to answer the following: 
-  - What is the variance of the distribution of flipper lengths within each penguin species? 
-  - What is the test statistic? Briefly explain what this value means in the context of the data. 
-  - What distribution was used to calculate the p-value? 
+     - What is the test statistic? Briefly explain what this value means in the context of the data. 
+    - What distribution was used to calculate the p-value? 
 
 6. What is the conclusion from the ANOVA test? State the conclusion in the context of the data. 
 
-7. Let's dive into the data further and use pairwise comparisons to understand how flipper length compares across species. We want the probability of making a family-wise Type I error to be 0.1. Briefly explain what this means in the context of the data. 
+7. Let's dive into the data further and use pairwise comparisons to understand how flipper length compares across species. We know at least species has a different mean flipper length, and we can do further analysis to see how the means compare. To do so, we will look at confidence intervals for the difference in the mean weight between groups. The confidence interval for the difference in means between groups $i$ and $j$ is.  The confidence interval for the difference in means between groups $i$ and $j$ is 
 
-8. To achieve the desired family-wise Type I error rate from the previous question, what confidence level should be used for the individual confidence intervals? Briefly explain your response.
+    $$(\bar{y}_i-\bar{y}_j) \pm t^* \sqrt{MSE\Big(\frac{1}{n_i}+\frac{1}{n_j}\Big)}$$
+Where $MSE$ is the variance of distribution of flipper length within each group, and $t^*$ is calculated from a t distribution with the degrees of freedom associated with the within group variability? 
 
-9. Calculate the pairwise confidence intervals. 
+    How many such comparisons do we need to make for this data?
 
-10. How does the flipper length compare across the species of penguins? In your description, include numerical and inferential conclusions based on your analysis. 
+8. When we calculate multiple confidence intervals or conduct multiple hypothesis tests, there are different levels of error that we can make: 
 
-## Submission
+      - **Type I error**: Incorrectly conclude two groups have unequal means (i.e. incorrectly reject $H_0$)
 
-**One team member:** Upload the team's PDF to Gradescope. Be sure to include every team member's name in the Gradescope submission Associate the "Overall" graded section with the first page of your PDF, and mark where each answer is to the exercises. If any answer spans multiple pages, then mark all pages.
+     - **Individual Type I error**: Incorrectly reject $H_0$ for **one specific** comparison of group means. P(Type I error) = $\alpha = 1 - C$, where $C$ is the confidence level
+
+     - **Family-wise Type I error**: Incorrectly reject $H_0$ for **at least one** comparison of group means
+
+    Even if the probability of making an individual Type I error is low, the probability of making a family-wise Type I error becomes much larger when we make multiple comparisons. Therefore, when we make multiple comparisons, we will select the critical value $t^*$ to control for the probability of making a  **family-wise Type I error**. Thus, if we want the family-wise error Type I error to be $\alpha$, we will choose $t^*$ such that the probability of making a Type I error for any individual confidence interval is  $\frac{\alpha}{m}$ (confidence level  =  $1 - \alpha/m$), where $m$ is the number of comparisons.This is called the **Bonferroni correction.** 
+
+
+    Suppose we want a family-wise Type I error rate for this analysis to be 0.1. What confidence level should we use for each individual confidence interval of the difference in means between two groups? Briefly explain your response.
+
+
+```{marginfigure}
+[Click here](https://www.rdocumentation.org/packages/pairwiseCI/versions/0.1-27/topics/pairwiseCI) to read more about the `pairwiseCI` function. 
+```
+
+9. Calculate the pairwise confidence intervals using the confidence level from the previous question. We can quickly calculate the pairwise confidence interval using the `pariwiseCI` function in the **pairwiseCI** R package. Fill in the code below to calculate the intervals.
+
+```{r eval = FALSE}
+pairwiseCI(_____ ~ _____, data = _____) 
+           conf.level = ______, var.equal = TRUE) %>%
+  kable(digits = 3)
+```
+
+10. How does the flipper length compare across the species of penguins? Briefly explain your response in 2 - 3 sentences, using results from the previous exercise to support your conclusions. 
+
+# Submission
+
+- **Select <u>one</u> team member to upload the team's PDF submission to Gradescope.** 
+- Be sure to mark every team member's name on Gradescope.
+- Associate the "Workflow & formatting" graded section with the first page of your PDF, and mark the page associated with each exercise. If any answer spans multiple pages, then mark all pages.
+
+**There should only be <u>one</u> submission per team on Gradescope.**
+
+# Grading (50 pts)
+
+<br>
+
+| Component | Points |
+|:----------|:-------|
+| Ex 1 - 10    | 40   |
+| Complete ANOVA Lab Activity | 5 |
+| Workflow & formatting     | 5 |   
+
+**Grading notes**:
+
+-   The "Workflow & formatting" grade is to assess the reproducible workflow and team work. This includes having at least one meaningful commit by each team member and updating the name and date in the YAML.
 
 There should only be <u>one</u> submission per team on Gradescope.
