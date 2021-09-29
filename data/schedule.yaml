@@ -100,7 +100,7 @@ lessons:
     title: "MLR: Types of predictors"
     slides: "12-mlr-predictor-types.html"
     prepare: "week-06.html"
-    appex: "ae-11-mlr.html"
+    ae: "ae-12-mlr-contd.html"
   - date: "Thu, Sep 30"
     title: "Lab 04"
    
