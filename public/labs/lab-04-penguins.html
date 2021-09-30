@@ -196,12 +196,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(knitr)</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(broom)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># add more packages as needed</span></span></code></pre></div>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(pairwiseCI)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># add more packages as needed</span></span></code></pre></div>
 </div>
 </div>
 <div id="data-palmer-penguins" class="section level1">
 <h1>Data: Palmer penguins</h1>
-<p>The data is the <code>penguins</code> data set from the <a href="https://allisonhorst.github.io/palmerpenguins/">palmerpenguins R package</a> maintained by Dr. Allison Horst. This data set contains measurements and other characteristics for 344 penguins observed near Palmer Station in Antarctica. The data were originally collected by Dr. Kristen Gorman.</p>
+<p>The data is the <code>penguins</code> data set from the <a href="https://allisonhorst.github.io/palmerpenguins/">palmerpenguins R package</a> maintained by Dr. Allison Horst. This data set contains measurements and other characteristics for over 300 penguins observed near Palmer Station in Antarctica. The data were originally collected by Dr. Kristen Gorman.</p>
 <p>The data set is in <code>penguins.csv</code> located in the <code>data</code> folder.</p>
 <p>The following variables are in the <code>penguins</code> data set.</p>
 <table>
@@ -263,7 +264,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="exercises" class="section level1">
 <h1>Exercises</h1>
-<p>Can we differentiate penguin species based on their flipper length? To analyze this question we will use Analysis of Variance to compare the mean flipper length for Adelie, Gentoo, Chinstrap penguins found near the Palmer Station in Antarctica.</p>
+<p><em>Can we differentiate penguin species based on their flipper length?</em> To analyze this question we will use Analysis of Variance to compare the mean flipper length for Adelie, Gentoo, Chinstrap penguins found near the Palmer Station in Antarctica.</p>
 <div class="commit">
 <p>As you complete the lab</p>
 <ul>
@@ -276,7 +277,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ol style="list-style-type: decimal">
 <li><p>Let’s take a look at the <code>flipper_length_mm</code> based on the <code>species</code>. Create a visualization to explore the relationship between the two variables. Interpret the visualization in the context of the data.</p></li>
 <li><p>We’d like to use ANOVA to assess if there’s a relationship between flipper length and species. Write the null and alternative hypotheses for the ANOVA test (a) using mathematical notation (b) using words.</p></li>
-<li><p>Before conducting the test, we can check the conditions for ANOVA. For each condition (normality, constant variance, independence) and write whether or not it is satisfied. Briefly explain your response for each condition, including any plots, summary statistics, etc. used to make your determination.</p></li>
+<li><p>Before conducting the test, we will check the conditions for ANOVA (normality, constant variance, independence). State whether each condition is satisfied. Briefly explain your response including any plots, summary statistics, etc. used to make your determination.</p></li>
 <li><p>Use R to calculate and display the ANOVA table.</p></li>
 <li><p>Use the ANOVA table to answer the following:</p>
 <ul>
@@ -284,25 +285,28 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>What distribution was used to calculate the p-value?</li>
 </ul></li>
 <li><p>What is the conclusion from the ANOVA test? State the conclusion in the context of the data.</p></li>
-<li><p>Let’s dive into the data further and use pairwise comparisons to understand how flipper length compares across species. We know at least species has a different mean flipper length, and we can do further analysis to see how the means compare. To do so, we will look at confidence intervals for the difference in the mean weight between groups. The confidence interval for the difference in means between groups <span class="math inline">\(i\)</span> and <span class="math inline">\(j\)</span> is. The confidence interval for the difference in means between groups <span class="math inline">\(i\)</span> and <span class="math inline">\(j\)</span> is</p>
-<p><span class="math display">\[(\bar{y}_i-\bar{y}_j) \pm t^* \sqrt{MSE\Big(\frac{1}{n_i}+\frac{1}{n_j}\Big)}\]</span> Where <span class="math inline">\(MSE\)</span> is the variance of distribution of flipper length within each group, and <span class="math inline">\(t^*\)</span> is calculated from a t distribution with the degrees of freedom associated with the within group variability?</p>
-<p>How many such comparisons do we need to make for this data?</p></li>
-<li><p>When we calculate multiple confidence intervals or conduct multiple hypothesis tests, there are different levels of error that we can make:</p>
+<li><p>We know at least one species has a different mean flipper length, and we can do further analysis to see how the means compare. To do so, we will look at confidence intervals for the difference in the mean flipper length between species.</p></li>
+</ol>
+<p>The general form of the confidence interval for the difference in means between groups <span class="math inline">\(i\)</span> and <span class="math inline">\(j\)</span> is</p>
+<pre><code>$$(\bar{y}_i-\bar{y}_j) \pm t^* \sqrt{MSE\Big(\frac{1}{n_i}+\frac{1}{n_j}\Big)}$$</code></pre>
+<p>Where <span class="math inline">\(MSE\)</span> is the variance of distribution of flipper length within each group, and <span class="math inline">\(t^*\)</span> is calculated from a t distribution with the degrees of freedom associated with the within group variability.</p>
+<pre><code>We want to make pairwise comparisons of flipper length for the species in this data. How many such comparisons do we need to make? </code></pre>
+<ol start="8" style="list-style-type: decimal">
+<li><p>When we calculate multiple confidence intervals or conduct multiple hypothesis tests, there are different levels of Type I error that can be made in the conclusions. Making a Type I error in this context means to incorrectly conclude two groups have unequal means (i.e. incorrectly reject <span class="math inline">\(H_0\)</span>). The two types of Type I error that can be made are</p>
 <ul>
-<li><p><strong>Type I error</strong>: Incorrectly conclude two groups have unequal means (i.e. incorrectly reject <span class="math inline">\(H_0\)</span>)</p></li>
 <li><p><strong>Individual Type I error</strong>: Incorrectly reject <span class="math inline">\(H_0\)</span> for <strong>one specific</strong> comparison of group means. P(Type I error) = <span class="math inline">\(\alpha = 1 - C\)</span>, where <span class="math inline">\(C\)</span> is the confidence level</p></li>
 <li><p><strong>Family-wise Type I error</strong>: Incorrectly reject <span class="math inline">\(H_0\)</span> for <strong>at least one</strong> comparison of group means</p></li>
 </ul>
-<p>Even if the probability of making an individual Type I error is low, the probability of making a family-wise Type I error becomes much larger when we make multiple comparisons. Therefore, when we make multiple comparisons, we will select the critical value <span class="math inline">\(t^*\)</span> to control for the probability of making a <strong>family-wise Type I error</strong>. Thus, if we want the family-wise error Type I error to be <span class="math inline">\(\alpha\)</span>, we will choose <span class="math inline">\(t^*\)</span> such that the probability of making a Type I error for any individual confidence interval is <span class="math inline">\(\frac{\alpha}{m}\)</span> (confidence level = <span class="math inline">\(1 - \alpha/m\)</span>), where <span class="math inline">\(m\)</span> is the number of comparisons.This is called the <strong>Bonferroni correction.</strong></p>
-<p>Suppose we want a family-wise Type I error rate for this analysis to be 0.1. What confidence level should we use for each individual confidence interval of the difference in means between two groups? Briefly explain your response.</p></li>
+<p>Even if the probability of making an individual Type I error is low, the probability of making a family-wise Type I error becomes much larger when we make multiple comparisons. Therefore, when we make multiple comparisons, we will select the critical value <span class="math inline">\(t^*\)</span> to control for the probability of making a <strong>family-wise Type I error</strong>. Thus, if we want the family-wise error Type I error to be <span class="math inline">\(\alpha\)</span>, we will choose <span class="math inline">\(t^*\)</span> such that the probability of making a Type I error for any individual confidence interval is <span class="math inline">\(\frac{\alpha}{m}\)</span> (confidence level = <span class="math inline">\(1 - \alpha/m\)</span>), where <span class="math inline">\(m\)</span> is the number of comparisons. This is called the <strong>Bonferroni correction.</strong></p>
+<p>Suppose we want a family-wise Type I error rate for this analysis to be 0.1. What confidence level should we use for each individual confidence interval of the difference in means between two groups?</p></li>
 </ol>
 <p><label for="tufte-mn-1" class="margin-toggle">⊕</label><input type="checkbox" id="tufte-mn-1" class="margin-toggle"><span class="marginnote"><span style="display: block;"><a href="https://www.rdocumentation.org/packages/pairwiseCI/versions/0.1-27/topics/pairwiseCI">Click here</a> to read more about the <code>pairwiseCI</code> function.</span></span></p>
 <ol start="9" style="list-style-type: decimal">
-<li>Calculate the pairwise confidence intervals using the confidence level from the previous question. We can quickly calculate the pairwise confidence interval using the <code>pariwiseCI</code> function in the <strong>pairwiseCI</strong> R package. Fill in the code below to calculate the intervals.</li>
+<li>Calculate the pairwise confidence intervals using the confidence level from the previous question. We can quickly calculate the pairwise confidence interval using the <code>pariwiseCI</code> function in the <strong>pairwiseCI</strong> R package. Fill in the code below to calculate the intervals using the confidence level chosen in the previous exercise.</li>
 </ol>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">pairwiseCI</span>(_____ <span class="sc">~</span> _____, <span class="at">data =</span> _____) </span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>           conf.level <span class="ot">=</span> ______, var.equal <span class="ot">=</span> <span class="cn">TRUE</span><span class="er">)</span> <span class="sc">%&gt;%</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable</span>(<span class="at">digits =</span> <span class="dv">3</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">pairwiseCI</span>(_____ <span class="sc">~</span> _____, <span class="at">data =</span> _____, </span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>           <span class="at">conf.level =</span> ______, <span class="at">var.equal =</span> <span class="cn">TRUE</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable</span>(<span class="at">digits =</span> <span class="dv">3</span>)</span></code></pre></div>
 <ol start="10" style="list-style-type: decimal">
 <li>How does the flipper length compare across the species of penguins? Briefly explain your response in 2 - 3 sentences, using results from the previous exercise to support your conclusions.</li>
 </ol>

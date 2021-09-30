@@ -102,7 +102,9 @@ lessons:
     prepare: "week-06.html"
     ae: "ae-12-mlr-contd.html"
   - date: "Thu, Sep 30"
-    title: "Lab 04"
+    title: "Lab 04: ANOVA with Palmer Penguins"
+    lab: "lab-04-penguins.html"
+    
    
   - week: "Week 07"
     date: "Mon, Oct 04"

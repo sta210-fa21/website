@@ -64,12 +64,13 @@ We'll use the following packages in this lab.
 library(tidyverse)
 library(knitr)
 library(broom)
+library(pairwiseCI)
 # add more packages as needed
 ```
 
 # Data: Palmer penguins
 
-The data is the `penguins` data set from the [palmerpenguins R package](https://allisonhorst.github.io/palmerpenguins/) maintained by Dr. Allison Horst. This data set contains measurements and other characteristics for 344 penguins observed near Palmer Station in Antarctica. The data were originally collected by Dr. Kristen Gorman. 
+The data is the `penguins` data set from the [palmerpenguins R package](https://allisonhorst.github.io/palmerpenguins/) maintained by Dr. Allison Horst. This data set contains measurements and other characteristics for over 300 penguins observed near Palmer Station in Antarctica. The data were originally collected by Dr. Kristen Gorman. 
 
 The data set is in `penguins.csv` located in the `data` folder. 
 
@@ -89,7 +90,7 @@ The following variables are in the `penguins` data set.
 
 # Exercises
 
-Can we differentiate penguin species based on their flipper length? To analyze this question we will use Analysis of Variance to compare the mean flipper length for  Adelie, Gentoo, Chinstrap penguins found near the Palmer Station in Antarctica. 
+*Can we differentiate penguin species based on their flipper length?* To analyze this question we will use Analysis of Variance to compare the mean flipper length for  Adelie, Gentoo, Chinstrap penguins found near the Palmer Station in Antarctica. 
 
 ::: {.commit}
 
@@ -106,7 +107,7 @@ As you complete the lab
 
 2. We'd like to use ANOVA to assess if there's a relationship between flipper length and species. Write the null and alternative hypotheses for the ANOVA test (a) using mathematical notation (b) using words.
 
-3. Before conducting the test, we can check the conditions for ANOVA. For each condition (normality, constant variance, independence) and write whether or not it is satisfied. Briefly explain your response for each condition, including  any plots, summary statistics, etc. used to make your determination.
+3. Before conducting the test, we will check the conditions for ANOVA (normality, constant variance, independence). State whether each condition is satisfied. Briefly explain your response including  any plots, summary statistics, etc. used to make your determination.
 
 4. Use R to calculate and display the ANOVA table.
 
@@ -116,35 +117,35 @@ As you complete the lab
 
 6. What is the conclusion from the ANOVA test? State the conclusion in the context of the data. 
 
-7. Let's dive into the data further and use pairwise comparisons to understand how flipper length compares across species. We know at least species has a different mean flipper length, and we can do further analysis to see how the means compare. To do so, we will look at confidence intervals for the difference in the mean weight between groups. The confidence interval for the difference in means between groups $i$ and $j$ is.  The confidence interval for the difference in means between groups $i$ and $j$ is 
+7. We know at least one species has a different mean flipper length, and we can do further analysis to see how the means compare. To do so, we will look at confidence intervals for the difference in the mean flipper length between species. 
+
+  The general form of the confidence interval for the difference in means between groups $i$ and $j$ is
 
     $$(\bar{y}_i-\bar{y}_j) \pm t^* \sqrt{MSE\Big(\frac{1}{n_i}+\frac{1}{n_j}\Big)}$$
-Where $MSE$ is the variance of distribution of flipper length within each group, and $t^*$ is calculated from a t distribution with the degrees of freedom associated with the within group variability? 
+    
+  Where $MSE$ is the variance of distribution of flipper length within each group, and $t^*$ is calculated from a t distribution with the degrees of freedom associated with the within group variability. 
 
-    How many such comparisons do we need to make for this data?
+    We want to make pairwise comparisons of flipper length for the species in this data. How many such comparisons do we need to make? 
 
-8. When we calculate multiple confidence intervals or conduct multiple hypothesis tests, there are different levels of error that we can make: 
-
-      - **Type I error**: Incorrectly conclude two groups have unequal means (i.e. incorrectly reject $H_0$)
+8. When we calculate multiple confidence intervals or conduct multiple hypothesis tests, there are different levels of Type I error that can be made in the conclusions. Making a Type I error in this context means to incorrectly conclude two groups have unequal means (i.e. incorrectly reject $H_0$). The two types of Type I error that can be made are
 
      - **Individual Type I error**: Incorrectly reject $H_0$ for **one specific** comparison of group means. P(Type I error) = $\alpha = 1 - C$, where $C$ is the confidence level
 
      - **Family-wise Type I error**: Incorrectly reject $H_0$ for **at least one** comparison of group means
 
-    Even if the probability of making an individual Type I error is low, the probability of making a family-wise Type I error becomes much larger when we make multiple comparisons. Therefore, when we make multiple comparisons, we will select the critical value $t^*$ to control for the probability of making a  **family-wise Type I error**. Thus, if we want the family-wise error Type I error to be $\alpha$, we will choose $t^*$ such that the probability of making a Type I error for any individual confidence interval is  $\frac{\alpha}{m}$ (confidence level  =  $1 - \alpha/m$), where $m$ is the number of comparisons.This is called the **Bonferroni correction.** 
+    Even if the probability of making an individual Type I error is low, the probability of making a family-wise Type I error becomes much larger when we make multiple comparisons. Therefore, when we make multiple comparisons, we will select the critical value $t^*$ to control for the probability of making a  **family-wise Type I error**. Thus, if we want the family-wise error Type I error to be $\alpha$, we will choose $t^*$ such that the probability of making a Type I error for any individual confidence interval is  $\frac{\alpha}{m}$ (confidence level  =  $1 - \alpha/m$), where $m$ is the number of comparisons. This is called the **Bonferroni correction.** 
 
 
-    Suppose we want a family-wise Type I error rate for this analysis to be 0.1. What confidence level should we use for each individual confidence interval of the difference in means between two groups? Briefly explain your response.
-
+    Suppose we want a family-wise Type I error rate for this analysis to be 0.1. What confidence level should we use for each individual confidence interval of the difference in means between two groups? 
 
 ```{marginfigure}
 [Click here](https://www.rdocumentation.org/packages/pairwiseCI/versions/0.1-27/topics/pairwiseCI) to read more about the `pairwiseCI` function. 
 ```
 
-9. Calculate the pairwise confidence intervals using the confidence level from the previous question. We can quickly calculate the pairwise confidence interval using the `pariwiseCI` function in the **pairwiseCI** R package. Fill in the code below to calculate the intervals.
+9. Calculate the pairwise confidence intervals using the confidence level from the previous question. We can quickly calculate the pairwise confidence interval using the `pariwiseCI` function in the **pairwiseCI** R package. Fill in the code below to calculate the intervals using the confidence level chosen in the previous exercise.
 
 ```{r eval = FALSE}
-pairwiseCI(_____ ~ _____, data = _____) 
+pairwiseCI(_____ ~ _____, data = _____, 
            conf.level = ______, var.equal = TRUE) %>%
   kable(digits = 3)
 ```
