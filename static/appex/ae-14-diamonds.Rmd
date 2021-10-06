@@ -18,7 +18,7 @@ knitr::opts_chunk$set(warning = F,
 
 ## Announcements
 
-- Ed Discussion for today's lecture:
+- Ed Discussion for today's lecture:https://edstem.org/us/courses/8350/discussion/690183
 
 - [Lab 04](https://sta210-fa21.netlify.app/labs/lab-04-penguins.html) due Thu, Oct 7 at 11:59p, 
 
@@ -60,6 +60,8 @@ Total_Points <-
 Grade <- Total_Points / (0.30 + 0.15 + 0.10 + 0.05 +0.025)
 ```
 
+## Visual editor in RStudio! 
+
 ##  AE 14: Transforming the repsonse variable
 
 - Go to the ae-14-[GITHUB USERNAME] repo in the GitHub course organization: https://github.com/sta210-fa21
@@ -68,4 +70,7 @@ Grade <- Total_Points / (0.30 + 0.15 + 0.10 + 0.05 +0.025)
 
 - See the [Lab 01 instructions](https://sta210-fa21.netlify.app/labs/lab-01-ikea.html) for details on cloning the repo and starting a new project in RStudio.
 
-## Visual editor in RStudio! 
+## Introduce project
+
+
+

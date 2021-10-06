@@ -238,77 +238,399 @@ Go to &lt;a href=&#34;http://studentaffairs.duke.edu/dukereach&#34;&gt;studentaf
   <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
   
 <guid>/project/</guid>
-  <description>&lt;p&gt;&lt;em&gt;More detail about the project will be released when the project is assigned.&lt;/em&gt;&lt;/p&gt;
+  <description>&lt;h2 id=&#34;timeline&#34;&gt;Timeline&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;#topic-ideas&#34;&gt;Topic ideas&lt;/a&gt; due &lt;strong&gt;Monday, October 11&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;#project-proposal&#34;&gt;Proposal&lt;/a&gt; due &lt;strong&gt;Friday, October 29&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;#draft-report&#34;&gt;Draft report&lt;/a&gt; due &lt;strong&gt;Wednesday, November 10&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;#peer-review&#34;&gt;Peer review&lt;/a&gt; due &lt;strong&gt;Monday, November 15&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;#written-report&#34;&gt;Final report&lt;/a&gt; due &lt;strong&gt;Friday, December 3&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;#video-presentation--slides&#34;&gt;Video presentation + slides&lt;/a&gt; due &lt;strong&gt;Thursday, December 9&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;#presentation-comments&#34;&gt;Presentation comments&lt;/a&gt; due &lt;strong&gt;Saturday, December 11&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;TL;DR&lt;/strong&gt;: &lt;em&gt;Pick a data set and do a regression analysis. That is your
+final project.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The goal of the final project is for you to use regression analysis to analyze a data set of your own choosing. The data set may already exist or you may collect your own data by scraping the web.&lt;/p&gt;
+&lt;p&gt;Choose the data based on your group&amp;rsquo;s interests or work you all have done in other courses or research projects. The goal of this project is for you to demonstrate proficiency in the techniques we have covered in this class (and beyond, if you like!) and apply them to a data set to analyze it in a meaningful way.&lt;/p&gt;
+&lt;p&gt;All analyses must be done in RStudio, and all components of the project &lt;strong&gt;must be reproducible&lt;/strong&gt; (with the exception of the presentation).&lt;/p&gt;
+&lt;h3 id=&#34;logistics&#34;&gt;Logistics&lt;/h3&gt;
+&lt;p&gt;You will work on the project with your lab groups.&lt;/p&gt;
+&lt;p&gt;The four primary deliverables for the final project are&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A written, reproducible report detailing your analysis&lt;/li&gt;
+&lt;li&gt;A GitHub repository corresponding to your report&lt;/li&gt;
+&lt;li&gt;Slides + a video presentation&lt;/li&gt;
+&lt;li&gt;Formal peer review on another team&amp;rsquo;s project&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;topic-ideas&#34;&gt;Topic ideas&lt;/h2&gt;
+&lt;p&gt;Identify 2-3 data sets you&amp;rsquo;re interested in potentially using for the final project. If you&amp;rsquo;re unsure where to find data, you can use the list of potential data sources in the &lt;a href=&#34;#tips--resources&#34;&gt;Tips + Resources&lt;/a&gt; section as a starting point. It may also help to think of topics you&amp;rsquo;re interested in investigating and find data sets on those topics.&lt;/p&gt;
+&lt;p&gt;The purpose of submitting project ideas is to give you time to find data for the project and to make sure you have a data set that can help you be successful in the project. &lt;strong&gt;Therefore, you must use one of the data sets submitted as a topic idea, unless otherwise notified by the teaching team.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The data sets should meet the following criteria:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;At least 500observations&lt;/li&gt;
+&lt;li&gt;At least 10 columns&lt;/li&gt;
+&lt;li&gt;At least 6 of the columns must be useful and unique predictor variables.
+&lt;ul&gt;
+&lt;li&gt;Identifier variables such as &amp;ldquo;name&amp;rdquo;, &amp;ldquo;social security number&amp;rdquo;, etc. are not useful predictor variables.&lt;/li&gt;
+&lt;li&gt;If you have multiple columns with the same information (e.g. &amp;ldquo;state abbreviation&amp;rdquo; and &amp;ldquo;state name&amp;rdquo;), then they are not unique predictors.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;At least one variable that can be identified as a reasonable response variable.
+&lt;ul&gt;
+&lt;li&gt;The response variable can be quantitative or categorical.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;A mix of quantitative and categorical variables that can be used as predictors.&lt;/li&gt;
+&lt;li&gt;Observations should reasonably meet the independence condition. Therefore, avoid data with repeated measures, data collected over time, etc.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;You cannot use data that has previously been used in any course materials, or any derivation of data that has been used in course materials.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Please ask a member of the teaching team if you&amp;rsquo;re unsure whether your data set meets the criteria.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;submission&#34;&gt;Submission&lt;/h3&gt;
+&lt;p&gt;You will submit the topic ideas in the &lt;code&gt;01-topic-ideas&lt;/code&gt; folder in the  &lt;code&gt;project&lt;/code&gt; repo on GitHub. The submission should include the following for each data set:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Short description of the data (1 - 2 sentences).&lt;/li&gt;
+&lt;li&gt;Description of the observations and characteristics being measured in the data&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;glimpse&lt;/code&gt; of data set&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Submit the PDF of your topic ideas to Gradescope.&lt;/p&gt;
+&lt;h2 id=&#34;project-proposal&#34;&gt;Project proposal&lt;/h2&gt;
+&lt;p&gt;The purpose of the project proposal is to help you think about your analysis strategy early. s&lt;/p&gt;
+&lt;p&gt;Include the following in the proposal:&lt;/p&gt;
+&lt;h3 id=&#34;section-1---introduction&#34;&gt;Section 1 - Introduction&lt;/h3&gt;
+&lt;p&gt;The introduction section includes&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;an introduction to the subject matter you&amp;rsquo;re investigating&lt;/li&gt;
+&lt;li&gt;the motivation for your research question (citing any relevant literature)&lt;/li&gt;
+&lt;li&gt;the general research question you wish to explore&lt;/li&gt;
+&lt;li&gt;your hypotheses regarding the research question of interest.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;section-2---data-description&#34;&gt;Section 2 - Data description&lt;/h3&gt;
+&lt;p&gt;In this section, you will describe the data set you wish to explore. This includes&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;description of the observations in the data set,&lt;/li&gt;
+&lt;li&gt;description of how the data was originally collected (not how you found the data but how the original curator of the data collected it).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;section-3---analysis-approach&#34;&gt;Section 3 - Analysis approach&lt;/h3&gt;
+&lt;p&gt;In this section, you will provide a brief overview of your analysis approach. This includes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Description of the response variable.&lt;/li&gt;
+&lt;li&gt;Visualization and summary statistics for the response variable.&lt;/li&gt;
+&lt;li&gt;List of variables that will be considered as predictors&lt;/li&gt;
+&lt;li&gt;Regression model technique (multiple linear regression and logistic regression)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;data-dictionary-aka-code-book&#34;&gt;Data dictionary (aka code book)&lt;/h3&gt;
+&lt;p&gt;Submit a data dictionary for all the variables in your data set in the &lt;code&gt;README&lt;/code&gt; of your project repo.&lt;/p&gt;
+&lt;h3 id=&#34;submission-1&#34;&gt;Submission&lt;/h3&gt;
+&lt;p&gt;Submit your work by pushing it to your GitHub repo by the deadline. The teaching team will submit feedback about your proposal using the &lt;strong&gt;Issues&lt;/strong&gt; on GitHub.&lt;/p&gt;
+&lt;h3 id=&#34;proposal-grading&#34;&gt;Proposal grading&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Total&lt;/th&gt;
+&lt;th&gt;10 pts&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;3 pts&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Data description&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;2 pts&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Analysis plan&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;4 pts&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Data dictionary&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;1 pts&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Each component will be graded as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Meets expectations (full credit)&lt;/strong&gt;: All required elements are completed and are accurate. The narrative is written clearly, all tables and visualizations are nicely formatted, and the work would be presentable in a professional setting.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Close to expectations (half credit)&lt;/strong&gt;: There are some elements missing and/or inaccurate. There are some issues with formatting.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Does not meet expectations (no credit)&lt;/strong&gt;: Major elements missing. Work is not neatly formatted and would not be presentable in a professional setting.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;!--
-## Timeline
+## Draft report 
 
-Proposal due **Friday, October 9**
+The purpose of the draft and peer review is to give you an opportunity to get early feedback on your analysis. Therefore, the draft and peer review will focus primarily on the exploratory data analysis and modeling.  As you work on the draft, the focus should be on the analysis rather than crafting the final report.
 
-Draft report due **Wednesday, October 28** 
+Write the draft in the **written-report.Rmd** file in your project repo.  Below is a brief description of the sections to focus on in the draft: 
 
-Peer feedback due **Thursday, November 5**
+### Introduction and data
 
-Final written report due **Sunday, November 15** 
+This section includes an introduction to the project motivation, data, and research question. Describe the data and definitions of key variables. It should also include some exploratory data analysis. All of the EDA won’t fit in the paper, so focus on the EDA for the response variable and a few other interesting variables and relationships.
 
-Presentation video, slides, repo due **Tuesday, November 17**
 
-Presentation comments due **Friday, November 20**
+### Methodology 
 
-## Introduction 
+This section includes a brief description of your modeling process. Explain the reasoning for the type of model you&#39;re fitting, predictor variables considered for the model including any interactions. Additionally, show how you arrived at the final model by describing the model selection process, any variable transformations (if needed), and any other relevant considerations that were part of the model fitting process. 
 
-**TL;DR**: *Pick a dataset and do something with it. That is your 
-final project.*
+For the draft, you may show the results from a few models you&#39;ve considered.
 
-The final project for this class will consist of analysis on a dataset of your own choosing. The dataset may already exist, you may collect your own data by scraping the web.  
 
-Choose the data based on your group&#39;s interests or work you all have done in other courses or research projects. The goal of this project is for you to demonstrate proficiency in the techniques we have covered in this class (and beyond, if you like!) and apply them to a dataset to analyze it in a meaningful way. 
+### Results 
 
-### Logistics
+This is also where you will output the final model and include a brief discussion of the model assumptions, diagnostics, and any relevant model fit statistics. 
 
-You will work on the project with your lab groups.
+For the draft, if you do not have a final model, briefly describe your next steps and other models you&#39;re considering. 
 
-The four primary deliverables for the final project are
 
-- A written, reproducible report detailing your analysis
-- A GitHub repository corresponding to your report
-- Slides + a video presentation
-- Formal peer review on another team&#39;s project
+## Peer review
 
-## Overall grading
+Critically reviewing others&#39; work is a crucial part of the scientific process, and STA 210 is no exception. Each lab team will be assigned another team&#39;s project to review. Each team should push their draft to their GitHub repo by **Sunday, April 18**. The lab on April 19 will be dedicated to the peer review, and all reviews will be due by **Monday, April 19**. 
 
-The grade breakdown is as follows:
+During the peer review process, you will be provided read-only access to your  partner team&#39;s GitHub repo. Provide your review in the form of GitHub issues to your partner team&#39;s GitHub repo. The peer review will be graded on the extent to which it comprehensively and constructively addresses the components of the partner team&#39;s report: the  research context and motivation, exploratory data analysis, and any inference, modeling, or conclusions. 
 
-Total                                                   | 115 pts
+## Written report
+
+Your written report must be completed in the `written-report.Rmd` file and must be reproducible.  All team members should contribute to the GitHub repository, with regular meaningful commits. 
+
+Before you finalize your write up, make sure the printing of code chunks is off with the option `echo = FALSE`. 
+
+**You will submit the PDF of your final report on Gradescope.**
+
+
+The PDF you submit must match the files in your GitHub repository *exactly*. The mandatory components of the report are below. You are free to add additional sections as necessary. The report, including visualizations, should be **no more than 10 pages long.** There is no minimum page requirement; however, you should comprehensively address all of the aspects mentioned below.
+
+Please be selective in what you include in your final write-up. The goal is to write a cohesive narrative rather than explain every step of the analysis.
+
+The written report is worth 40 points, broken down as follows
+
+Total                                                   | 40 pts
 --------------------------------------------------------|--------
-**Project proposal**                                    | 10 pts
-**Written report**                                      | 50 pts
-**Slides**                                              | 15 pts
-**Repository**                                          | 5 pts
-**Video presentation**                                  | 20 pts
-**Peer feedback**                                       | 15 pts
+**Introduction/data**                                   | 8 pts
+**Methodology**                                         | 9 pts
+**Results**                                             | 14 pts
+**Discussion + Conclusion**                             | 5 pts
+**Organization + formatting**                          | 4 pts
 
-**&lt;i&gt;Note: No late projects are accepted.&lt;/i&gt;**
+Each item will be graded as one of the following: 
 
-## Data sources
+- Full credit: The item is complete and accurate.
+- Half credit: The item is partially incomplete and/or there are minor inaccuracies.
+- No credit: The item is mostly incomplete and/or there are major inaccuracies.
 
-In order for you to have the greatest chance of success with this project it is important that you choose a manageable dataset. This means that the data should be readily accessible and large enough that multiple relationships can be explored. Therefore, **your dataset must have at least 50 observations and at least 10 variables (exceptions can be made but you must speak with me first).**
+### Introduction and data
 
-In the dataset, there should be 
+This section includes an introduction to the project motivation, data, and research question. The data and definitions of key variables are described. It should also include some exploratory data analysis (EDA) - visualizations and appropriate summary statistics. All of the EDA won’t fit in the paper, so focus on the EDA for the response variable and other key variables and multivariate relationships.
 
-- categorical variables
-- discrete numerical variables 
-- continuous numerical variables 
+#### Grading criteria
+
+**(8 pts)** The research question and motivation are clearly stated in the introduction, including citations for any external research. The data are clearly described, including a description about how the data were originally collected and a concise definition of the relevant variables for the analysis. The explanatory data analysis helps the reader better understand the observations in the data set and interesting relationships between the variables. It incorporates appropriate visualizations and summary statistics.
 
 
-If you are using a dataset that comes in a 
-format that we haven&#39;t encountered in class (for instance, a `.DAT` file), make 
-sure that you are able to load it into RStudio as this can be tricky depending 
-on the source. If you are having trouble, ask for help before it is too late.
+### Methodology 
 
-**Reusing datasets from class:** Do not reuse datasets used in examples / homework 
-in the class. 
+This section includes a brief description of your modeling process. Explain the reasoning for the type of model you&#39;re fitting, predictor variables considered for the model and any interactions. Additionally, discuss how you arrived at the final model by describing the model selection process, any variable transformations (if needed), and any other relevant considerations that were part of the model fitting process. 
 
-Some resources that may be helpful:
+
+#### Grading criteria
+
+**(9 pts)** The analysis steps are appropriate for the data and research question. The group used a thoughtful approach to select the final model that took into account potential interaction effects and addressed violations in model conditions. The model conditions and diagnostics are thoroughly and accurately assessed as appropriate for the model. If violations of model conditions still exist, there was a reasonable attempt to address them, i.e. based on what we’ve learned this semester.
+
+
+### Results 
+
+This is where you will output the final model with any relevant model fit statistics. 
+
+Describe the key results from the model. The goal is not to interpret every single variable in the model but rather to show that you are proficient in using the model output to address the research questions, using the interpretations to support your conclusions.  Focus on the variables that help you answer the research question and that provide relevant context for the reader. 
+
+#### Grading criteria 
+
+**(14 pts)** The model fit is clearly assessed, and interesting findings from the model are clearly described. Interpretations of model coefficients are used to support the key findings and conclusions, rather than merely listing the interpretation of every model coefficient. If the primary modeling objective is prediction, the model’s predictive power is assessed.
+
+### Discussion + Conclusion
+
+In this section you&#39;ll include a summary of what you have learned about your research question along with statistical arguments supporting your conclusions. In addition, discuss the limitations of your analysis and provide suggestions on ways the analysis could be improved. Issues pertaining to the reliability and validity of your data and appropriateness of the statistical analysis should also be discussed here.
+
+#### Grading criteria 
+
+**(5 pts)** Overall conclusions from analysis are clearly described. The group has thoughtfully considered potential limitations of their data and/or analysis and presented potential ideas to address these limitations and avenues to explore in future work. 
+
+### Organization + formatting 
+
+This is an assessment of the overall presentation and formatting of the written report. 
+
+### Grading criteria 
+
+**(4 pts)** The written report is neatly organized with clear section headers and appropriately sized figures with informative labels. Numerical results are displayed with a reasonable number of digits, and all visualizations are neatly formatted. All code, warnings, and messages are suppressed. Overall, the document would be presentable in a business or research setting.
+
+
+## Video presentation + slides
+
+### Slides 
+
+In addition to the written report, your team will also create presentation slides that summarize and showcase your project. Introduce your research question and data set, showcase visualizations, and discuss the primary conclusions. These slides should serve as a brief visual addition to your written report and will be graded for content and quality.
+
+**For submission, convert these slides to a .pdf document, and submit the PDF of the slides on Gradescope.**
+
+The slide deck should have no more than 6 content slides + 1 title slide. Here is a *&lt;u&gt;suggested&lt;/u&gt;* outline as you think through the slides; you do *&lt;u&gt;not&lt;/u&gt;* have to use this exact format for the 6 slides.
+
+- Title Slide
+- Slide 1: Introduce the topic and motivation
+- Slide 2: Introduce the data
+- Slide 3: Highlights from EDA
+- Slide 4: Final model
+- Slide 5: Interesting findings from the model
+- Slide 6: Conclusions + future work
+
+## Video presentation
+
+For the video presentation, you can speak over your slide deck, similar to the lecture content videos. **The video presentation must be no longer than 10 minutes.** It is fine if the video is shorter than 10 minutes, but it cannot exceed 10 minutes. You may use can use any platform that works best for your group to record your presentation. Below are a few resources on recording videos:
+
+- [Recording presentations in Zoom](https://kb.siue.edu/61721)
+- [Apple Quicktime for screen recording]( https://support.apple.com/en-gb/guide/quicktime-player/qtp97b08e666/mac)
+- [Windows 10 built-in screen recording functionality](https://www.youtube.com/watch?v=OfPbr1mRDuo)
+- [Kap for screen recording](https://getkap.co/)
+
+Once your video is ready, upload the video to Warpwire, then embed the video in a new discussion for the group.
+
+#### To upload your video to Warpwire:
+
+- Click the Warpwire tab in the course Sakai site.
+- Click the “+” and select “Upload files”.
+- Locate the video on your computer and click to upload.
+- Once you’ve uploaded the video to Warpwire, click to share the video and make
+a copy of the video’s URL. You will need this when you post the video in the
+discussion forum.
+
+#### To post the video to the discussion forum
+
+- Click the Presentations tab in the course Sakai site. 
+- Click the Presentations topic. 
+- Click &#34;Start a new conversation&#34;. 
+- Make the title &#34;Your Team Name: Project Title&#34;. For example, &#34;Teaching Team: Analysis of Cars in the US&#34;.
+- Click the Warpwire icon (between the flag and shopping cart icons).
+- Select your video, then click “Insert 1 item.” This will embed your video in the conversation.
+- Under the video, paste the URL to your video.
+- You’re done! 
+
+You can see the Teaching team example in Sakai. 
+
+
+## Presentation comments 
+
+Each student will be assigned 1 presentations to watch. [Click here](https://prodduke-my.sharepoint.com/:x:/g/personal/mt324_duke_edu/EfDz1sQBQhRAtfHA9geukg0BRJL3Un1D3dkSRSpaFSw6Yg?e=RnacXD) to see your viewing assignments. 
+
+Watch the group&#39;s video, then click &#34;Reply&#34; to post a question for the group. You may not post a question that&#39;s already been asked on the discussion thread. Additionally, the question should be (i) substantive (i.e. it shouldn&#39;t be &#34;Why did you use a bar plot instead of a pie chart&#34;?), (ii) demonstrate your understanding of the content from the course, and (iii) relevant to that group&#39;s specific presentation, i.e demonstrating that you&#39;ve watched the presentation. 
+
+You may start posting questions and comments on Fri, Apr 30 12a EDT. **All questions must be posted by Sat, May 01 at 11:59p ESDT**. 
+
+**&lt;i&gt;This portion of the project will be assessed individually.&lt;/i&gt;**
+
+## Reproducibilty +  organization
+
+All written work (with exception of presentation slides) should be reproducible, and the GitHub repo should be neatly organized. 
+
+The GitHub repo should include the following: 
+
+- `README`: Short project description and data dictionary
+- `/data/*`: Data set in the `/data` folder.
+- `/topic-ideas`: Potential topics and data sets from earlier in the semester
+- `/proposal`: Proposal from earlier in the semester
+- `/written-report`: Written report 
+- `/presentation`: Presentation slides 
+
+Style and format does count for this assignment, so please take the time to make sure everything looks good and your data and code are properly formatted.
+
+## Peer teamwork evaluation
+
+You will be asked to fill out a survey where you rate the contribution and teamwork of each team member by assigning a contribution percentage for each team member. Filling out the survey is a prerequisite for getting credit on the team member evaluation. If you are suggesting that an individual did less than  half the expected contribution given your team size (e.g., for a team of four students, if a student contributed less than 12.5% of the total effort), please
+provide some explanation. If any individual gets an average peer score 
+indicating that this was the case, their grade will be assessed accordingly.
+--&gt;
+&lt;h2 id=&#34;overall-grading&#34;&gt;Overall grading&lt;/h2&gt;
+&lt;p&gt;The grade breakdown is as follows:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Total&lt;/th&gt;
+&lt;th&gt;100 pts&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Topic ideas&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;5  pts&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Project proposal&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;10 pts&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Peer review&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;10 pts&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Written report&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;40 pts&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Slides + video presentation&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;20 pts&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Reproducibility + organization&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;5 pts&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Video comments&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;5 pts&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Peer teamwork evaluation&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;5 pts&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;&lt;i&gt;Note: No late project reports or videos are accepted.&lt;/i&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;grading-summary&#34;&gt;Grading summary&lt;/h3&gt;
+&lt;p&gt;Grading of the project will take into account the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Content - What is the quality of research and/or policy question and relevancy
+of data to those questions?&lt;/li&gt;
+&lt;li&gt;Correctness - Are statistical procedures carried out and explained correctly?&lt;/li&gt;
+&lt;li&gt;Writing and Presentation - What is the quality of the statistical presentation,
+writing, and explanations?&lt;/li&gt;
+&lt;li&gt;Creativity and Critical Thought - Is the project carefully thought out? Are the
+limitations carefully considered? Does it appear that time and effort went into
+the planning and implementation of the project?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A general breakdown of scoring is as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;90%-100%&lt;/em&gt;: Outstanding effort. Student understands how to apply all statistical
+concepts, can put the results into a cogent argument, can identify weaknesses in
+the argument, and can clearly communicate the results to others.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;80%-89%&lt;/em&gt;: Good effort. Student understands most of the concepts, puts together
+an adequate argument, identifies some weaknesses of their argument, and communicates
+most results clearly to others.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;70%-79%&lt;/em&gt;: Passing effort. Student has misunderstanding of concepts in several
+areas, has some trouble putting results together in a cogent argument, and communication
+of results is sometimes unclear.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;60%-69%&lt;/em&gt;: Struggling effort. Student is making some effort, but has misunderstanding
+of many concepts and is unable to put together a cogent argument. Communication
+of results is unclear.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Below 60%&lt;/em&gt;: Student is not making a sufficient effort.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;late-work-policy&#34;&gt;Late work policy&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;There is no late work accepted on this project.&lt;/strong&gt; Be sure to turn in your work early to avoid any technological mishaps.&lt;/p&gt;
+&lt;!--
+## Tips + Resources
+
+### Data sources
+
+#### Some resources that may be helpful as you find data:
 
 - [R Data Sources for Regression Analysis](https://rfun.library.duke.edu/blog/data-sources-for-regression-analysis/)
 - [kaggle](https://www.kaggle.com/datasets)
@@ -316,7 +638,7 @@ Some resources that may be helpful:
 - [TidyTuesday](https://github.com/rfordatascience/tidytuesday)
 
 
-Additions:
+#### Other data repositories
 
 - [World Health Organization](https://www.who.int/gho/database/en/)
 - [The National Bureau of Economic Research](https://data.nber.org/data/)
@@ -335,192 +657,6 @@ Additions:
 - [World Bank](https://datacatalog.worldbank.org/)
 - [Election Studies](https://electionstudies.org//)
 
-All analyses must be done in RStudio, and your final written report and 
-analysis **must be reproducible**. This means that you must create an R Markdown
-document attached to a GitHub repository that will create your written report
-exactly upon knitting.
-
-## Project proposal 
-
-There are two main purposes of the project proposal:
-
-- To help you think about the project early, so you can get a head start on finding data, reading relevant literature, thinking about the questions you wish to answer, etc.
-- To ensure that the data you wish to analyze, methods you plan to use, and the scope of your analysis are feasible and will help you be successful for this project.
-
-Include the following in the proposal: 
-
-### Section 1 - Introduction
-
-The introduction section includes 
-
-- an introduction to the subject matter you&#39;re investigating
-- the motivation for your research question (citing any relevant literature)
-- the general research question you wish to explore 
-- your hypotheses regarding the research question of interest. 
-
-### Section 2 - Data description 
-
-In this section, you will describe the data set you wish to explore. This includes a description of the observations in the data set, a general description of the variables in the data set, and a description of how the data was originally collected (not how you found the data but how the original curator of the data collected it). 
-
-### Section 3 - Glimpse of data
-
-Use the `glimpse` function print a summary of the data at the end of your proposal.
-
-Place your data in the `/data` folder of the repo. Later on you will include the codebook in the README of the data folder. 
-
-### Submission
-
-Submit the PDF of your proposal in the **Project Proposal** assignment on Gradescope. Be sure to select the names of all team members in the submission. The proposal is due on **Friday, October 9.** 
-
-### Proposal grading
-
-Total                                                   | 10 pts
---------------------------------------------------------|--------
-**Introduction**                                        | 4 pts
-**Data description**                                    | 4 pts
-**Glimpse of data**                                     | 2 pts
-
-## Peer feedback
-
-Critically reviewing others&#39; work is a crucial part of the scientific process, and STA 199 is no exception. You will be assigned a team to review. As part of the review process, you must provide your partner team a copy of your current report by **Wednesday, October 28**. After giving the report to your partner team, they will have until **Friday, November 5** to provide a detailed critique about the written report and data analysis. This feedback is intended to help you create a high quality final project, as well as give you experience 
-reading and constructively critiquing the work of others.
-
-During the peer feedback process, you will be provided read-only access to your  partner team&#39;s GitHub repo. Provide your feedback in the form of GitHub issues to your partner team&#39;s GitHub repo. 
-
-Peer feedback will be graded on the extent to which it comprehensively and constructively addresses the components of the partner team&#39;s report: the research context and motivation, exploratory data analysis, and any inference, modeling, or conclusions. As you work on the draft, the focus should be on the analysis and less on crafting the final report. **Your draft must include a reasonable attempt at each analysis component - exploratory data analysis, inference or modeling, and drawing initial conclusions.** 
-
-## Written report
-
-Your written report must be done using R Markdown. All team members must contribute to the GitHub repository, with regular meaningful commits. 
-
-Before you finalize your write up, make sure the printing of code chunks is off with the option `echo = FALSE`. 
-
-**Submit the final report on Gradescope under the &lt;i&gt;Written Report&lt;/i&gt; assignment on Gradescope.** Your final report must match your GitHub repository *exactly*. The mandatory components of the report are below. You are free to add additional sections as necessary. The report, including visualizations, should be **no more than 10 pages long.** There is no minimum page requirement; however, you must comprehensively address all of the aspects mentioned below.
-
-Please be judicious in what you include in your final write-up.
-
-The written report is worth 50 points, broken down as
-
-Total                                                   | 50 pts
---------------------------------------------------------|--------
-**Introduction/data**                                   | 8 pts
-**Methodology**                                         | 17 pts
-**Results**                                             | 17 pts
-**Discussion**                                          | 8 pts
-
-
-### Introduction and data
-
-The introduction should introduce your general research question and your data  (where it came from, how it was collected, what are the cases, what are the  variables, etc.). 
-
-### Methodology 
-
-The methodology section should include the variables used to address your research question, as well as any useful visualizations or summary statistics. Additionally, you should introduce and justify the statistical method(s) that you believe will be useful in answering your research question. 
-
-### Results 
-
-Showcase how you arrived at answers to 
-your question using any techniques we have learned in this class (and some beyond, if you&#39;re feeling adventurous). Provide the main results from your analysis. The goal is not to do an exhaustive 
-data analysis (i.e., do not calculate every statistic and procedure you have learned for every variable), but rather let me know that you are proficient at asking meaningful questions and answering them with results of data analysis, that you are proficient in using R, and that you are proficient at interpreting 
-and presenting the results. Focus on methods that help you begin to answer your research questions. 
-
-### Discussion
-
-This section is a conclusion and discussion. This will require a 
-summary of what you have learned about your research question along with statistical arguments supporting your conclusions. Also, critique your own methods and provide suggestions for improving your analysis. Issues pertaining to the reliability and validity of your data and appropriateness of the statistical analysis should also be discussed here. A paragraph on what you would do differently if you were able to start over with the project or what you would do next if you were going to continue work on the project should also be included.
-
-
-## Presentation Slides
-
-In addition to the write-up, your team must also create presentation
-slides that summarize and showcase your project. Introduce your research question and dataset, showcase visualizations, and provide some conclusions. These slides should serve as a brief visual accompaniment to your write-up and will be graded for content and quality. **For submission, convert these slides to a .pdf document to be submitted to Gradescope.** The slides are due on **Tuesday, November 17**.
-
-The slide deck should have no more than **6 content slides + 1 title slide**. Here is a *&lt;u&gt;suggested&lt;/u&gt;* outline as you think through the slides; you do *&lt;u&gt;not&lt;/u&gt;* have to use this exact format for the slide deck.
-
-- Title Slide
-- Slide 1: Introduce the topic and motivation
-- Slide 2: Introduce the data
-- Slide 3 - 4: Highlights from EDA
-- Slide 4 - 5: Inference / modeling
-- Slide 6: Conclusions + future work
-
-## Video presentation
-
-Sometime by **Tuesday, November 17**, you/your group will upload a video presentation of your project to Warpwire. Note that all members must present, and that a ten-minute time limit is **strictly enforced**.
-
-For the presentation, you can speak over your slide deck, similar to the lecture content videos. I recommend using Zoom to record your presentation; however, you can use whatever platform works best for your group. Below are a few resources to help you record video presentations:
-
-- [Recording presentations in Zoom](https://kb.siue.edu/61721)
-- [Apple Quicktime for screen recording]( https://support.apple.com/en-gb/guide/quicktime-player/qtp97b08e666/mac)
-- [Windows 10 built-in screen recording functionality](https://www.youtube.com/watch?v=OfPbr1mRDuo)
-- [Kap for screen recording](https://getkap.co/)
-
-You will post the presentation video in Warpwire, which is accessible from the the course Sakai site (bottom of the left-hand tool bar). 
-
-**To upload your video to Warpwire:**
-
-- Click the Warpwire tab in the course Sakai site.
-- Click the “+” and select “Upload files”.
-- Locate the video on your computer and click to upload.
-- Once you’ve uploaded the video to Warpwire, click to share the video and make
-a copy of the video’s URL. You will need this when you post the video in the
-discussion forum.
-
-**To post the video to the discussion forum:**
-
-- Click the Presentations tab in the course Sakai site. 
-- Click the Presentations topic. 
-- Click &#34;Start New Presentation&#34;. 
-- Make the title &#34;Your Team Name: Project Title&#34;. For example, &#34;Teaching Team: Analysis of Cars in the US&#34;.
-- Click the Warpwire icon (between the flag and shopping cart icons).
-- Select your video, then click “Insert 1 item.” This will embed your video in the conversation.
-- Under the video, paste the URL to your video.
-- You’re done! 
-
-You can see the Teaching team example in Sakai. 
-
-## Presentation comments 
-
-Each student will be assigned 2 presentations to watch. [Click here](https://prodduke-my.sharepoint.com/:x:/g/personal/mt324_duke_edu/ES0ECPUhluBNqTJgeJkR8q8BsCHfmthaPPWruhda8Vp_cA?e=uo1FcX) to see your viewing assignments. 
-
-Watch the group&#39;s video, then click &#34;Reply&#34; to post a question for the group. You may not post a question that&#39;s already been asked on the discussion thread. Additionally, the question should be (i) substantive (i.e. it shouldn&#39;t be &#34;Why did you use a bar plot instead of a pie chart&#34;?), (ii) demonstrate your understanding of the content from the course, and (iii) relevant to that group&#39;s specific presentation, i.e demonstrating that you&#39;ve watched the presentation. 
-
-You may start posting questions and comments on Wed, Nov 18 at 12a EST. **All questions must be posted by Fri, Nov 20 at 11:59p EST**. 
-
-**&lt;i&gt;This portion of the project will be assessed individually.&lt;/i&gt;**
-
-## Project repository
-
-In addition to your Gradescope submissions, we will be checking your GitHub repository. This repository should be contributed to equally by all team members and should include
-
-- RMarkdown files (formatted to clearly present all of your code and results)
-that will output the proposal and write-up
-- Meaningful README file on the GitHub repository that contains a *codebook*
-for relevant variables
-- Dataset(s) (in csv or RData format, in a `/data` folder)
-- Presentation (if using Keynote/PowerPoint/Google Slides, export to PDF and put in repo, in a `/presentation` folder)
-
-Style and format does count for this assignment, so please take the time to make sure everything looks good and your data and code are properly formatted.
-
-The repository must be finalized by **Tuesday, November 17**.
-
-## Peer teamwork evaluation
-
-You will be asked to fill out a survey where you rate the contribution and teamwork of each team member by assigning a contribution percentage for each team member. Filling out the survey is a prerequisite for getting credit on the team member evaluation. If you are suggesting that an individual did less than  half the expected contribution given your team size (e.g., for a team of four students, if a student contributed less than 12.5% of the total effort), please
-provide some explanation. If any individual gets an average peer score 
-indicating that this was the case, their grade will be assessed accordingly.
-
-
-## Additional notes and tips
-
-The project is very open ended. For instance, in creating a compelling 
-visualization(s) of your data in R, there is no limit on what tools or 
-packages you may use. You do not need to visualize all of the data at once. A single high quality visualization will receive a much higher grade than a large number of poor quality visualizations.
-
-Before you finalize your write up, make sure the printing of code chunks is turned off with the option `echo = FALSE`. In addition to code chunks, ensure all messages are turned off with the options `warning = FALSE` and `echo = FALSE`. 
-
-Finally, pay attention to details in your write-up and presentation. Neatness, coherency, and clarity will count.
-
 
 ### Tips
 
@@ -535,42 +671,10 @@ happen, issues will arise, and that’s fine! Commit and push often, and ask que
 - Make sure each team member is contributing, both in terms of quality and quantity of contribution (we will be reviewing commits from different team  members).
 - All team members are expected to contribute equally to the completion of this assignment and group assessments will be given at its completion - anyone judged to not have sufficient contributed to the final product will have their grade penalized. While different teams members may have different backgrounds and abilities, it is the responsibility of every team member to understand how and why all code and approaches in  the assignment works.
 
-### Grading summary
 
-Grading of the project will take into account the following:
+### Formatting + communication 
 
-- Content - What is the quality of research and/or policy question and relevancy 
-of data to those questions?
-- Correctness - Are statistical procedures carried out and explained correctly?
-- Writing and Presentation - What is the quality of the statistical presentation, 
-writing, and explanations?
-- Creativity and Critical Thought - Is the project carefully thought out? Are the 
-limitations carefully considered? Does it appear that time and effort went into 
-the planning and implementation of the project?
-
-A general breakdown of scoring is as follows:
-
-- *90%-100%*: Outstanding effort. Student understands how to apply all statistical 
-concepts, can put the results into a cogent argument, can identify weaknesses in 
-the argument, and can clearly communicate the results to others.
-- *80%-89%*: Good effort. Student understands most of the concepts, puts together 
-an adequate argument, identifies some weaknesses of their argument, and communicates 
-most results clearly to others.
-- *70%-79%*: Passing effort. Student has misunderstanding of concepts in several 
-areas, has some trouble putting results together in a cogent argument, and communication 
-of results is sometimes unclear.
-- *60%-69%*: Struggling effort. Student is making some effort, but has misunderstanding 
-of many concepts and is unable to put together a cogent argument. Communication 
-of results is unclear.
-- *Below 60%*: Student is not making a sufficient effort.
-
-## Late work policy
-
-**There is no late work accepted on this project.** Be sure to turn in your work early to avoid any technological mishaps.
-
-## Formatting + communication 
-
-### Suppress Code, Warnings, &amp; Messages
+#### Suppress Code, Warnings, &amp; Messages
 
 
 
@@ -583,23 +687,23 @@ knitr::opts_chunk$set(echo = FALSE,
                       message = FALSE)
 ```
 
-### Headers
+#### Headers
 
 - Use headers to clearly label each section. Make sure there is a space between the last `#` and the title, so the header renders correctly. For example, `###Section Title` will not render as header, but `### Section Title` will. 
 
-### References 
+#### References 
 
 - Include all references in a section called &#34;References&#34; at the end of the report. 
 - This course does not have specific requirements for formatting citations and references.
 - See [Section 4.5](https://bookdown.org/yihui/rmarkdown-cookbook/bibliography.html) of the R Markdown Cookbook to learn about the citation functionality in R Markdown. 
 
-### Appendix
+#### Appendix
 
 - If you have additional work that does not fit or does not belong in the body of the report, you may put it at the end of the document in section called &#34;Appendix&#34;. 
 - The items in the appendix should be properly labeled. 
 - The appendix should only be for additional material. The reader should be able to fully understand your report without viewing content in the appendix.
 
-### Resize figures
+#### Resize figures
 
 - Resize plots and figures, so you have more space for the narrative. 
     - **Resize individual figures**: Use the code chunk header `{r plot1, fig.height = 3, fig.width = 5}`, replacing `plot1` with a meaningful label and the height and width with values appropriate for your write up.
@@ -618,7 +722,7 @@ output:
  
 Replace the height and width values with values appropriate for your write up.
 
-### Arranging plots
+#### Arranging plots
 
 Arrange plots in a grid, instead of one after the other. This is especially useful when displaying plots for exploratory data analysis and to check assumptions. 
 
@@ -626,7 +730,7 @@ Arrange plots in a grid, instead of one after the other. This is especially usef
 
 - If you&#39;re using base R function, i.e. when using the `emplogit` functions, put the code `par(mfrow = c(rows,columns))` before the code to make the plots. For example, `par(mfrow = c(2,3))` will arrange plots in a grid with 2 rows and 3 columns.
 
-### Plot titles and axis labels
+#### Plot titles and axis labels
 
 Be sure all plot titles and axis labels are visible and easy to read. 
 
@@ -654,7 +758,7 @@ ggplot(data = mpg, aes(x = manufacturer)) +
 
 &lt;img src=&#34;/project/index_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;672&#34; /&gt;
 
-### Do a little more to make the plot look professional!
+#### Do a little more to make the plot look professional!
 
 - Informative title and axis labels
 - Flipped coordinates to make names readable
@@ -680,7 +784,7 @@ mpg %&gt;%
 &lt;img src=&#34;/project/index_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;672&#34; /&gt;
 
 
-### Tables and model output
+#### Tables and model output
 
 - Use the `kable` function from the knitr package to neatly output all tables and model output. This will also ensure all model coefficients are displayed. 
   - Use the `digits` argument to display only 3 or 4 significant digits. 
@@ -702,16 +806,19 @@ tidy(model) %&gt;%
 |hp          |   -0.068|     0.010|    -6.742|       0|
 
 
-### Guidelines for communicating results 
+#### Guidelines for communicating results 
 
-- **Don&#39;t use variable names in your narrative!** Use descriptive terms, so the reader understands your narrative without relying on the codebook.
+- **Don&#39;t use variable names in your narrative!** Use descriptive terms, so the reader understands your narrative without relying on the data dictionary.
   - ❌ There is a negative linear relationship between mpg and hp.
   - ✅ There is a negative linear relationship between a car&#39;s fuel economy (in miles per gallon) and its horsepower.
-- **Know your audience:** Your report should be written for a general audience who has an understanding of statistics at the level of STA 199.
+- **Know your audience:** Your report should be written for a general audience who has an understanding of statistics at the level of STA 210.
 - **Avoid subject matter jargon:** Don&#39;t assume the audience knows all of the specific terminology related to your subject area. If you must use jargon, include a brief definition the first time you introduce a term. 
 - **Tell the &#34;so what&#34;:** Your report and presentation should be more than a list of interpretations and technical definitions. Focus on what the results mean, i.e. what you want the audience to know about your topic after reading your report or viewing your presentation. 
+  - ❌ For every one unit increase in horsepower, we expect the miles per gallon to decrease by 0.068 units, on average.
+  - ✅ If the priority is to have good fuel economy, then one should choose a car with lower horsepower. Based on our model, the fuel economy is expected to decrease, on average, by 0.68 miles per gallon for every 10 additional horsepower.
 - **Tell a story:** All visualizations, tables, model output, and narrative should tell a cohesive story!
 - **Use one voice:** Though multiple people are writing the report, it should read as if it&#39;s from a single author. At least one team member should read through the report before submission to ensure it reads like a cohesive document.
+
 
 ### Additional resources
 
@@ -723,8 +830,7 @@ tidy(model) %&gt;%
   - [ggplot2: Elegant Graphics for Data Analysis](https://ggplot2-book.org/)
   - [Data Visualization: A Practice Introduction](https://socviz.co/index.html)
   - [Patchwork R Package](https://patchwork.data-imaginist.com/index.html)
-
---&gt;
+  --&gt;
 </description>
   </item>
   
