@@ -1,0 +1,71 @@
+---
+title: "AE 14: Diamonds" 
+subtitle: "Transforming the response variable"
+date: "2021-10-06`"
+output: 
+  html_document: 
+    fig_height: 3
+    fig_width: 6
+    theme: readable
+    code_folding: hide
+---
+
+```{r include = F}
+knitr::opts_chunk$set(warning = F, 
+                      message = F)
+```
+
+
+## Announcements
+
+- Ed Discussion for today's lecture:
+
+- [Lab 04](https://sta210-fa21.netlify.app/labs/lab-04-penguins.html) due Thu, Oct 7 at 11:59p, 
+
+- HW 03 due Wed, Oct 13 at 11:59pm
+  - Released after class
+
+- [Week 08](https://sta210-fa21.netlify.app/prepare/week-08.html) prepare 
+
+
+
+
+### Upcoming events
+
+**UConn Sports Analytics Conference - October 9**
+- Cost is $5 for students. 
+- Go to [statds.org/events/ucsas2021](https://statds.org/events/ucsas2021/index.html) for more information 
+
+**HackDuke Code for Good - October 23 - 24**
+
+- Free event but registration required
+- Go to [2021.hackduke.org](https://2021.hackduke.org/) for more information. 
+ 
+## Grading 
+
+- See Gradescope for grading and feedback on Exam 01. Solutions available on Sakai. 
+
+- Mid-semester grades are available on DukeHub. Grades were calculated using the formula below and [letter grade thresholds](https://sta210-fa21.netlify.app/syllabus/#grading) in the syllabus. 
+
+```
+#Note: all averages rescaled to be out of 100 points
+
+Total_Points <- 
+  Mean(HW01, HW02) * 0.3 + 
+  Mean(Lab01, Lab02, Lab03) * 0.15 + 
+  Exam01 * 0.10 + 
+  Sum(PrepQuiz01, PreqQuiz02, PrepQuiz03)/15 * 0.05 + 
+  Mean(AE05 - AE11) * 0.025
+
+Grade <- Total_Points / (0.30 + 0.15 + 0.10 + 0.05 +0.025)
+```
+
+##  AE 14: Transforming the repsonse variable
+
+- Go to the ae-14-[GITHUB USERNAME] repo in the GitHub course organization: https://github.com/sta210-fa21
+
+- Access the RStudio Docker containers at https://vm-manage.oit.duke.edu/containers
+
+- See the [Lab 01 instructions](https://sta210-fa21.netlify.app/labs/lab-01-ikea.html) for details on cloning the repo and starting a new project in RStudio.
+
+## Visual editor in RStudio! 
