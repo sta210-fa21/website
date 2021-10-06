@@ -48,7 +48,7 @@ The purpose of submitting project ideas is to give you time to find data for the
 
 The data sets should meet the following criteria: 
 
-- At least 500observations
+- At least 500 observations
 - At least 10 columns 
 - At least 6 of the columns must be useful and unique predictor variables.
     - Identifier variables such as "name", "social security number", etc. are not useful predictor variables.
@@ -73,7 +73,7 @@ Submit the PDF of your topic ideas to Gradescope.
 
 ## Project proposal 
 
-The purpose of the project proposal is to help you think about your analysis strategy early. s
+The purpose of the project proposal is to help you think about your analysis strategy early. 
 
 Include the following in the proposal: 
 
@@ -128,9 +128,10 @@ Each component will be graded as follows:
 
 - **Does not meet expectations (no credit)**: Major elements missing. Work is not neatly formatted and would not be presentable in a professional setting. 
 
-<!--
+
 ## Draft report 
 
+<!--
 The purpose of the draft and peer review is to give you an opportunity to get early feedback on your analysis. Therefore, the draft and peer review will focus primarily on the exploratory data analysis and modeling.  As you work on the draft, the focus should be on the analysis rather than crafting the final report.
 
 Write the draft in the **written-report.Rmd** file in your project repo.  Below is a brief description of the sections to focus on in the draft: 
@@ -153,14 +154,20 @@ This is also where you will output the final model and include a brief discussio
 
 For the draft, if you do not have a final model, briefly describe your next steps and other models you're considering. 
 
+-->
 
 ## Peer review
 
+<!--
 Critically reviewing others' work is a crucial part of the scientific process, and STA 210 is no exception. Each lab team will be assigned another team's project to review. Each team should push their draft to their GitHub repo by **Sunday, April 18**. The lab on April 19 will be dedicated to the peer review, and all reviews will be due by **Monday, April 19**. 
 
 During the peer review process, you will be provided read-only access to your  partner team's GitHub repo. Provide your review in the form of GitHub issues to your partner team's GitHub repo. The peer review will be graded on the extent to which it comprehensively and constructively addresses the components of the partner team's report: the  research context and motivation, exploratory data analysis, and any inference, modeling, or conclusions. 
 
+--> 
+
 ## Written report
+
+<!--
 
 Your written report must be completed in the `written-report.Rmd` file and must be reproducible.  All team members should contribute to the GitHub repository, with regular meaningful commits. 
 
@@ -234,8 +241,11 @@ This is an assessment of the overall presentation and formatting of the written 
 
 **(4 pts)** The written report is neatly organized with clear section headers and appropriately sized figures with informative labels. Numerical results are displayed with a reasonable number of digits, and all visualizations are neatly formatted. All code, warnings, and messages are suppressed. Overall, the document would be presentable in a business or research setting.
 
+--> 
 
 ## Video presentation + slides
+
+<!--
 
 ### Slides 
 
@@ -285,10 +295,11 @@ discussion forum.
 - You’re done! 
 
 You can see the Teaching team example in Sakai. 
-
+-->
 
 ## Presentation comments 
 
+<!--
 Each student will be assigned 1 presentations to watch. [Click here](https://prodduke-my.sharepoint.com/:x:/g/personal/mt324_duke_edu/EfDz1sQBQhRAtfHA9geukg0BRJL3Un1D3dkSRSpaFSw6Yg?e=RnacXD) to see your viewing assignments. 
 
 Watch the group's video, then click "Reply" to post a question for the group. You may not post a question that's already been asked on the discussion thread. Additionally, the question should be (i) substantive (i.e. it shouldn't be "Why did you use a bar plot instead of a pie chart"?), (ii) demonstrate your understanding of the content from the course, and (iii) relevant to that group's specific presentation, i.e demonstrating that you've watched the presentation. 
@@ -297,7 +308,11 @@ You may start posting questions and comments on Fri, Apr 30 12a EDT. **All quest
 
 **<i>This portion of the project will be assessed individually.</i>**
 
+--> 
+
 ## Reproducibilty +  organization
+
+<!--
 
 All written work (with exception of presentation slides) should be reproducible, and the GitHub repo should be neatly organized. 
 
@@ -311,8 +326,11 @@ The GitHub repo should include the following:
 - `/presentation`: Presentation slides 
 
 Style and format does count for this assignment, so please take the time to make sure everything looks good and your data and code are properly formatted.
+-->
 
 ## Peer teamwork evaluation
+
+<!--
 
 You will be asked to fill out a survey where you rate the contribution and teamwork of each team member by assigning a contribution percentage for each team member. Filling out the survey is a prerequisite for getting credit on the team member evaluation. If you are suggesting that an individual did less than  half the expected contribution given your team size (e.g., for a team of four students, if a student contributed less than 12.5% of the total effort), please
 provide some explanation. If any individual gets an average peer score 
@@ -370,7 +388,6 @@ of results is unclear.
 
 **There is no late work accepted on this project.** Be sure to turn in your work early to avoid any technological mishaps.
 
-<!--
 ## Tips + Resources
 
 ### Data sources
@@ -378,7 +395,6 @@ of results is unclear.
 #### Some resources that may be helpful as you find data:
 
 - [R Data Sources for Regression Analysis](https://rfun.library.duke.edu/blog/data-sources-for-regression-analysis/)
-- [kaggle](https://www.kaggle.com/datasets)
 - [FiveThirtyEight data](https://data.fivethirtyeight.com/)
 - [TidyTuesday](https://github.com/rfordatascience/tidytuesday)
 
@@ -417,11 +433,11 @@ happen, issues will arise, and that’s fine! Commit and push often, and ask que
 - All team members are expected to contribute equally to the completion of this assignment and group assessments will be given at its completion - anyone judged to not have sufficient contributed to the final product will have their grade penalized. While different teams members may have different backgrounds and abilities, it is the responsibility of every team member to understand how and why all code and approaches in  the assignment works.
 
 
+<!--
 ### Formatting + communication 
 
+
 #### Suppress Code, Warnings, & Messages
-
-
 
 - Include the following code in a code chunk at the top of your .Rmd file to suppress all code, warnings, and other messages. Use the code chunk header `{r set-up, include = FALSE}` to suppress this set up code. 
 
