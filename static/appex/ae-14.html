@@ -198,24 +198,149 @@ library(ggfortify)</code></pre>
 <div id="original-model" class="section level3">
 <h3>Original model</h3>
 <pre class="r"><code>orig_model &lt;- lm(price ~ carat + color + carat * color, data = diamonds)
-tidy(orig_model, conf.int = TRUE)</code></pre>
-<pre><code>## # A tibble: 14 × 7
-##    term         estimate std.error statistic   p.value conf.low conf.high
-##    &lt;chr&gt;           &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;     &lt;dbl&gt;
-##  1 (Intercept)    -479.       20.9   -23.0   4.59e-115  -520.       -438.
-##  2 carat          3867.       57.3    67.5   0          3755.       3980.
-##  3 colorE          171.       26.2     6.51  7.51e- 11   119.        222.
-##  4 colorF          191.       27.7     6.89  5.60e- 12   137.        245.
-##  5 colorG           84.4      27.8     3.03  2.42e-  3    29.9       139.
-##  6 colorH           86.0      32.3     2.67  7.69e-  3    22.8       149.
-##  7 colorI           73.2      41.2     1.78  7.57e-  2    -7.57      154.
-##  8 colorJ           39.1      63.2     0.618 5.36e-  1   -84.9       163.
-##  9 carat:colorE   -500.       72.1    -6.93  4.20e- 12  -641.       -358.
-## 10 carat:colorF   -580.       76.1    -7.63  2.43e- 14  -730.       -431.
-## 11 carat:colorG   -356.       76.7    -4.64  3.50e-  6  -506.       -206.
-## 12 carat:colorH   -609.       90.8    -6.71  2.05e- 11  -787.       -431.
-## 13 carat:colorI   -839.      115.     -7.31  2.79e- 13 -1064.       -614.
-## 14 carat:colorJ  -1017.      169.     -6.03  1.68e-  9 -1347.       -686.</code></pre>
+tidy(orig_model, conf.int = TRUE) %&gt;%
+  kable(digits = 3)</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th align="left">term</th>
+<th align="right">estimate</th>
+<th align="right">std.error</th>
+<th align="right">statistic</th>
+<th align="right">p.value</th>
+<th align="right">conf.low</th>
+<th align="right">conf.high</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">(Intercept)</td>
+<td align="right">-479.324</td>
+<td align="right">20.878</td>
+<td align="right">-22.958</td>
+<td align="right">0.000</td>
+<td align="right">-520.248</td>
+<td align="right">-438.400</td>
+</tr>
+<tr class="even">
+<td align="left">carat</td>
+<td align="right">3867.444</td>
+<td align="right">57.305</td>
+<td align="right">67.488</td>
+<td align="right">0.000</td>
+<td align="right">3755.120</td>
+<td align="right">3979.768</td>
+</tr>
+<tr class="odd">
+<td align="left">colorE</td>
+<td align="right">170.565</td>
+<td align="right">26.185</td>
+<td align="right">6.514</td>
+<td align="right">0.000</td>
+<td align="right">119.240</td>
+<td align="right">221.889</td>
+</tr>
+<tr class="even">
+<td align="left">colorF</td>
+<td align="right">190.792</td>
+<td align="right">27.676</td>
+<td align="right">6.894</td>
+<td align="right">0.000</td>
+<td align="right">136.545</td>
+<td align="right">245.039</td>
+</tr>
+<tr class="odd">
+<td align="left">colorG</td>
+<td align="right">84.368</td>
+<td align="right">27.812</td>
+<td align="right">3.034</td>
+<td align="right">0.002</td>
+<td align="right">29.854</td>
+<td align="right">138.883</td>
+</tr>
+<tr class="even">
+<td align="left">colorH</td>
+<td align="right">86.044</td>
+<td align="right">32.281</td>
+<td align="right">2.666</td>
+<td align="right">0.008</td>
+<td align="right">22.771</td>
+<td align="right">149.317</td>
+</tr>
+<tr class="odd">
+<td align="left">colorI</td>
+<td align="right">73.166</td>
+<td align="right">41.189</td>
+<td align="right">1.776</td>
+<td align="right">0.076</td>
+<td align="right">-7.568</td>
+<td align="right">153.901</td>
+</tr>
+<tr class="even">
+<td align="left">colorJ</td>
+<td align="right">39.101</td>
+<td align="right">63.239</td>
+<td align="right">0.618</td>
+<td align="right">0.536</td>
+<td align="right">-84.853</td>
+<td align="right">163.055</td>
+</tr>
+<tr class="odd">
+<td align="left">carat:colorE</td>
+<td align="right">-499.718</td>
+<td align="right">72.059</td>
+<td align="right">-6.935</td>
+<td align="right">0.000</td>
+<td align="right">-640.959</td>
+<td align="right">-358.476</td>
+</tr>
+<tr class="even">
+<td align="left">carat:colorF</td>
+<td align="right">-580.495</td>
+<td align="right">76.064</td>
+<td align="right">-7.632</td>
+<td align="right">0.000</td>
+<td align="right">-729.586</td>
+<td align="right">-431.404</td>
+</tr>
+<tr class="odd">
+<td align="left">carat:colorG</td>
+<td align="right">-355.826</td>
+<td align="right">76.675</td>
+<td align="right">-4.641</td>
+<td align="right">0.000</td>
+<td align="right">-506.116</td>
+<td align="right">-205.536</td>
+</tr>
+<tr class="even">
+<td align="left">carat:colorH</td>
+<td align="right">-608.635</td>
+<td align="right">90.753</td>
+<td align="right">-6.707</td>
+<td align="right">0.000</td>
+<td align="right">-786.519</td>
+<td align="right">-430.752</td>
+</tr>
+<tr class="odd">
+<td align="left">carat:colorI</td>
+<td align="right">-839.122</td>
+<td align="right">114.798</td>
+<td align="right">-7.310</td>
+<td align="right">0.000</td>
+<td align="right">-1064.136</td>
+<td align="right">-614.109</td>
+</tr>
+<tr class="even">
+<td align="left">carat:colorJ</td>
+<td align="right">-1016.669</td>
+<td align="right">168.628</td>
+<td align="right">-6.029</td>
+<td align="right">0.000</td>
+<td align="right">-1347.194</td>
+<td align="right">-686.144</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div id="model-using-mean-centered-carat" class="section level3">
 <h3>Model using mean-centered <code>carat</code></h3>
@@ -224,24 +349,149 @@ tidy(orig_model, conf.int = TRUE)</code></pre>
   mutate(caratCent = carat - mean(carat))</code></pre>
 <pre class="r"><code>mean_cent_model &lt;- lm(price ~ caratCent + color + caratCent * color, 
                       data = diamonds)
-tidy(mean_cent_model, conf.int = TRUE)</code></pre>
-<pre><code>## # A tibble: 14 × 7
-##    term             estimate std.error statistic   p.value conf.low conf.high
-##    &lt;chr&gt;               &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;     &lt;dbl&gt;
-##  1 (Intercept)        893.        3.75    238.   0            886.     900.  
-##  2 caratCent         3867.       57.3      67.5  0           3755.    3980.  
-##  3 colorE              -6.75      4.85     -1.39 1.64e-  1    -16.3      2.76
-##  4 colorF             -15.2       5.09     -2.98 2.85e-  3    -25.2     -5.21
-##  5 colorG             -41.9       4.88     -8.59 9.76e- 18    -51.5    -32.3 
-##  6 colorH            -130.        5.59    -23.2  1.17e-117   -141.    -119.  
-##  7 colorI            -225.        6.70    -33.5  2.25e-239   -238.    -211.  
-##  8 colorJ            -322.       10.4     -30.8  1.78e-203   -342.    -301.  
-##  9 caratCent:colorE  -500.       72.1      -6.93 4.20e- 12   -641.    -358.  
-## 10 caratCent:colorF  -580.       76.1      -7.63 2.43e- 14   -730.    -431.  
-## 11 caratCent:colorG  -356.       76.7      -4.64 3.50e-  6   -506.    -206.  
-## 12 caratCent:colorH  -609.       90.8      -6.71 2.05e- 11   -787.    -431.  
-## 13 caratCent:colorI  -839.      115.       -7.31 2.79e- 13  -1064.    -614.  
-## 14 caratCent:colorJ -1017.      169.       -6.03 1.68e-  9  -1347.    -686.</code></pre>
+tidy(mean_cent_model, conf.int = TRUE) %&gt;%
+  kable(digits = 3)</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th align="left">term</th>
+<th align="right">estimate</th>
+<th align="right">std.error</th>
+<th align="right">statistic</th>
+<th align="right">p.value</th>
+<th align="right">conf.low</th>
+<th align="right">conf.high</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">(Intercept)</td>
+<td align="right">892.944</td>
+<td align="right">3.746</td>
+<td align="right">238.394</td>
+<td align="right">0.000</td>
+<td align="right">885.602</td>
+<td align="right">900.286</td>
+</tr>
+<tr class="even">
+<td align="left">caratCent</td>
+<td align="right">3867.444</td>
+<td align="right">57.305</td>
+<td align="right">67.488</td>
+<td align="right">0.000</td>
+<td align="right">3755.120</td>
+<td align="right">3979.768</td>
+</tr>
+<tr class="odd">
+<td align="left">colorE</td>
+<td align="right">-6.748</td>
+<td align="right">4.849</td>
+<td align="right">-1.392</td>
+<td align="right">0.164</td>
+<td align="right">-16.252</td>
+<td align="right">2.756</td>
+</tr>
+<tr class="even">
+<td align="left">colorF</td>
+<td align="right">-15.183</td>
+<td align="right">5.089</td>
+<td align="right">-2.983</td>
+<td align="right">0.003</td>
+<td align="right">-25.157</td>
+<td align="right">-5.208</td>
+</tr>
+<tr class="odd">
+<td align="left">colorG</td>
+<td align="right">-41.888</td>
+<td align="right">4.879</td>
+<td align="right">-8.585</td>
+<td align="right">0.000</td>
+<td align="right">-51.451</td>
+<td align="right">-32.324</td>
+</tr>
+<tr class="even">
+<td align="left">colorH</td>
+<td align="right">-129.916</td>
+<td align="right">5.594</td>
+<td align="right">-23.223</td>
+<td align="right">0.000</td>
+<td align="right">-140.881</td>
+<td align="right">-118.950</td>
+</tr>
+<tr class="odd">
+<td align="left">colorI</td>
+<td align="right">-224.576</td>
+<td align="right">6.699</td>
+<td align="right">-33.522</td>
+<td align="right">0.000</td>
+<td align="right">-237.707</td>
+<td align="right">-211.445</td>
+</tr>
+<tr class="even">
+<td align="left">colorJ</td>
+<td align="right">-321.639</td>
+<td align="right">10.438</td>
+<td align="right">-30.814</td>
+<td align="right">0.000</td>
+<td align="right">-342.099</td>
+<td align="right">-301.179</td>
+</tr>
+<tr class="odd">
+<td align="left">caratCent:colorE</td>
+<td align="right">-499.718</td>
+<td align="right">72.059</td>
+<td align="right">-6.935</td>
+<td align="right">0.000</td>
+<td align="right">-640.959</td>
+<td align="right">-358.476</td>
+</tr>
+<tr class="even">
+<td align="left">caratCent:colorF</td>
+<td align="right">-580.495</td>
+<td align="right">76.064</td>
+<td align="right">-7.632</td>
+<td align="right">0.000</td>
+<td align="right">-729.586</td>
+<td align="right">-431.404</td>
+</tr>
+<tr class="odd">
+<td align="left">caratCent:colorG</td>
+<td align="right">-355.826</td>
+<td align="right">76.675</td>
+<td align="right">-4.641</td>
+<td align="right">0.000</td>
+<td align="right">-506.116</td>
+<td align="right">-205.536</td>
+</tr>
+<tr class="even">
+<td align="left">caratCent:colorH</td>
+<td align="right">-608.635</td>
+<td align="right">90.753</td>
+<td align="right">-6.707</td>
+<td align="right">0.000</td>
+<td align="right">-786.519</td>
+<td align="right">-430.752</td>
+</tr>
+<tr class="odd">
+<td align="left">caratCent:colorI</td>
+<td align="right">-839.122</td>
+<td align="right">114.798</td>
+<td align="right">-7.310</td>
+<td align="right">0.000</td>
+<td align="right">-1064.136</td>
+<td align="right">-614.109</td>
+</tr>
+<tr class="even">
+<td align="left">caratCent:colorJ</td>
+<td align="right">-1016.669</td>
+<td align="right">168.628</td>
+<td align="right">-6.029</td>
+<td align="right">0.000</td>
+<td align="right">-1347.194</td>
+<td align="right">-686.144</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div id="testing-coefficients-poll" class="section level3">
 <h3>Testing coefficients (Poll)</h3>
@@ -310,24 +560,149 @@ p1 + p2</code></pre>
 <p><span class="math display">\[\log(y_i)  = \beta_0 + \beta_1 x_1 + \dots + \beta_p x_p + \epsilon_i, \hspace{5mm} \epsilon_i \sim N(0,\sigma^2_\epsilon)\]</span></p>
 <p>Let’s refit the model using the log-transformed value of price.</p>
 <pre class="r"><code>log_model &lt;- lm(log_price ~ carat + color + carat*color, data = diamonds)
-tidy(log_model, conf.int = TRUE)</code></pre>
-<pre><code>## # A tibble: 14 × 7
-##    term         estimate std.error statistic  p.value conf.low conf.high
-##    &lt;chr&gt;           &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;    &lt;dbl&gt;     &lt;dbl&gt;
-##  1 (Intercept)    5.35      0.0227   236.    0          5.30     5.39   
-##  2 carat          3.90      0.0622    62.7   0          3.78     4.02   
-##  3 colorE         0.107     0.0284     3.78  1.60e- 4   0.0516   0.163  
-##  4 colorF         0.122     0.0300     4.06  4.94e- 5   0.0630   0.181  
-##  5 colorG         0.0170    0.0302     0.565 5.72e- 1  -0.0421   0.0762 
-##  6 colorH        -0.171     0.0350    -4.88  1.08e- 6  -0.240   -0.102  
-##  7 colorI        -0.391     0.0447    -8.75  2.27e-18  -0.479   -0.304  
-##  8 colorJ        -0.650     0.0686    -9.48  2.84e-21  -0.785   -0.516  
-##  9 carat:colorE  -0.311     0.0782    -3.98  6.91e- 5  -0.464   -0.158  
-## 10 carat:colorF  -0.373     0.0825    -4.52  6.23e- 6  -0.535   -0.211  
-## 11 carat:colorG  -0.158     0.0832    -1.89  5.82e- 2  -0.321    0.00546
-## 12 carat:colorH   0.0576    0.0985     0.585 5.59e- 1  -0.135    0.251  
-## 13 carat:colorI   0.330     0.125      2.65  8.14e- 3   0.0855   0.574  
-## 14 carat:colorJ   0.624     0.183      3.41  6.55e- 4   0.265    0.982</code></pre>
+tidy(log_model, conf.int = TRUE) %&gt;%
+  kable(digits = 3)</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th align="left">term</th>
+<th align="right">estimate</th>
+<th align="right">std.error</th>
+<th align="right">statistic</th>
+<th align="right">p.value</th>
+<th align="right">conf.low</th>
+<th align="right">conf.high</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">(Intercept)</td>
+<td align="right">5.349</td>
+<td align="right">0.023</td>
+<td align="right">236.110</td>
+<td align="right">0.000</td>
+<td align="right">5.304</td>
+<td align="right">5.393</td>
+</tr>
+<tr class="even">
+<td align="left">carat</td>
+<td align="right">3.901</td>
+<td align="right">0.062</td>
+<td align="right">62.742</td>
+<td align="right">0.000</td>
+<td align="right">3.779</td>
+<td align="right">4.023</td>
+</tr>
+<tr class="odd">
+<td align="left">colorE</td>
+<td align="right">0.107</td>
+<td align="right">0.028</td>
+<td align="right">3.776</td>
+<td align="right">0.000</td>
+<td align="right">0.052</td>
+<td align="right">0.163</td>
+</tr>
+<tr class="even">
+<td align="left">colorF</td>
+<td align="right">0.122</td>
+<td align="right">0.030</td>
+<td align="right">4.059</td>
+<td align="right">0.000</td>
+<td align="right">0.063</td>
+<td align="right">0.181</td>
+</tr>
+<tr class="odd">
+<td align="left">colorG</td>
+<td align="right">0.017</td>
+<td align="right">0.030</td>
+<td align="right">0.565</td>
+<td align="right">0.572</td>
+<td align="right">-0.042</td>
+<td align="right">0.076</td>
+</tr>
+<tr class="even">
+<td align="left">colorH</td>
+<td align="right">-0.171</td>
+<td align="right">0.035</td>
+<td align="right">-4.879</td>
+<td align="right">0.000</td>
+<td align="right">-0.240</td>
+<td align="right">-0.102</td>
+</tr>
+<tr class="odd">
+<td align="left">colorI</td>
+<td align="right">-0.391</td>
+<td align="right">0.045</td>
+<td align="right">-8.752</td>
+<td align="right">0.000</td>
+<td align="right">-0.479</td>
+<td align="right">-0.304</td>
+</tr>
+<tr class="even">
+<td align="left">colorJ</td>
+<td align="right">-0.650</td>
+<td align="right">0.069</td>
+<td align="right">-9.480</td>
+<td align="right">0.000</td>
+<td align="right">-0.785</td>
+<td align="right">-0.516</td>
+</tr>
+<tr class="odd">
+<td align="left">carat:colorE</td>
+<td align="right">-0.311</td>
+<td align="right">0.078</td>
+<td align="right">-3.980</td>
+<td align="right">0.000</td>
+<td align="right">-0.464</td>
+<td align="right">-0.158</td>
+</tr>
+<tr class="even">
+<td align="left">carat:colorF</td>
+<td align="right">-0.373</td>
+<td align="right">0.083</td>
+<td align="right">-4.520</td>
+<td align="right">0.000</td>
+<td align="right">-0.535</td>
+<td align="right">-0.211</td>
+</tr>
+<tr class="odd">
+<td align="left">carat:colorG</td>
+<td align="right">-0.158</td>
+<td align="right">0.083</td>
+<td align="right">-1.894</td>
+<td align="right">0.058</td>
+<td align="right">-0.321</td>
+<td align="right">0.005</td>
+</tr>
+<tr class="even">
+<td align="left">carat:colorH</td>
+<td align="right">0.058</td>
+<td align="right">0.098</td>
+<td align="right">0.585</td>
+<td align="right">0.559</td>
+<td align="right">-0.135</td>
+<td align="right">0.251</td>
+</tr>
+<tr class="odd">
+<td align="left">carat:colorI</td>
+<td align="right">0.330</td>
+<td align="right">0.125</td>
+<td align="right">2.647</td>
+<td align="right">0.008</td>
+<td align="right">0.085</td>
+<td align="right">0.574</td>
+</tr>
+<tr class="even">
+<td align="left">carat:colorJ</td>
+<td align="right">0.624</td>
+<td align="right">0.183</td>
+<td align="right">3.408</td>
+<td align="right">0.001</td>
+<td align="right">0.265</td>
+<td align="right">0.982</td>
+</tr>
+</tbody>
+</table>
 <div id="residual-plots" class="section level2">
 <h2>Residual plots</h2>
 <p>Before we interpret the coefficients, let’s take another look at the residual plots.</p>

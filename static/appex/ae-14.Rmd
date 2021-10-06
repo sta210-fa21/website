@@ -47,7 +47,8 @@ diamonds <- ggplot2::diamonds %>%
 
 ```{r}
 orig_model <- lm(price ~ carat + color + carat * color, data = diamonds)
-tidy(orig_model, conf.int = TRUE)
+tidy(orig_model, conf.int = TRUE) %>%
+  kable(digits = 3)
 ```
 
 ### Model using mean-centered `carat`
@@ -62,7 +63,8 @@ diamonds <- diamonds %>%
 ```{r}
 mean_cent_model <- lm(price ~ caratCent + color + caratCent * color, 
                       data = diamonds)
-tidy(mean_cent_model, conf.int = TRUE)
+tidy(mean_cent_model, conf.int = TRUE) %>%
+  kable(digits = 3)
 ```
 
 
@@ -144,7 +146,8 @@ Let's refit the model using the log-transformed value of price.
 
 ```{r}
 log_model <- lm(log_price ~ carat + color + carat*color, data = diamonds)
-tidy(log_model, conf.int = TRUE)
+tidy(log_model, conf.int = TRUE) %>%
+  kable(digits = 3)
 ```
 
 ## Residual plots
