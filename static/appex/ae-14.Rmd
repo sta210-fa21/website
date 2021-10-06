@@ -1,0 +1,183 @@
+---
+title: "AE 14: Price of diamonds, cont'd"
+subtitle: "Transforming the response variable"
+author: "Your Name"
+date: "`r Sys.Date()`"
+output: 
+  html_document: 
+    fig_height: 4
+    fig_width: 6
+---
+
+```{r setup, echo = F}
+knitr::opts_chunk$set(warning = FALSE, 
+                      message = FALSE, 
+                      fig.align = "center")
+```
+
+## Price of Diamonds
+
+```{r load-packages, message=FALSE}
+library(tidyverse)
+library(broom)
+library(patchwork)
+library(knitr)
+library(ggfortify)
+```
+
+Today's data set contains the price and characteristics of diamonds. The data are part of the **ggplot2** package. This analysis will focus on the following variables: 
+
+-   `carat`: Weight of the diamond (in carats)
+-   `color`: Coded as D (best) through J (worst)
+-   `price`: price for the diamond (in dollars)
+
+We will focus on diamonds that weight 0.5 carats or less. The goal of this analysis is to use the carat and color to explain variability in the price of diamonds. 
+
+```{r}
+diamonds <- ggplot2::diamonds %>%
+ filter(carat <= 0.5) %>%
+  mutate(color = as.character(color), 
+         color = factor(color, 
+                        levels = c("D", "E", "F", "G", "H", "I", "J")))
+```
+
+## Review: Mean-centered variables + categorical predictors
+
+### Original model
+
+```{r}
+orig_model <- lm(price ~ carat + color + carat * color, data = diamonds)
+tidy(orig_model, conf.int = TRUE)
+```
+
+### Model using mean-centered `carat`
+
+Let's use the mean-centered value of `carat` and refit the model. 
+
+```{r}
+diamonds <- diamonds %>%
+  mutate(caratCent = carat - mean(carat))
+```
+
+```{r}
+mean_cent_model <- lm(price ~ caratCent + color + caratCent * color, 
+                      data = diamonds)
+tidy(mean_cent_model, conf.int = TRUE)
+```
+
+
+### Testing coefficients (Poll)
+
+Let's use the mean-centered version of the model to answer the following questions:
+
+1.  Suppose we wish to test if the mean price for diamonds with color E differs significantly from diamonds with color D. We should use the inferential statistics for which term to conduct this test?
+
+(a) Intercept
+(b) colorE
+(c) caratCent
+(d) colorCent:colorE
+
+
+2.  Suppose we wish to test if the effect of carat for diamonds with color E  differs significantly from diamonds with color E. We should use the inferential statistics for which term to conduct this test?
+
+(a) Intercept
+(b) colorE
+(c) caratCent
+(d) colorCent:colorE
+
+3.  What are the degrees of freedom associated with the regression standard error, $\hat{\sigma}$, and thus the degrees of freedom associated with the two tests mentioned above? 
+
+(a) 18910
+(b) 18918
+(c) 18928
+(d) 18932
+
+## Plot of residuals vs. fitted
+
+Let's take a look at plots of the residuals.
+
+```{r}
+autoplot(mean_cent_model, which = c(1,2))
+```
+
+Based on what you learned about conditions for SLR, which condition(s) appear to be violated? *Select all that apply.*
+
+(a) Linearity
+(b) Constant variance
+(c) Normality
+(d) Independence
+
+
+## Log-transformations on the response
+
+Typically, a "fan-shaped" residual plot indicates the need for a transformation of the response variable $y$
+- $\log(y)$ is the most straightforward to interpret
+- When building a model:
+    - Choose a transformation and build the model on the transformed data
+    - Reassess the residual plots
+    - If the residuals plots did not sufficiently improve, try a new transformation!
+    
+```{r}
+diamonds <- diamonds %>%
+  mutate(log_price = log(price))
+```
+
+```{r}
+p1 <- ggplot(data = diamonds, aes(x = price)) +
+  geom_histogram() + 
+  labs(title = "Price")
+
+p2 <- ggplot(data = diamonds, aes(x = log_price)) +
+  geom_histogram() + 
+  labs(title = "Log-transformed price")
+
+p1 + p2
+```
+
+# Model on log-transformed response 
+
+If we apply a log transformation to the response variable, we want to estimate the parameters for the model
+
+$$\log(y_i)  = \beta_0 + \beta_1 x_1 + \dots + \beta_p x_p + \epsilon_i, \hspace{5mm} \epsilon_i \sim N(0,\sigma^2_\epsilon)$$
+
+Let's refit the model using the log-transformed value of price.
+
+```{r}
+log_model <- lm(log_price ~ carat + color + carat*color, data = diamonds)
+tidy(log_model, conf.int = TRUE)
+```
+
+## Residual plots
+
+Before we interpret the coefficients, let's take another look at the residual plots. 
+
+```{r}
+autoplot(log_model, which = c(1,2))
+```
+## Interpretations in terms of log(price)
+
+The output from R shows the coefficients for the linear model with the response variable $\log(price)$.
+
+1. Interpret the intercept in terms of log(price)
+
+2. Interpret the effect of carat in terms of log(price) for diamonds with color D.
+
+## Interpretations in terms of price
+
+In practice, we want to interpret the coefficients in terms of the original units, not the log-transformed values. Given the regression equation 
+
+$$\hat{\log(y_i)}  = \hat{\beta}_0 + \hat{\beta}_1 x_1 + \dots + \hat{\beta}_p x_p$$
+
+Then, 
+
+$$\begin{aligned}\widehat{Median(y)} &= \exp\{\hat{\beta}_0 + \hat{\beta}_1 x_1 + \dots + \hat{\beta}_p\} \\ 
+&= \exp\{\hat{\beta}_0\}\exp\{\hat{\beta}_1x_1\}\times \dots \times\exp\{\hat{\beta}_px_p\}\end{aligned}$$
+
+**Intercept:** When $x_1 = x_2 = \dots = x_p = 0$ the median of $u$ is expected to be $\exp{\hat{\beta}_0}$
+
+**Slope:** For every one unit increase in $x_j$, the median of $y$ is expected to multiply by a factor of $\exp\{\hat{\beta}_j\}$, holding all else constant. 
+
+
+1. Interpret the intercept in terms of the price.
+
+2. Interpret the effect of carat in terms of price for diamonds with color D.
