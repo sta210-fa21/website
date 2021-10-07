@@ -50,13 +50,12 @@ derby <- derby %>%
 
 The Kentucky Derby is a 1.25 mile horse race held annually at the Churchill Downs race track in Louisville, Kentucky. The data used to fit the regression model in this analysis includes information about 122 derbies held 1896 to 2017. The analysis focuses on the following variables: 
 
-- `year`: year of race recorded as number of years since 1896
-    - e.g.: 2017 is recorded as `2017 - 1896 = 121`
+- `year`: year of race recorded as number of years since 1896 (e.g., 2017 is recorded as `2017 - 1896 = 121`)
 - `condition`: condition of the track - fast, good, and slow.
     - "good" includes the official designations "good" and "dusty"
     - "slow" includes the official designations "slow", "heavy", "muddy", and "sloppy"
 - `starters`: number of horses who raced
-- `startersCent`: mean-centered value of `starters` calculated as `starters - 14`
+- `startersCent`: mean-centered value of `starters` calculated as (`starters - 14`)
 - `speed`: average speed of the winner (in feet per second)
 
 Below is a regression model using the main effects `year`, `condition`, `starters`, and  the interaction between year and condition to understand variation in `speed`. 
@@ -73,14 +72,15 @@ kable(tidy(model, conf.int = T), digits = 3)
 1. Write the equation of the statistical model that corresponds to the regression equation above. 
 
 2. Interpret the following in the context of the data:
-  - Coefficient of `conditiongood`.
-  - Coefficient of `year`.
+   
+    - Coefficient of `conditiongood`.
+    - Coefficient of `year`.
 
 3. Use the confidence intervals in the regression output to answer each analysis question. For each question, state the confidence interval you used and state your conclusion in the context of the data.
 
-  - On average, is the winning speed the same for fast and slow track conditions? 
-  - Is the coefficient of year the same for fast and good track conditions? 
-  - What is the estimated winning speed for races in 1896 that included 14 horses?
+   - On average, is the winning speed the same for fast and slow track conditions? 
+   - Is the coefficient of year the same for fast and good track conditions? 
+   - What is the estimated winning speed for races in 1896 that included 14 horses?
 
 4. When interpreting the coefficient for `startersCent`, why do include "holding year and condition constant"? Is it wrong to leave such a qualifier off the interpretation? Briefly explain. 
 

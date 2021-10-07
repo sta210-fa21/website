@@ -173,38 +173,31 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2>Part 1: Kentucky Derby</h2>
 <p>The Kentucky Derby is a 1.25 mile horse race held annually at the Churchill Downs race track in Louisville, Kentucky. The data used to fit the regression model in this analysis includes information about 122 derbies held 1896 to 2017. The analysis focuses on the following variables:</p>
 <ul>
-<li><code>year</code>: year of race recorded as number of years since 1896
-<ul>
-<li>e.g.: 2017 is recorded as <code>2017 - 1896 = 121</code></li>
-</ul></li>
+<li><code>year</code>: year of race recorded as number of years since 1896 (e.g., 2017 is recorded as <code>2017 - 1896 = 121</code>)</li>
 <li><code>condition</code>: condition of the track - fast, good, and slow.
 <ul>
 <li>“good” includes the official designations “good” and “dusty”</li>
 <li>“slow” includes the official designations “slow”, “heavy”, “muddy”, and “sloppy”</li>
 </ul></li>
 <li><code>starters</code>: number of horses who raced</li>
-<li><code>startersCent</code>: mean-centered value of <code>starters</code> calculated as <code>starters - 14</code></li>
+<li><code>startersCent</code>: mean-centered value of <code>starters</code> calculated as (<code>starters - 14</code>)</li>
 <li><code>speed</code>: average speed of the winner (in feet per second)</li>
 </ul>
 <p>Below is a regression model using the main effects <code>year</code>, <code>condition</code>, <code>starters</code>, and the interaction between year and condition to understand variation in <code>speed</code>.</p>
 <ol style="list-style-type: decimal">
 <li><p>Write the equation of the statistical model that corresponds to the regression equation above.</p></li>
-<li><p>Interpret the following in the context of the data:</p></li>
-</ol>
+<li><p>Interpret the following in the context of the data:</p>
 <ul>
 <li>Coefficient of <code>conditiongood</code>.</li>
 <li>Coefficient of <code>year</code>.</li>
-</ul>
-<ol start="3" style="list-style-type: decimal">
-<li>Use the confidence intervals in the regression output to answer each analysis question. For each question, state the confidence interval you used and state your conclusion in the context of the data.</li>
-</ol>
+</ul></li>
+<li><p>Use the confidence intervals in the regression output to answer each analysis question. For each question, state the confidence interval you used and state your conclusion in the context of the data.</p>
 <ul>
 <li>On average, is the winning speed the same for fast and slow track conditions?</li>
 <li>Is the coefficient of year the same for fast and good track conditions?</li>
 <li>What is the estimated winning speed for races in 1896 that included 14 horses?</li>
-</ul>
-<ol start="4" style="list-style-type: decimal">
-<li>When interpreting the coefficient for <code>startersCent</code>, why do include “holding year and condition constant”? Is it wrong to leave such a qualifier off the interpretation? Briefly explain.</li>
+</ul></li>
+<li><p>When interpreting the coefficient for <code>startersCent</code>, why do include “holding year and condition constant”? Is it wrong to leave such a qualifier off the interpretation? Briefly explain.</p></li>
 </ol>
 </div>
 <div id="part-2-birth-weights" class="section level2">
