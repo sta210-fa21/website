@@ -58,7 +58,7 @@ The Kentucky Derby is a 1.25 mile horse race held annually at the Churchill Down
 - `startersCent`: mean-centered value of `starters` calculated as (`starters - 14`)
 - `speed`: average speed of the winner (in feet per second)
 
-Below is a regression model using the main effects `year`, `condition`, `starters`, and  the interaction between year and condition to understand variation in `speed`. Use this table to answer exercises 1 - 4. 
+Below is a regression model using the main effects `year`, `condition`, `starters`, and  the interaction between year and condition to understand variation in `speed`. Use the output for exercises 1 - 4. 
 
 
 ```{r echo=F, eval = T}
@@ -66,7 +66,7 @@ derby <- derby %>%
   mutate(startersCent = starters - mean(starters))
 
 model <- lm(speed ~ year + startersCent + condition + year*condition, data=derby)
-kable(tidy(model, conf.int = T), digits = 3)
+kable(tidy(model, conf.int = T), digits = 3, format = "html")
 ```
 
 1. Write the equation of the statistical model that corresponds to the regression equation above. 
@@ -86,7 +86,7 @@ kable(tidy(model, conf.int = T), digits = 3)
 
 ## Part 2: Birth weights
 
-**Use the following scenario and data for questions 5 - 8.**
+**Use the following scenario and data for exercises 5 - 8.**
 
 The Child Health and Development Studies investigate a range of topics. One study considered all pregnancies between 1960 and 1967 among women in the Kaiser Foundation Health Plan in the San Francisco East Bay area. The data set is in the file `babies.csv` and includes the following variables:
 
