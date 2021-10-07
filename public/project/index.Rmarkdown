@@ -57,19 +57,28 @@ The data sets should meet the following criteria:
   - The response variable can be quantitative or categorical.
 - A mix of quantitative and categorical variables that can be used as predictors. 
 - Observations should reasonably meet the independence condition. Therefore, avoid data with repeated measures, data collected over time, etc.
-- **You cannot use data that has previously been used in any course materials, or any derivation of data that has been used in course materials.**
+- You may not use data that has previously been used in any course materials, or any derivation of data that has been used in course materials.
 
 **Please ask a member of the teaching team if you're unsure whether your data set meets the criteria.**
 
-### Submission
+For each data set, include the following:
 
-You will submit the topic ideas in the `01-topic-ideas` folder in the  `project` repo on GitHub. The submission should include the following for each data set: 
+#### Introduction and data 
 
-- Short description of the data (1 - 2 sentences). 
-- Description of the observations and characteristics being measured in the data
-- `glimpse` of data set
+- State the source of the data set. 
+- Describe when and how it was originally collected (by the original data curator, not necessarily how you found the data)
+- Describe the observations and the general characteristics being measured in the data
 
-Submit the PDF of your topic ideas to Gradescope.
+#### Research question
+
+- Describe a research question you're interested in answering using this data. 
+
+
+#### Glimpse of data 
+
+- Use the `glimpse` function to provide an overview of each data set
+
+Submit the PDF of the topic ideas to Gradescope. Mark all pages associated with each data set. 
 
 ## Project proposal 
 
