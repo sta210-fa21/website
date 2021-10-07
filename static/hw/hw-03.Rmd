@@ -38,7 +38,7 @@ library(knitr)
 # you can add additional packages as needed
 ```
 
-```{r echo = F}
+```{r echo = F, eval = T}
 derby <- read_csv("data/derbyplus.csv")
 derby <- derby %>%
   mutate(year=year-1896)
@@ -61,7 +61,7 @@ The Kentucky Derby is a 1.25 mile horse race held annually at the Churchill Down
 Below is a regression model using the main effects `year`, `condition`, `starters`, and  the interaction between year and condition to understand variation in `speed`. 
 
 
-```{r echo=F}
+```{r echo=F, eval = T}
 derby <- derby %>%
   mutate(startersCent = starters - mean(starters))
 
