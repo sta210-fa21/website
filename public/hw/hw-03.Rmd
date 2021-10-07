@@ -58,7 +58,7 @@ The Kentucky Derby is a 1.25 mile horse race held annually at the Churchill Down
 - `startersCent`: mean-centered value of `starters` calculated as (`starters - 14`)
 - `speed`: average speed of the winner (in feet per second)
 
-Below is a regression model using the main effects `year`, `condition`, `starters`, and  the interaction between year and condition to understand variation in `speed`. 
+Below is a regression model using the main effects `year`, `condition`, `starters`, and  the interaction between year and condition to understand variation in `speed`. Use this table to answer exercises 1 - 4. 
 
 
 ```{r echo=F, eval = T}
