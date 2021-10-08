@@ -103,7 +103,7 @@ The goal of this analysis is to understand the impact of the mother smoking on t
 
 1. Briefly explain why we want to include all other relevant variables as predictors in the model given the objective is to understand the effect of smoking. 
 
-1. Fit the model and display the output using 3 digits. Then, interpret the coefficient of `gestation` in the context of the data.
+1. Fit the model and display the output using 3 digits. The model only needs to include main effects. Then, interpret the coefficient of `gestation` in the context of the data.
 
 1. Use the model to describe the association between the mother smoking and the baby's birth weight. 
 
