@@ -111,6 +111,7 @@ lessons:
     title: "NO CLASS: Fall break"
   - date: "Wed, Oct 06"
     title: "MLR: Transforming the response variable"
+    slides: "14-transformations.html"
     ae: "ae-14-diamonds.html"
   - title:  "HW 03 released"
     hw: "hw-03.html"  
@@ -120,7 +121,9 @@ lessons:
 
   - week: "Week 08"
     date: "Mon, Oct 11"
-    title: "Comparing models"
+    title: "Variable transformations cont'd"
+    slides: "14-transformations.html"
+  - title: "Comparing models"
   - title: "Project topic ideas due"
     project: "#topic-ideas"
   - date: "Wed, Oct 13"
