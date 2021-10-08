@@ -124,6 +124,7 @@ lessons:
     title: "Variable transformations cont'd"
     slides: "14-transformations.html"
   - title: "Comparing models"
+    slides: "15-model-comparison.html"
   - title: "Project topic ideas due"
     project: "#topic-ideas"
   - date: "Wed, Oct 13"

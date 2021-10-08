@@ -1,0 +1,49 @@
+---
+title: "Prepare: Week 08"
+output: 
+  html_document:
+    css: "prepare.css"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## For October 11
+
+### Required
+
+`r emo::ji("laptop")` Review slides on [variable transformations](https://sta210-fa21.netlify.app/slides/14-transformations.html#1)
+
+`r emo::ji("movie_camera")` Watch [Comparing models]()
+
+- [Click here]) for slides
+
+### Optional 
+
+`r emo::ji("book")` *Handbook of Regression Analysis*
+
+## For October 13
+ 
+`r emo::ji("memo")` Take Prep Quiz 04
+
+Watch [Model selection](https://warpwire.duke.edu/w/v1kFAA/)
+
+- [Click here]() for slides
+
+`r emo::ji("book")` *Handbook of Regression Analysis*
+
+<br> 
+
+<hr>
+
+**Notes on using Handbook of Regression Analysis**
+
+- This book is available under the "Solutions/Textbook" tab in Sakai 
+- This book is made available to us through Duke Library and should **not** be shared. 
+
+
+
+
+
