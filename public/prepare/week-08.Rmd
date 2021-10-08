@@ -16,9 +16,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 `r emo::ji("laptop")` Review slides on [variable transformations](https://sta210-fa21.netlify.app/slides/14-transformations.html#1)
 
-`r emo::ji("movie_camera")` Watch [Comparing models]()
+`r emo::ji("movie_camera")` Watch [Comparing models](https://warpwire.duke.edu/w/420FAA/)
 
-- [Click here]) for slides
+- [Click here](https://sta210-fa21.netlify.app/slides/15-model-comparison.html#1) for slides
 
 ### Optional 
 
