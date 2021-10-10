@@ -288,9 +288,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><p>We know at least one species has a different mean flipper length, and we can do further analysis to see how the means compare. To do so, we will look at confidence intervals for the difference in the mean flipper length between species.</p></li>
 </ol>
 <p>The general form of the confidence interval for the difference in means between groups <span class="math inline">\(i\)</span> and <span class="math inline">\(j\)</span> is</p>
-<pre><code>$$(\bar{y}_i-\bar{y}_j) \pm t^* \sqrt{MSE\Big(\frac{1}{n_i}+\frac{1}{n_j}\Big)}$$</code></pre>
+<p><span class="math display">\[(\bar{y}_i-\bar{y}_j) \pm t^* \sqrt{MSE\Big(\frac{1}{n_i}+\frac{1}{n_j}\Big)}\]</span></p>
 <p>Where <span class="math inline">\(MSE\)</span> is the variance of distribution of flipper length within each group, and <span class="math inline">\(t^*\)</span> is calculated from a t distribution with the degrees of freedom associated with the within group variability.</p>
-<pre><code>We want to make pairwise comparisons of flipper length for the species in this data. How many such comparisons do we need to make? </code></pre>
+<p>We want to make pairwise comparisons of flipper length for the species in this data. How many such comparisons do we need to make?</p>
 <ol start="8" style="list-style-type: decimal">
 <li><p>When we calculate multiple confidence intervals or conduct multiple hypothesis tests, there are different levels of Type I error that can be made in the conclusions. Making a Type I error in this context means to incorrectly conclude two groups have unequal means (i.e. incorrectly reject <span class="math inline">\(H_0\)</span>). The two types of Type I error that can be made are</p>
 <ul>
@@ -304,9 +304,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ol start="9" style="list-style-type: decimal">
 <li>Calculate the pairwise confidence intervals using the confidence level from the previous question. We can quickly calculate the pairwise confidence interval using the <code>pariwiseCI</code> function in the <strong>pairwiseCI</strong> R package. Fill in the code below to calculate the intervals using the confidence level chosen in the previous exercise.</li>
 </ol>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">pairwiseCI</span>(_____ <span class="sc">~</span> _____, <span class="at">data =</span> _____, </span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>           <span class="at">conf.level =</span> ______, <span class="at">var.equal =</span> <span class="cn">TRUE</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable</span>(<span class="at">digits =</span> <span class="dv">3</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">pairwiseCI</span>(_____ <span class="sc">~</span> _____, <span class="at">data =</span> _____, </span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>           <span class="at">conf.level =</span> ______, <span class="at">var.equal =</span> <span class="cn">TRUE</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable</span>(<span class="at">digits =</span> <span class="dv">3</span>)</span></code></pre></div>
 <ol start="10" style="list-style-type: decimal">
 <li>How does the flipper length compare across the species of penguins? Briefly explain your response in 2 - 3 sentences, using results from the previous exercise to support your conclusions.</li>
 </ol>

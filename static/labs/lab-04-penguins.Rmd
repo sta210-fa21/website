@@ -121,11 +121,11 @@ As you complete the lab
 
   The general form of the confidence interval for the difference in means between groups $i$ and $j$ is
 
-    $$(\bar{y}_i-\bar{y}_j) \pm t^* \sqrt{MSE\Big(\frac{1}{n_i}+\frac{1}{n_j}\Big)}$$
+$$(\bar{y}_i-\bar{y}_j) \pm t^* \sqrt{MSE\Big(\frac{1}{n_i}+\frac{1}{n_j}\Big)}$$
     
   Where $MSE$ is the variance of distribution of flipper length within each group, and $t^*$ is calculated from a t distribution with the degrees of freedom associated with the within group variability. 
 
-    We want to make pairwise comparisons of flipper length for the species in this data. How many such comparisons do we need to make? 
+  We want to make pairwise comparisons of flipper length for the species in this data. How many such comparisons do we need to make? 
 
 8. When we calculate multiple confidence intervals or conduct multiple hypothesis tests, there are different levels of Type I error that can be made in the conclusions. Making a Type I error in this context means to incorrectly conclude two groups have unequal means (i.e. incorrectly reject $H_0$). The two types of Type I error that can be made are
 
