@@ -124,6 +124,7 @@ lessons:
     title: "Variable transformations cont'd"
     slides: "14-transformations.html"
     prepare: "week-08.html"
+    ae: "ae-15-compare.html"
   - title: "Comparing models"
     slides: "15-model-comparison.html"
   - title: "Project topic ideas due"
@@ -196,3 +197,5 @@ lessons:
     title: "Special topics"
   - date: "Thu, Dec 02"
     title: "Project"
+  - date: "Fri, Dec 03"
+    hw: "stats-experience.html"
