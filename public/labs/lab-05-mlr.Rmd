@@ -1,0 +1,117 @@
+---
+title: "Lab 05: Multiple linear regression with Candy"
+subtitle: "due Mon, Oct 18 at 11:59pm"
+output: 
+  tufte::tufte_html:
+    css: "./sta210-labs.css"
+    tufte_variant: "envisioned"
+    highlight: pygments
+    fig_height: 10
+    toc: true
+    toc_depth: 1
+link-citations: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(eval = FALSE)
+```
+
+
+# Learning goals
+
+By the end of the lab you will be able to...
+
+- [ ADD GOALS]
+
+# Introduction 
+
+The goal of today's lab is fit and interpret multiple linear regression models. Before we get to that, however, we will look at something that may happen as you collaborate with your lab team (or any other team!) in GitHub.
+
+
+# The data 
+
+The data from this lab comes from the the article FiveThirtyEight [*The Ultimate Halloween Candy Power Ranking*](https://fivethirtyeight.com/features/the-ultimate-halloween-candy-power-ranking) by Walt Hickey. To collect data, Hickey and collaborators at FiveThirtyEight set up an experiment people could vote on a series of randomly generated candy matchups (e.g. Reeses vs. Skittles). Click [here](http://walthickey.com/2017/10/18/whats-the-best-halloween-candy/) to check out some of the matchups.
+
+The goal of this analysis is to fit a linear regression model to help determine what makes the best candy. The data set contains the characteristics and win percentage from 85 candies in the experiment. The data set includes the following variables: 
+
+Variable | Description
+-------|------------
+`chocolate` | Does it contain chocolate?
+`fruity` | Is it fruit flavored?
+`caramel` | Is there caramel in the candy?
+`peanutalmondy` | Does it contain peanuts, peanut butter or almonds?
+`nougat` | Does it contain nougat?
+`crispedricewafer` | Does it contain crisped rice, wafers, or a cookie component?
+`hard` | Is it a hard candy?
+`bar` | Is it a candy bar?
+`pluribus` | Is it one of many candies in a bag or box?
+`sugarpercent` | The percentile of sugar it falls under within the data set.
+`pricepercent` | The unit price percentile compared to the rest of the set.
+`winpercent` | The overall win percentage according to 269,000 matchups.
+
+Use the code below to load the data directly from the [FiveThirtyEight's github repo](https://github.com/fivethirtyeight/data/tree/master/candy-power-ranking).
+
+```{r}
+candy <- read_csv("https://raw.githubusercontent.com/fivethirtyeight/data/master/candy-power-ranking/candy-data.csv")
+```
+
+# Exercises 
+
+1. Let's see how sugar and whether the candy is chocolate impact a candy's win percentage. Create plots to visualize the relationship between each of these predictors and the response variable. Arrange the plots side-by-side using functions from [`patchwork`](https://patchwork.data-imaginist.com/) or a similar package.
+
+*Hint: Recode `chocolate` to make it factor, so R correctly treats it as a categorical variable.*
+
+1. Describe the relationship between the response and each predictor variable based on the plots from the previous exercise. 
+
+1. Fit a main effects model (i.e. no interactions) using `sugarpercent` and `chocolate` to predict `winpercent`. Display the code and output for your model.
+
+1. Based on the model from the previous exercise
+  - Interpret the coefficient of `sugarpercent` in the context of the data. 
+  - What is the intercept in the model for candy that is **<u>not**</u> chocolate? 
+  - What is the intercept in the model for candy that **is** chocolate?
+
+1. Let's see if there's a potential interaction between the sugar percentile and chocolate. Plot the relationship between `winpercent` and `sugarpercent` based on the `chocolate`, including lines to help more clearly see the relationships between the variables. 
+
+  Based on this plot, do you think there's an interaction effect between `sugarpercent` and `chocolate`? Briefly explain why or why not.
+
+1. Fit the model including `sugarpercent`, `chocolate`, and their interaction. Display the code and model output. 
+
+1. Using the model above, 
+  - What is the intercept? The intercept is the expected win percentage for what type of candy? 
+  - What does the coefficient for the interaction between `suagrpercent` and `chocolate` tell us?
+  - Describe the effect of `sugarpercent` on `winpercent` for candy that is chocolate.
+
+1. Does the data provide sufficient evidence that the effect of `sugarpercent` on `winpercent` differs based on whether the candy is chocolate? Briefly explain why or why not. 
+
+1. Select a variable of your choice. (*If you choose a categorical variable, be sure to convert it to a factor variable first.*) What variable did you choose?
+  - Plot the relationship between `winpercent` and your new variable.
+  - Fit a regression model using `suarpercent`, `chocolate`, your variable, and an interaction between the variable and either `sugarpercet` or `chocolate`.
+  - Use the main effect and interaction to describe how your variable affects the win percentage.
+
+
+1. Based on the model from the previous exercise, how might you describe the "best" candy  - the candy that wins as much as possible. 
+
+
+# Submission
+
+- **Select <u>one</u> team member to upload the team's PDF submission to Gradescope.** 
+- Be sure to mark every team member's name on Gradescope.
+- Associate the "Workflow & formatting" graded section with the first page of your PDF, and mark the page associated with each exercise. If any answer spans multiple pages, then mark all pages.
+
+**There should only be <u>one</u> submission per team on Gradescope.**
+
+# Grading (50 pts)
+
+<br>
+
+| Component | Points |
+|:----------|:-------|
+| Ex 1 - 10    | 40   |
+| Complete ANOVA Lab Activity | 5 |
+| Workflow & formatting     | 5 |   
+
+**Grading notes**:
+
+-   The "Workflow & formatting" grade is to assess the reproducible workflow and team work. This includes having at least one meaningful commit by each team member and updating the name and date in the YAML.
+
+There should only be <u>one</u> submission per team on Gradescope.
