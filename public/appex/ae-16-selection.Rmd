@@ -1,0 +1,48 @@
+---
+title: "AE 16: Model selection" 
+subtitle: ""
+date: "2021-10-13"
+output: 
+  html_document: 
+    fig_height: 3
+    fig_width: 6
+    theme: readable
+    code_folding: hide
+---
+
+```{r include = F}
+knitr::opts_chunk$set(warning = F, 
+                      message = F)
+```
+
+
+## Announcements
+
+- [HW 03](https://sta210-fa21.netlify.app/hw/hw-03.html) due **TODAY at 11:59pm**
+
+- Exam 02 - Thu, Oct 21 - Fri, Oct 22
+  - Covers Weeks 05 - 08
+  - Similar format as Exam 01
+
+## Statistics experience 
+
+- [Click here](https://sta210-fa21.netlify.app/hw/stats-experience.html) for instructions. 
+  - due **December 3 at 11:59pm** on Gradescope.
+  
+
+### Upcoming events
+
+**HackDuke Code for Good - October 23 - 24**
+
+- Free event but registration required
+- Go to [2021.hackduke.org](https://2021.hackduke.org/) for more information. 
+ 
+
+##  AE 16: Model selection
+
+- Go to the ae-16-[GITHUB USERNAME] repo in the GitHub course organization: https://github.com/sta210-fa21
+
+- Access the RStudio Docker containers at https://vm-manage.oit.duke.edu/containers
+
+- See the [Lab 01 instructions](https://sta210-fa21.netlify.app/labs/lab-01-ikea.html) for details on cloning the repo and starting a new project in RStudio.
+
