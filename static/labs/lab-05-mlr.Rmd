@@ -89,7 +89,7 @@ The goal of this analysis is to use linear regression to determine what makes th
 
     - Does there appear to be an interaction between sugar percentile and whether the candy has crisped rice, wafers or cookie? Briefly explain your response. 
   
-1. Add the interaction between `sugarpercent` and `crispedricewafer` to the model selected in Exercise 4. Neatly display the updated model using 3 digits. 
+1. Add the interaction between `sugarpercent` and `crispedricewafer` to the model selected in Exercise 5. Neatly display the updated model using 3 digits. 
 
     - Interpret the effect of sugar percentile on win percentage for candy that **does** have crisped rice, wafers or cookie. 
 
