@@ -1,5 +1,5 @@
 ---
-title: "Lab 05: Multiple linear regression with Candy"
+title: "Lab 05: Multiple linear regression with candy"
 subtitle: "due Mon, Oct 18 at 11:59pm"
 output: 
   tufte::tufte_html:

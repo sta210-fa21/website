@@ -1,5 +1,5 @@
 ---
-title: "Lab 05: Multiple linear regression with Candy"
+title: "Lab 05: Multiple linear regression with candy"
 subtitle: "due Mon, Oct 18 at 11:59pm"
 output: 
   tufte::tufte_html:
@@ -76,7 +76,7 @@ The goal of this analysis is to fit a linear regression model to help determine 
     - Display the output from the Nested F test. 
     - State your conclusion in the context of the data.
 
-1. Let's use model summary statistics to choose the model that is the best fit for the data. Choose the model that is best fit - the model selected in Exercise 1 or the model selected in Exercise 2. Briefly explain your choice using appropriate model summary statistic - Adjusted $R^2$ or $R^2$ - to support your response.
+1. Let's use model summary statistics to choose the model that is the best fit for the data. Choose the model that is best fit - the model selected in Exercise 1 or the model selected in Exercise 2. Briefly explain your choice using appropriate model summary statistic - $R^2$ or Adjusted $R^2$ - to support your response.
 
 1. Use the model chosen in the previous exercise: 
   
