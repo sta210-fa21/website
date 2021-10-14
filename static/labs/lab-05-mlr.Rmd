@@ -1,5 +1,5 @@
 ---
-title: "Lab 05: Multiple linear regression with candy"
+title: "Lab 05: Multiple linear regression with candy rankings"
 subtitle: "due Mon, Oct 18 at 11:59pm"
 output: 
   tufte::tufte_html:
@@ -27,7 +27,7 @@ By the end of the lab you will be able to...
 
 # The data 
 
-The data from this lab comes from the the article FiveThirtyEight [*The Ultimate Halloween Candy Power Ranking*](https://fivethirtyeight.com/features/the-ultimate-halloween-candy-power-ranking) by Walt Hickey. To collect data, Hickey and collaborators at FiveThirtyEight set up an experiment people could vote on a series of randomly generated candy matchups (e.g. Reeses vs. Skittles). Click [here](http://walthickey.com/2017/10/18/whats-the-best-halloween-candy/) to check out some of the matchups.
+The data from this lab comes from the the article FiveThirtyEight [*The Ultimate Halloween Candy Power Ranking*](https://fivethirtyeight.com/features/the-ultimate-halloween-candy-power-ranking) by Walt Hickey. To collect data, Hickey and collaborators at FiveThirtyEight set up an experiment people could vote on a series of randomly generated candy matchups (e.g. Reeses vs. Skittles). Click [here](http://walthickey.com/2017/10/18/whats-the-best-halloween-candy/) to check out some of the match ups.
 
 The data set contains the characteristics and win percentage from 85 candies in the experiment. The variables are
 
@@ -42,9 +42,9 @@ Variable | Description
 `hard` | Is it a hard candy?
 `bar` | Is it a candy bar?
 `pluribus` | Is it one of many candies in a bag or box?
-`sugarpercent` | The percentile of sugar it falls under within the data set.
-`pricepercent` | The unit price percentile compared to the rest of the set.
-`winpercent` | The overall win percentage according to 269,000 matchups.
+`sugarpercent` | The percentile of sugar it falls under within the data set. Values 0 - 1.
+`pricepercent` | The unit price percentile compared to the rest of the set. Values 0 - 1.
+`winpercent` | The overall win percentage according to 269,000 matchups. Values 0 - 100.
 
 Use the code below to load the data from the `candy_rankings` data frame in the **fivethirtyeight** R package. 
 
@@ -54,15 +54,17 @@ candy <- fivethirtyeight::candy_rankings
 
 # Exercises 
 
-The goal of this analysis is to fit a linear regression model to help determine what makes the best candy. We'll define "best" as the candy that can win the highest percentage of match ups. 
+The goal of this analysis is to use linear regression to determine what makes the best candy. We'll define "best" as the candy that can win the highest percentage of match ups. 
 
-1. Before fitting our model, let's take a look at the model used by author Walt Hickey in the [FiveThirtyEight article](https://fivethirtyeight.com/videos/the-ultimate-halloween-candy-power-ranking/). He fits a model using nine candy characteristics. The output can be found in the middle of the article.
+1. Before fitting our model, let's take a look at the model used by author Walt Hickey in the [FiveThirtyEight article](https://fivethirtyeight.com/videos/the-ultimate-halloween-candy-power-ranking/). He fits a model using nine candy characteristics. The output can be found within the text of the article.
 
     - On average, how far are the win percentages predicted from his model from the actual win percentages? Show the calculation or briefly explain how you obtain this value. 
 
-1. Use backward model selection with AIC as the selection criteria to choose a candidate model. Add `include = FALSE` in the header of the code chunk with the model selection code, so the step-by-step output does not print in the knitted PDF. 
+**Now it's your turn to build a model. For the model selection, consider all relevant variables in the data set as potential predictors, regardless of whether they're in the model in the FiveThirtyEight article.** 
+
+1.  Use backward model selection with AIC as the selection criteria to choose a candidate model. Add `include = FALSE` in the header of the code chunk with the model selection code, so the step-by-step output does not print in the knitted PDF. 
  
-    - What variable was removed in the first step of the selection process? What was the resulting AIC from removing this variable? 
+    - Which variable was removed in the first step of the selection process? 
     - Neatly display the model selected by backward selection using 3 digits. 
 
 1. Next, use forward model selection with BIC as the selection criteria to choose a candidate model. Add `include = FALSE` in the header of the code chunk with the model selection code, so the step-by-step output does not print in the knitted PDF. 
@@ -70,29 +72,29 @@ The goal of this analysis is to fit a linear regression model to help determine 
     - Which 2 variables are included in the model after the second step?
     - Neatly display the final model selected by forward selection using 3 digits. 
   
-1. There are some variables selected by the model selection procedure in Exercise 1 that were not included in the selection procedure in Exercise 2. Use a Nested F test to determine if there is evidence that at least one of the additional variables selected in Exercise 1 are useful predictors of win percentage. Use $\alpha = 0.05$.
+1. There are some variables selected by the model selection procedure in Exercise 2 that were not included in the selection procedure in Exercise 3. Use a Nested F test to determine if there is evidence that at least one of the additional variables selected in Exercise 2 are useful predictors of win percentage. Use $\alpha = 0.05$.
   
     - State the null and alternative hypotheses in statistical notation. 
     - Display the output from the Nested F test. 
     - State your conclusion in the context of the data.
 
-1. Let's use model summary statistics to choose the model that is the best fit for the data. Choose the model that is best fit - the model selected in Exercise 1 or the model selected in Exercise 2. Briefly explain your choice using appropriate model summary statistic - $R^2$ or Adjusted $R^2$ - to support your response.
+1. Let's use model summary statistics to choose the model that is the best fit for the data - either the model selected in Exercise 2 or the model selected in Exercise 3. Briefly explain your choice using appropriate model summary statistic, $R^2$ or Adjusted $R^2$, to support your response.
 
 1. Use the model chosen in the previous exercise: 
   
     - Describe the type of candy whose expected win percentage is represented by the intercept. 
     - Interpret the coefficient of chocolate in the context of the data. 
 
-1. Plot the relationship between the sugar percentile and win percentage with the points colored based on whether the candy has crisped rice/ wafers/cookie component. Include lines to see the relationship between sugar percentile and win percentage based on whether the candy has crisped rice/wafers/cookie component. 
+1. Plot the relationship between the sugar percentile and win percentage with the points colored based on whether the candy has crisped rice, wafers or cookie. Include lines on the plot to more clearly see the relationship between sugar percentile and win percentage based on whether the candy has crisped rice, wafers or cookie.
 
-    - Does there appear to be an interaction between sugar percentile and whether the candy has crisped rice/ wafers/cookie component? Briefly explain your response. 
+    - Does there appear to be an interaction between sugar percentile and whether the candy has crisped rice, wafers or cookie? Briefly explain your response. 
   
 1. Add the interaction between `sugarpercent` and `crispedricewafer` to the model selected in Exercise 4. Neatly display the updated model using 3 digits. 
 
-    - Interpret the effect of sugar percentile on win percentage for candy that **does** have crisped rice/ wafers/cookie component. 
+    - Interpret the effect of sugar percentile on win percentage for candy that **does** have crisped rice, wafers or cookie. 
 
   
-1. Is there evidence that the effect of sugar percentile differs based on whether candy has crisped rice/ wafers/cookie component? Briefly explain, including the results used to make the determination. 
+1. Is there evidence that the effect of sugar percentile differs based on whether candy has crisped rice, wafers or cookie? Briefly explain, including the results used to make the determination. 
 
 1. Use the model to describe what generally makes a good candy, i.e. one with a high win percentage.
 

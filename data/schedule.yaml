@@ -135,7 +135,8 @@ lessons:
     slides: "16-model-selection.html"
     ae: "ae-16-selection.html"
   - date: "Thu, Oct 14"
-    title: "Lab 05: Multiple linear regression"
+    title: "Lab 05: MLR with candy rankings"
+    lab: "lab-05-mlr.html"
 
   - week: "Week 09"
     date: "Mon, Oct 18"
