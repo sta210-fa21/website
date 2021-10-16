@@ -140,9 +140,12 @@ lessons:
 
   - week: "Week 09"
     date: "Mon, Oct 18"
-    title: "MLR: Model diagnostics"
+    title: "MLR: Model conditions & diagnostics"
+    slides: "17-mlr-conditions.html"
+    prepare: "week-09.html"
   - date: "Wed, Oct 20"
     title: "Exam 02 review"
+    prepare: "week-09.html"
   - date: "Thu, Oct 21"
     title: "NO LAB: Work on Exam 02"
   - title: "Exam 02 released"
