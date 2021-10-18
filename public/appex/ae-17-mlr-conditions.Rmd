@@ -27,6 +27,9 @@ knitr::opts_chunk$set(warning = F,
 - Exam 02 review on Wednesday.
   - Review will be answering submitted questions. 
   - Submit questions [here](https://forms.gle/mEfhSpAGQpV2yJA4A) by Wed, Oct 20 at 9a
+  
+  
+- Ed Discussion for this class: https://edstem.org/us/courses/8350/discussion/741031
 
 
 ## Statistics experience 
