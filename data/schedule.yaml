@@ -142,6 +142,7 @@ lessons:
     date: "Mon, Oct 18"
     title: "MLR: Model conditions & diagnostics"
     slides: "17-mlr-conditions.html"
+    ae: "ae-17-mlr-conditions.html"
     prepare: "week-09.html"
   - date: "Wed, Oct 20"
     title: "Exam 02 review"
