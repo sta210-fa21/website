@@ -147,6 +147,7 @@ lessons:
   - date: "Wed, Oct 20"
     title: "Exam 02 review"
     prepare: "week-09.html"
+    ae: "ae-18-review.html"
   - date: "Thu, Oct 21"
     title: "NO LAB: Work on Exam 02"
   - title: "Exam 02 released"
