@@ -1,0 +1,62 @@
+---
+title: "Prepare: Week 11"
+output: 
+  html_document:
+    css: "prepare.css"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## For November 01
+
+### Required
+
+`r emo::ji("memo")` Take Prep Quiz 05
+
+`r emo::ji("movie_camera")` Watch [Logistic regression: Inference](https://warpwire.duke.edu/w/SYQFAA/)
+
+- [Click here](https://warpwire.duke.edu/w/SYQFAA/) for slides
+
+### Optional 
+
+`r emo::ji("book")` Read *Handbook of Regression Analysis* 
+
+- Section 8.3 Methodology
+
+
+## For November 03
+
+`r emo::ji("movie_camera")` Watch [Logistic regression: Prediction](https://warpwire.duke.edu/w/TYQFAA/)
+
+- [Click here](https://sta210-fa21.netlify.app/slides/22-logistic-prediction.html) for slides
+
+`r emo::ji("movie_camera")` Watch [Logistic regression: Conditions](https://warpwire.duke.edu/w/UYQFAA/)
+
+- [Click here](https://sta210-fa21.netlify.app/slides/22-logistic-conditions.html) for slides
+
+
+### Optional 
+
+`r emo::ji("book")` Read *Handbook of Regression Analysis* 
+
+- Section 8.4 Smoking and Mortality
+- Section 8.5 Modeling Bankruptcy
+
+
+
+
+
+<hr>
+
+**Notes on using Handbook of Regression Analysis**
+
+- This book is available under the "Solutions/Textbook" tab in Sakai 
+- This book is made available to us through Duke Library and should **not** be shared. 
+
+
+
+
+
