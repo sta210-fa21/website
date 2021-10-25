@@ -157,6 +157,7 @@ lessons:
     date: "Mon, Oct 25"
     title: "Probabilities & odds"
     slides: "19-logistic-odds.html"
+    ae: "ae-19-odds.html"
     prepare: "week-10.html"
   - date: "Wed, Oct 27"
     title: "Odds ratios"
