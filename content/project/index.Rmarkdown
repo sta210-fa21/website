@@ -117,7 +117,7 @@ Submit a data dictionary for all the variables in your data set in the `README` 
  
 ### Submission
 
-Submit your work by pushing it to your GitHub repo by the deadline. The teaching team will submit feedback about your proposal using the **Issues** on GitHub.
+Push all of your final changes to the GitHub repo, and submit the PDF of your propsal to **Gradescope**. 
 
 ### Proposal grading
 
