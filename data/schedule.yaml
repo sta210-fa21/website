@@ -162,6 +162,7 @@ lessons:
   - date: "Wed, Oct 27"
     title: "Odds ratios"
     slides: "20-logistic-odds-ratios.html"
+    ae: "ae-20-odds-ratios.html"
     prepare: "week-10.html"
   - date: "Thu, Oct 28"
     title: "Lab"
