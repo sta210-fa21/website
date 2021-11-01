@@ -172,6 +172,7 @@ lessons:
     title: "Logistic regression: Inference"
     slides: "21-logistic-inference.html"
     prepare: "week-11.html"
+    ae: "ae-21-logistic-inference.html"
   - date: "Wed, Nov 03"
     title: "Logistic regression: Prediction"
     slides: "22-logistic-prediction.html"
