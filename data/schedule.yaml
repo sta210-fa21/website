@@ -177,6 +177,7 @@ lessons:
     title: "Logistic regression: Prediction"
     slides: "22-logistic-prediction.html"
     prepare: "week-11.html"
+    ae: "ae-21-logistic-prediction.html"
   - title: "Logistic regression: Conditions"
     slides: "22-logistic-conditions.html"
   - title: "HW 04 released"
