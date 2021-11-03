@@ -8,9 +8,9 @@ title: "STA 210 Final Project"
 
 [Proposal](#project-proposal) due **Friday, October 29**
 
-[Draft report](#draft-report) due **Wednesday, November 10** 
+[Draft report](#draft-report) due **Tuesday, November 16** 
 
-[Peer review](#peer-review) due **Monday, November 15**
+[Peer review](#peer-review) due **Wednesday, November 17**
 
 [Final report](#written-report) due **Friday, December 3** 
 
