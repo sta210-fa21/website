@@ -1,10 +1,167 @@
 ---
-title: "HW 04"
-subtitle: ""
+title: "HW 04: Logistic regression"
+subtitle: "due Wednesday, November 10 at 11:59pm"
 output: 
-  html_document:
-    toc: true
+  tufte::tufte_html:
     css: "sta210-hw.css"
+    tufte_variant: "envisioned"
+    highlight: pygments
+    fig_height: 4
+    fig_width: 6
+    toc: true
+    toc_depth: 1
+link-citations: yes
 ---
 
-Instructions will be posted when the HW is assigned. 
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      warning=FALSE,
+                      message=FALSE,
+                      eval  = FALSE)
+```
+
+# Getting started 
+
+-   Go to the [**sta210-fa21**](https://www.github.com/sta210-fa21) organization on GitHub. Click on the repo with the prefix **hw-04**. It contains the starter documents you need to complete the lab.
+
+- Clone the repo and start a new project in RStudio. See the [Lab 01 instructions](https://sta210-fa21.netlify.app/labs/lab-01-ikea.html) for details on cloning a repo, starting a new R project and configuring git. 
+
+
+## Packages 
+
+No R packages are needed for this assignment. 
+
+# Exercises
+
+## Use the following student for Exercises 1 - 2
+
+The 2016 article ["Tea consumption reduces the incidence of neurocognitive disorders: Findings from the Singapore longitudinal aging study"](https://link.springer.com/article/10.1007/s12603-016-0687-0) by Feng et al. examined the association between tea consumption habits and  neurocognitive disorders (NCD), such as Alzheimer's disease, in adults age 55 and older. Portions of the abstract are below:
+
+> *<u>Participants</u>*
+
+> *957 community-living Chinese elderly who were cognitively intact at baseline.*
+
+> *<u>Measurements</u>*
+
+> *We collected tea consumption information at baseline from 2003 to 2005 and ascertained incident cases of neurocognitive disorders (NCD) from 2006 to 2010. Odds ratio (OR) of association were calculated in logistic regression models that adjusted for potential confounders.*
+
+> *<u>Results</u>*
+
+> *A total of 72 incident NCD cases were identified from the cohort. Tea intake was associated with lower risk of incident NCD, independent of other risk factors. Reduced NCD risk was observed for both green tea (OR=0.43) and black/oolong tea (OR=0.53) and appeared to be influenced by the changing of tea consumption habit at follow-up. Using consistent nontea consumers as the reference, only consistent tea consumers had reduced risk of NCD (OR=0.39). Stratified analyses indicated that tea consumption was associated with reduced risk of NCD among females (OR=0.32) and APOE e4 carriers (OR=0.14) but not males and non APOE e4 carriers.*
+
+
+1. The odds ratios reported in the abstract are the adjusted odds ratios, i.e., the odds ratios after adjusting for potential confounders such as age, pre-existing health conditions, diet, and behavioral factors. Interpret the following odds ratios from the abstract. Write the interpretations in the context of the data. 
+
+    - OR = 0.39
+    - OR = 0.32
+
+2. An [online article](https://www.womansworld.com/posts/health/tea-cuts-dementia-risk) based on the results of Feng et al. states the following: 
+  
+     > *"And for people who carry a gene that puts them at higher risk for Alzheimer’s disease (the APOE e4 gene), enjoying the beverage is even more important: Daily tea consumption could reduce their risk of cognitive decline by up to 86 percent."*
+    
+    Is this statement supported by the results of the study? Briefly explain why or why not.
+
+## Use the following for Exercises 3 - 4
+
+In the 2014 article ["The Biggest Predictor of How Long You’ll Be Unemployed Is When You Lose Your Job"](https://fivethirtyeight.com/features/the-biggest-predictor-of-how-long-youll-be-unemployed-is-when-you-lose-your-job/), author Ben Casselman analyzes the relationship between numerous factors such as age, race, and education and the odds an adult is unemployed for over a year.
+
+3. According to the article, among those unemployed for over a year, 16% are under 25 years old, 62% are 25 to 54 years old, and 22% are 55 and up. Based on this data...
+
+    -  What are the odds a randomly selected person who has been unemployed over a year is 55 and up? 
+    -  What are the odds a randomly selected person who has been unemployed over a year is **not** 25 to 54 years old?
+
+
+4. Casselman fits a logistic regression model using the unemployment rate at the time the person lost their job to predict whether an adult is unemployed for over a year. He states the following from the model: 
+
+     > *"A one-point increase in the unemployment rate raises an individual’s odds of becoming long-term unemployed by 35 percent."*
+     
+     What is the coefficient for unemployment rate in this  model? Show how you calculated the answer.
+
+## Use the following for Exercises 5- 7
+
+In their [2020 paper](https://web-s-ebscohost-com.proxy.lib.duke.edu/ehost/detail/detail?vid=0&sid=6e853e11-0b6e-4ea5-aa4b-25cc2d0c4dc1%40redis&bdata=JnNpdGU9ZWhvc3QtbGl2ZSZzY29wZT1zaXRl#AN=2020-78672-002&db=pdh) Marlowe et al. analyze the risk predictions produced by a black-box algorithm used to determine whether a  defendant is considered "high risk" of being rearrested if they are released while awaiting trial. Such algorithms are used by judges in some states to help determine whether or not defendants are released while awaiting trial.
+
+The authors analyze the algorithm's risk predictions and whether a person was rearrested for over 500 defendants released pretrial in a southern state. For each person, the algorithm produced one of the following predictions: "High Risk" or "Low Risk". The observed outcome was "Rearrested" or "Not Rearrested". Below are some results from the analysis: 
+
+- Sensitivity: 86%
+- Specificity: 24%
+- Positive predictive power: 57%
+- Negative predictive power: 60%
+
+5. Explain what each of the following mean in the context of the analysis: 
+
+    - Sensitivity 
+    - Positive predictive power
+    - Negative predictive power
+
+6. What is the false positive rate? What does this value mean in the context of the analysis? 
+
+7. The AUC for this algorithm is 0.55. Based on this value, do you think this algorithm a good fit for the population examined in the paper? Why or why not?
+
+## Use the following for Exercise 8
+Suppose you fit a logistic regression to aid in spam classification for individual emails. The output from the logistic regression model is below:
+
+```{r echo = F, eval = T}
+    library(openintro)
+    library(tidyverse)
+    library(knitr)
+    library(broom)
+library(kableExtra)
+
+    glm(spam ~ to_multiple + winner + format + re_subj,
+      data = email, family = "binomial"
+    ) %>%
+      tidy() %>%
+      mutate(p.value = ifelse(p.value < .0001, "<0.0001", round(p.value, 4))) %>%
+      kbl(
+        linesep = "", booktabs = TRUE,
+        digits = 2, align = "lrrrr"
+      ) 
+    ```
+
+8. Use the model to answer the following: 
+
+    - Write down the model using the coefficients from the model fit.
+
+    - Suppose we have an observation where $\texttt{to_multiple} = 0$, $\texttt{winner}= 1$, $\texttt{format} = 0$, and $\texttt{re_subj} = 0$. What is the predicted probability that this message is spam?
+
+    - Suppose you are a data scientist working on a spam filter. For a given message, how high must the probability a message is spam be before you think it would be reasonable to put it in a *spambox/ junk folder* (which the user is unlikely to check)? What are 2 tradeoffs you might consider?
+    
+  *Exercise 8 was adapted from an exercise in [Introduction to Modern Statistics](https://openintro-ims.netlify.app/)*
+
+# Submission
+
+**Before you wrap up the assignment, make sure all documents are updated on your GitHub repo. We will be checking these to make sure you have been practicing how to commit and push changes.**
+
+**Remember -- you must turn in a PDF file to the Gradescope page before the submission deadline for full credit.** 
+
+To submit your assignment: 
+
+- Go to http://www.gradescope.com and click *Log in* in the top right corner. 
+
+- Click *School Credentials* `r emo::ji("arrow_right")` *Duke NetID* and log in using your NetID credentials.
+
+- Click on your *STA 210* course. 
+
+- Click on the assignment, and you'll be prompted to submit it.
+
+- Mark the pages associated with each exercise. All of the pages of your assignment should be associated with at least one question (i.e., should be "checked"). 
+
+- Select the first page of your .PDF submission to be associated with the *"Workflow & formatting"* section.
+
+
+# Grading (50 pts)
+
+|  |  |
+|-------------------------------------------------------------|:--:|
+|Ex 1 - 2| 11|
+|Ex 3 - 4 | 10 | 
+| Ex 5 - 7 | 16 | 
+| Ex 8 | 8 |
+| Workflow & formatting | 5|
+
+
+-  The "Workflow & formatting" grade is to assess the reproducible workflow. This includes having at least 3 informative commit messages, updating the name and date in the YAML, and submitting a PDF document that is neatly formatted with easily readable code and narrative.
+
+
