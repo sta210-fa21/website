@@ -184,6 +184,7 @@ lessons:
     hw: "hw-04.html"
   - date: "Thu, Nov 04"
     title: "Lab 06: Logistic regression"
+    labs: "lab-06-logistic.html"
 
   - week: "Week 12"
     date: "Mon, Nov 08"
