@@ -384,37 +384,19 @@ final project.&lt;/em&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;draft-report&#34;&gt;Draft report&lt;/h2&gt;
-&lt;!--
-The purpose of the draft and peer review is to give you an opportunity to get early feedback on your analysis. Therefore, the draft and peer review will focus primarily on the exploratory data analysis and modeling.  As you work on the draft, the focus should be on the analysis rather than crafting the final report.
-
-Write the draft in the **written-report.Rmd** file in your project repo.  Below is a brief description of the sections to focus on in the draft: 
-
-### Introduction and data
-
-This section includes an introduction to the project motivation, data, and research question. Describe the data and definitions of key variables. It should also include some exploratory data analysis. All of the EDA won’t fit in the paper, so focus on the EDA for the response variable and a few other interesting variables and relationships.
-
-
-### Methodology 
-
-This section includes a brief description of your modeling process. Explain the reasoning for the type of model you&#39;re fitting, predictor variables considered for the model including any interactions. Additionally, show how you arrived at the final model by describing the model selection process, any variable transformations (if needed), and any other relevant considerations that were part of the model fitting process. 
-
-For the draft, you may show the results from a few models you&#39;ve considered.
-
-
-### Results 
-
-This is also where you will output the final model and include a brief discussion of the model assumptions, diagnostics, and any relevant model fit statistics. 
-
-For the draft, if you do not have a final model, briefly describe your next steps and other models you&#39;re considering. 
-
---&gt;
+&lt;p&gt;The purpose of the draft and peer review is to give you an opportunity to get early feedback on your analysis. Therefore, the draft and peer review will focus primarily on the exploratory data analysis, modeling, and initial interpretations.&lt;/p&gt;
+&lt;p&gt;Write the draft in the &lt;strong&gt;written-report.Rmd&lt;/strong&gt; file in your project repo. You do not need to submit the draft on Gradescope.&lt;/p&gt;
+&lt;p&gt;Below is a brief description of the sections to focus on in the draft:&lt;/p&gt;
+&lt;h3 id=&#34;introduction-and-data-1&#34;&gt;Introduction and data&lt;/h3&gt;
+&lt;p&gt;This section includes an introduction to the project motivation, data, and research question. Describe the data and definitions of key variables. It should also include some exploratory data analysis. All of the EDA won’t fit in the paper, so focus on the EDA for the response variable and a few other interesting variables and relationships.&lt;/p&gt;
+&lt;h3 id=&#34;methodology&#34;&gt;Methodology&lt;/h3&gt;
+&lt;p&gt;This section includes a brief description of your modeling process. Explain the reasoning for the type of model you&amp;rsquo;re fitting, predictor variables considered for the model including any interactions. Additionally, show how you arrived at the final model by describing the model selection process, any variable transformations (if needed), and any other relevant considerations that were part of the model fitting process.&lt;/p&gt;
+&lt;h3 id=&#34;results&#34;&gt;Results&lt;/h3&gt;
+&lt;p&gt;In this section, you will output the final model and include a brief discussion of the model assumptions, diagnostics, and any relevant model fit statistics.&lt;/p&gt;
+&lt;p&gt;This section also includes initial interpretations and conclusions drawn from the model.&lt;/p&gt;
 &lt;h2 id=&#34;peer-review&#34;&gt;Peer review&lt;/h2&gt;
-&lt;!--
-Critically reviewing others&#39; work is a crucial part of the scientific process, and STA 210 is no exception. Each lab team will be assigned another team&#39;s project to review. Each team should push their draft to their GitHub repo by **Sunday, April 18**. The lab on April 19 will be dedicated to the peer review, and all reviews will be due by **Monday, April 19**. 
-
-During the peer review process, you will be provided read-only access to your  partner team&#39;s GitHub repo. Provide your review in the form of GitHub issues to your partner team&#39;s GitHub repo. The peer review will be graded on the extent to which it comprehensively and constructively addresses the components of the partner team&#39;s report: the  research context and motivation, exploratory data analysis, and any inference, modeling, or conclusions. 
-
---&gt; 
+&lt;p&gt;Critically reviewing others&#39; work is a crucial part of the scientific process, and STA 210 is no exception. Each lab team will be assigned another team&amp;rsquo;s project to review. Each team should push their draft to their GitHub repo by &lt;strong&gt;Tuesday, November 16&lt;/strong&gt;. The lecture on Wednesday, November 17 be dedicated to the peer review, and all reviews will be due by November 17 at 11:59pm.&lt;/p&gt;
+&lt;p&gt;During the peer review process, you will be provided read-only access to your  partner team&amp;rsquo;s GitHub repo. Provide your review in the form of GitHub issues to your partner team&amp;rsquo;s GitHub repo. The peer review will be graded on the extent to which it comprehensively and constructively addresses the components of the partner team&amp;rsquo;s report: the research context and motivation, exploratory data analysis, modeling, interpretations, and conclusions.&lt;/p&gt;
 &lt;h2 id=&#34;written-report&#34;&gt;Written report&lt;/h2&gt;
 &lt;!--
 

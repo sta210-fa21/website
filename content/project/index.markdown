@@ -140,10 +140,11 @@ Each component will be graded as follows:
 
 ## Draft report 
 
-<!--
-The purpose of the draft and peer review is to give you an opportunity to get early feedback on your analysis. Therefore, the draft and peer review will focus primarily on the exploratory data analysis and modeling.  As you work on the draft, the focus should be on the analysis rather than crafting the final report.
+The purpose of the draft and peer review is to give you an opportunity to get early feedback on your analysis. Therefore, the draft and peer review will focus primarily on the exploratory data analysis, modeling, and initial interpretations. 
 
-Write the draft in the **written-report.Rmd** file in your project repo.  Below is a brief description of the sections to focus on in the draft: 
+Write the draft in the **written-report.Rmd** file in your project repo. You do not need to submit the draft on Gradescope. 
+
+Below is a brief description of the sections to focus on in the draft: 
 
 ### Introduction and data
 
@@ -154,25 +155,17 @@ This section includes an introduction to the project motivation, data, and resea
 
 This section includes a brief description of your modeling process. Explain the reasoning for the type of model you're fitting, predictor variables considered for the model including any interactions. Additionally, show how you arrived at the final model by describing the model selection process, any variable transformations (if needed), and any other relevant considerations that were part of the model fitting process. 
 
-For the draft, you may show the results from a few models you've considered.
-
-
 ### Results 
 
-This is also where you will output the final model and include a brief discussion of the model assumptions, diagnostics, and any relevant model fit statistics. 
+In this section, you will output the final model and include a brief discussion of the model assumptions, diagnostics, and any relevant model fit statistics. 
 
-For the draft, if you do not have a final model, briefly describe your next steps and other models you're considering. 
-
--->
+This section also includes initial interpretations and conclusions drawn from the model. 
 
 ## Peer review
 
-<!--
-Critically reviewing others' work is a crucial part of the scientific process, and STA 210 is no exception. Each lab team will be assigned another team's project to review. Each team should push their draft to their GitHub repo by **Sunday, April 18**. The lab on April 19 will be dedicated to the peer review, and all reviews will be due by **Monday, April 19**. 
+Critically reviewing others' work is a crucial part of the scientific process, and STA 210 is no exception. Each lab team will be assigned another team's project to review. Each team should push their draft to their GitHub repo by **Tuesday, November 16**. The lecture on Wednesday, November 17 be dedicated to the peer review, and all reviews will be due by November 17 at 11:59pm.
 
-During the peer review process, you will be provided read-only access to your  partner team's GitHub repo. Provide your review in the form of GitHub issues to your partner team's GitHub repo. The peer review will be graded on the extent to which it comprehensively and constructively addresses the components of the partner team's report: the  research context and motivation, exploratory data analysis, and any inference, modeling, or conclusions. 
-
---> 
+During the peer review process, you will be provided read-only access to your  partner team's GitHub repo. Provide your review in the form of GitHub issues to your partner team's GitHub repo. The peer review will be graded on the extent to which it comprehensively and constructively addresses the components of the partner team's report: the research context and motivation, exploratory data analysis, modeling, interpretations, and conclusions. 
 
 ## Written report
 
