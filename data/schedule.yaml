@@ -191,6 +191,7 @@ lessons:
     title: "Multinomial logistic regression"
     prepare: "week-12.html"
     slides: "23-multinom-logistic.html"
+    ae: "ae-23-multinom-logistic.html"
   - date: "Wed, Nov 10"
     title: "Multinomial logistic regression"
     prepare: "week-12.html"
