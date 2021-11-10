@@ -1,0 +1,42 @@
+---
+title: "AE 24: Multinomial logistic regression cont'd" 
+subtitle: ""
+date: "`r Sys.Date()`"
+output: 
+  html_document: 
+    fig_height: 3
+    fig_width: 6
+    theme: readable
+    code_folding: hide
+---
+
+```{r include = F}
+knitr::opts_chunk$set(warning = F, 
+                      message = F)
+```
+
+
+## Announcements
+
+- Ed Discussion for this class: https://edstem.org/us/courses/8350/discussion/838537
+
+- [HW 04](https://sta210-fa21.netlify.app/hw/hw-04.html) **due today at 11:59pm*
+
+- [Project draft report](https://sta210-fa21.netlify.app/project/#draft-report)due **Tue, Nov 15 at 11:59pm** on GitHub 
+
+- [Prepare Week 13](https://sta210-fa21.netlify.app/prepare/week-13.html)
+  - Submit a question for Exam 03 review on Monday. Counts as a prep quiz. 
+  
+## Statistics experience 
+
+- [Click here](https://sta210-fa21.netlify.app/hw/stats-experience.html) for instructions. 
+  - due **December 3 at 11:59pm** on Gradescope.
+  
+##  AE 24: Multinomial logistic regression cont'd
+
+- Go to the ae-24-[GITHUB USERNAME] repo in the GitHub course organization: https://github.com/sta210-fa21
+
+- Access the RStudio Docker containers at https://vm-manage.oit.duke.edu/containers
+
+- See the [Lab 01 instructions](https://sta210-fa21.netlify.app/labs/lab-01-ikea.html) for details on cloning the repo and starting a new project in RStudio.
+

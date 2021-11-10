@@ -1,0 +1,23 @@
+---
+title: "Prepare: Week 13"
+output: 
+  html_document:
+    css: "prepare.css"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## For November 15
+
+### Required
+
+`r emo::ji("memo")` Submit Prep Quiz 06 **by 9am**. 
+
+
+## For November 17
+
+Submit project draft to GitHub by Tuesday, November 16 at 11:59pm.
+
