@@ -199,6 +199,7 @@ lessons:
     ae: "ae-24-multinom-pt2.html"
   - date: "Thu, Nov 11"
     title: "Lab 07: Multinomial logistic regression"
+    lab: "lab-07-multinom-logistic.html"
 
   - week: "Week 13"
     date: "Mon, Nov 15"

@@ -75,13 +75,13 @@ voter_data <- read_csv("https://raw.githubusercontent.com/fivethirtyeight/data/m
 2.  Let's prepare the data for analysis and modeling.
 
     -   The variable `Q30` contains the respondent's political party identification. Make a new variable that simplifies `Q30` into four categories: "Democrat", "Republican", "Independent", "Other" ("Other" also includes respondents who did not answer the question).
-    -   We want to use mulitnomial logistic regression to understand the factors related to how consistently a person votes . The variable `voter_category` identifies the respondent's past voter behavior. Relevel the variable, so "rarely/never" is the baseline level. 
+    - The variable `voter_category` identifies the respondent's past voter behavior. Relevel the variable to make rarely/never the baseline level, followed by sporadic, then always.
     
 3. In the [FiveThirtyEight article](https://projects.fivethirtyeight.com/non-voters-poll-2020-election/), the authors include visualizations of the relationship between the voter category and demographic variables such as race, age, education, etc. Select two demographic variables. For each variable, interpret the plot to describe its relationship with voter category. 
 
-3.  Fit a model using mean-centered age, race, gender, income, and education to predict voter category. Show the code used to fit the model, but do **not** display the model output. 
+4.  Fit a model using mean-centered age, race, gender, income, and education to predict voter category. Show the code used to fit the model, but do **not** display the model output. 
 
-4.  *Should party identification be added to the model?* Use a drop-in-deviance test to determine if party identification should be added to the model. Include the hypotheses in mathematical notation, the output from the test, and the conclusion in the context of the data. Then, display the model you selected. 
+4.  *Should party identification be added to the model?* Use a drop-in-deviance test to determine if party identification should be added to the model. Include the hypotheses in mathematical notation, the output from the test, and the conclusion in the context of the data. Then, neatly display the model you selected. 
 
 **Use the model you select for the remainder of the assignment**.
 

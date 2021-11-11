@@ -202,11 +202,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><p>Let’s prepare the data for analysis and modeling.</p>
 <ul>
 <li>The variable <code>Q30</code> contains the respondent’s political party identification. Make a new variable that simplifies <code>Q30</code> into four categories: “Democrat”, “Republican”, “Independent”, “Other” (“Other” also includes respondents who did not answer the question).</li>
-<li>We want to use mulitnomial logistic regression to understand the factors related to how consistently a person votes . The variable <code>voter_category</code> identifies the respondent’s past voter behavior. Relevel the variable, so “rarely/never” is the baseline level.</li>
+<li>The variable <code>voter_category</code> identifies the respondent’s past voter behavior. Relevel the variable to make rarely/never the baseline level, followed by sporadic, then always.</li>
 </ul></li>
 <li><p>In the <a href="https://projects.fivethirtyeight.com/non-voters-poll-2020-election/">FiveThirtyEight article</a>, the authors include visualizations of the relationship between the voter category and demographic variables such as race, age, education, etc. Select two demographic variables. For each variable, interpret the plot to describe its relationship with voter category.</p></li>
 <li><p>Fit a model using mean-centered age, race, gender, income, and education to predict voter category. Show the code used to fit the model, but do <strong>not</strong> display the model output.</p></li>
-<li><p><em>Should party identification be added to the model?</em> Use a drop-in-deviance test to determine if party identification should be added to the model. Include the hypotheses in mathematical notation, the output from the test, and the conclusion in the context of the data. Then, display the model you selected.</p></li>
+<li><p><em>Should party identification be added to the model?</em> Use a drop-in-deviance test to determine if party identification should be added to the model. Include the hypotheses in mathematical notation, the output from the test, and the conclusion in the context of the data. Then, neatly display the model you selected.</p></li>
 </ol>
 <p><strong>Use the model you select for the remainder of the assignment</strong>.</p>
 <ol style="list-style-type: decimal">
