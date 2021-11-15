@@ -1,10 +1,57 @@
 ---
-title: "Exam 03"
-subtitle: ""
+title: "Exam 03 Instructions"
+subtitle: "Thu, Nov 18 at 9am - Fri, Nov 19 at 11:59pm"
 output: 
-  html_document:
-    toc: true
+  tufte::tufte_html:
     css: "sta210-exam.css"
+    tufte_variant: "envisioned"
+    highlight: pygments
+    toc: true
+    toc_depth: 1
 ---
 
-Instructions will be posted when the exam is assigned. 
+# General instructions
+
+Exam 03 will be released on Thu, Nov 18 at 9am and must be completed by Fri, Nov 19 at 11:59pm. You will find the **exam-03-** repo on GitHub by Thursday at 9am. 
+
+The exam will consist of two parts: 
+
+`r emo::ji("one")` Multiple choice/ short answer questions on Sakai test and quizzes. This portion may only be submitted one time.
+  
+
+`r emo::ji("two")` Data analysis in RStudio and submitted in Gradescope (like a usual lab and homework)
+
+- You must submit a PDF document to Gradescope that corresponds to an`.Rmd` file on your GitHub repository in order to receive credit for this portion of the exam.
+
+**Both portions must be completed and submitted by Fri, Nov 19 at 11:59pm**. Late work will only be accepted in the case of of extenuating circumstances and notification from your academic dean. 
+
+# Academic Integrity
+
+By taking this exam, you pledge to uphold the Duke Community Standard:
+
+-   I will not lie, cheat, or steal in my academic endeavors;
+-   I will conduct myself honorably in all my endeavors; and
+-   I will act if the Standard is compromised.
+
+# Rules & Notes
+
+-   This is an individual assignment. Everything in your repository is for your eyes only.
+-   You may not collaborate or communicate anything about this exam to **anyone** except the instructor. For example, you may not communicate with other students, the TAs, or post/solicit help on the internet, email or via any other method of communication.
+- The exam is open-book, open-note, so you may use any materials from class as you take the exam.
+- No TA office hours will be held during the exam.
+- You may not email the TAs questions about the exam.
+- Ed Discussion will be inactive during the exam.
+- If you have questions, email Professor Tackett with  "STA 210 Exam" in the subject line or attend Professor Tackett's office hours. 
+
+# Submission
+
+`r emo::ji("white_check_mark")` The answers to the multiple choice/short answer questions should be submitted under *Test & Quizzes* in Sakai (same place you take prep quizzes)
+
+`r emo::ji("white_check_mark")` The PDF document for the data analysis portion must be uploaded to Gradescope. 
+
+- Mark the pages associated with each section. If
+any answer for a section spans multiple pages, mark all pages. 
+
+- Make sure to associate the “Workflow & formatting" section with the first page. **Failure to mark the pages in Gradescope may result in point deductions.**
+
+-  Make sure that your uploaded PDF document matches your `.Rmd` and the PDF in your GitHub repository exactly. Points will be deducted for documents that are not reproducible. 

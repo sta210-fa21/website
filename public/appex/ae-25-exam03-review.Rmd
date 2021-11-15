@@ -1,5 +1,5 @@
 ---
-title: "AE 24: Multinomial logistic regression cont'd" 
+title: "AE 25: Exam 03 review" 
 subtitle: ""
 date: "`r Sys.Date()`"
 output: 
@@ -18,23 +18,25 @@ knitr::opts_chunk$set(warning = F,
 
 ## Announcements
 
-- Ed Discussion for this class: https://edstem.org/us/courses/8350/discussion/838537
-
-- [HW 04](https://sta210-fa21.netlify.app/hw/hw-04.html) **due today at 11:59pm**
+- Ed Discussion for this class: https://edstem.org/us/courses/8350/discussion/856625
 
 - [Project draft report](https://sta210-fa21.netlify.app/project/#draft-report) due **Tue, Nov 16 at 11:59pm** on GitHub 
 
-- [Prepare Week 13](https://sta210-fa21.netlify.app/prepare/week-13.html)
-  - Submit a question for Exam 03 review on Monday. Counts as a prep quiz. 
+- No lecture on Wednesday. Use time to complete project peer review. 
+
+- [Exam 03](https://sta210-fa21.netlify.app/exam/exam-03.html): Thu, Nov 18 - Fri, Nov 19
+  - No TA office hours Thu - Fri. 
+  - Prof. Tackett's office hours Friday 9 - 10 am.
+
   
 ## Statistics experience 
 
 - [Click here](https://sta210-fa21.netlify.app/hw/stats-experience.html) for instructions. 
   - due **December 3 at 11:59pm** on Gradescope.
   
-##  AE 24: Multinomial logistic regression cont'd
+##  AE 25: Exam 03 review
 
-- Go to the ae-24-[GITHUB USERNAME] repo in the GitHub course organization: https://github.com/sta210-fa21
+- Go to the ae-25-[GITHUB USERNAME] repo in the GitHub course organization: https://github.com/sta210-fa21
 
 - Access the RStudio Docker containers at https://vm-manage.oit.duke.edu/containers
 

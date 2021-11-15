@@ -204,6 +204,7 @@ lessons:
   - week: "Week 13"
     date: "Mon, Nov 15"
     title: "Exam 03 Review"
+    ae: "ae-25-exam03-review.html"
     prepare: "week-13.html"
   - date: "Tue, Nov 16"
     title: "Project draft due in GitHub"

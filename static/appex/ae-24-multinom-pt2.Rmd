@@ -22,7 +22,7 @@ knitr::opts_chunk$set(warning = F,
 
 - [HW 04](https://sta210-fa21.netlify.app/hw/hw-04.html) **due today at 11:59pm**
 
-- [Project draft report](https://sta210-fa21.netlify.app/project/#draft-report) due **Tue, Nov 15 at 11:59pm** on GitHub 
+- [Project draft report](https://sta210-fa21.netlify.app/project/#draft-report) due **Tue, Nov 16 at 11:59pm** on GitHub 
 
 - [Prepare Week 13](https://sta210-fa21.netlify.app/prepare/week-13.html)
   - Submit a question for Exam 03 review on Monday. Counts as a prep quiz. 
