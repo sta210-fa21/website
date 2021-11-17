@@ -228,9 +228,9 @@ lessons:
   
   - week: "Week 15"
     date: "Mon, Nov 29"
-    title: "Special topics"
+    title: "Beyond multiple linear regression"
   - date: "Wed, Dec 01"
-    title: "Special topics"
+    title: "Writing reports and presentations in R Markdown"
   - date: "Thu, Dec 02"
     title: "Project"
   - date: "Fri, Dec 03"
