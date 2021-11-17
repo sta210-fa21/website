@@ -163,9 +163,11 @@ This section also includes initial interpretations and conclusions drawn from th
 
 ## Peer review
 
-Critically reviewing others' work is a crucial part of the scientific process, and STA 210 is no exception. Each lab team will be assigned another team's project to review. Each team should push their draft to their GitHub repo by **Tuesday, November 16**. The lecture on Wednesday, November 17 be dedicated to the peer review, and all reviews will be due by November 17 at 11:59pm.
+Critically reviewing others' work is a crucial part of the scientific process, and STA 210 is no exception. Each lab team will be assigned another team's project to review. Each team should push their draft to their GitHub repo by **Tuesday, November 16**. The lecture on Wednesday, November 17 be dedicated to the peer review, and all reviews will be **due by November 17 at 11:59pm**.
 
 During the peer review process, you will be provided read-only access to your  partner team's GitHub repo. Provide your review in the form of GitHub issues to your partner team's GitHub repo. The peer review will be graded on the extent to which it comprehensively and constructively addresses the components of the partner team's report: the research context and motivation, exploratory data analysis, modeling, interpretations, and conclusions. 
+
+[Click here](peer-review.html) for peer review instructions.
 
 ## Written report
 

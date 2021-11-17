@@ -212,7 +212,7 @@ lessons:
   - date: "Wed, Nov 17"
     title: "NO LECTURE: Project Peer Review"
     prepare: "week-13.html"
-    project: "#peer-review"
+    project: "/peer-review.html"
   - date: "Thu, Nov 18"
     title: "NO LAB: Work on Exam 03"
   - title: "Exam 03 released"
