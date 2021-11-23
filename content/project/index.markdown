@@ -266,7 +266,7 @@ The slide deck should have no more than 6 content slides + 1 title slide. Here i
 - Slide 5: Interesting findings from the model
 - Slide 6: Conclusions + future work
 
-## Video presentation
+### Video presentation
 
 For the video presentation, you can speak over your slide deck, similar to the lecture content videos. **The video presentation must be no longer than 8 minutes.** It is fine if the video is shorter than 8 minutes, but it cannot exceed 8 minutes. You may use can use any platform that works best for your group to record your presentation. Below are a few resources on recording videos:
 
