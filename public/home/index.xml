@@ -397,135 +397,126 @@ final project.&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id=&#34;peer-review&#34;&gt;Peer review&lt;/h2&gt;
 &lt;p&gt;Critically reviewing others&#39; work is a crucial part of the scientific process, and STA 210 is no exception. Each lab team will be assigned another team&amp;rsquo;s project to review. Each team should push their draft to their GitHub repo by &lt;strong&gt;Tuesday, November 16&lt;/strong&gt;. The lecture on Wednesday, November 17 be dedicated to the peer review, and all reviews will be &lt;strong&gt;due by November 17 at 11:59pm&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;During the peer review process, you will be provided read-only access to your  partner team&amp;rsquo;s GitHub repo. Provide your review in the form of GitHub issues to your partner team&amp;rsquo;s GitHub repo. The peer review will be graded on the extent to which it comprehensively and constructively addresses the components of the partner team&amp;rsquo;s report: the research context and motivation, exploratory data analysis, modeling, interpretations, and conclusions.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;peer-review.html&#34;&gt;Click here&lt;/a&gt; for instructions to the peer review.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;peer-review.html&#34;&gt;Click here&lt;/a&gt; for peer review instructions.&lt;/p&gt;
 &lt;h2 id=&#34;written-report&#34;&gt;Written report&lt;/h2&gt;
+&lt;p&gt;Your written report must be completed in the &lt;code&gt;written-report.Rmd&lt;/code&gt; file and must be reproducible.  All team members should contribute to the GitHub repository, with regular meaningful commits.&lt;/p&gt;
+&lt;p&gt;Before you finalize your write up, make sure the printing of code chunks is off with the option &lt;code&gt;echo = FALSE&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;You will submit the PDF of your final report on Gradescope.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The PDF you submit must match the files in your GitHub repository &lt;em&gt;exactly&lt;/em&gt;. The mandatory components of the report are below. You are free to add additional sections as necessary. The report, including visualizations, should be &lt;strong&gt;no more than 10 pages long.&lt;/strong&gt;   is no minimum page requirement; however, you should comprehensively address all of the analysis and report.&lt;/p&gt;
+&lt;p&gt;Be selective in what you include in your final write-up. The goal is to write a cohesive narrative that demonstrates a thorough and comprehensive analysis  rather than explain every step of the analysis.&lt;/p&gt;
+&lt;p&gt;You are welcome to include an appendix with additional work at the end of the written report document; however, grading will largely be based on the content in the main body of the report. You should assume the reader will not see the material in the appendix unless prompted to view it in the main body of the report. The appendix should be neatly formatted and easy for the reader to navigate. It is not included in the 10-page limit.&lt;/p&gt;
+&lt;p&gt;The written report is worth 40 points, broken down as follows&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Total&lt;/th&gt;
+&lt;th&gt;40 pts&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Introduction/data&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;6 pts&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Methodology&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;10 pts&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Results&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;14 pts&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Discussion + Conclusion&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;6 pts&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Organization + formatting&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;4 pts&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;introduction-and-data-2&#34;&gt;Introduction and data&lt;/h3&gt;
+&lt;p&gt;This section includes an introduction to the project motivation, data, and research question. Describe the data and definitions of key variables. It should also include some exploratory data analysis. All of the EDA won’t fit in the paper, so focus on the EDA for the response variable and a few other interesting variables and relationships.&lt;/p&gt;
 &lt;!--
-
-Your written report must be completed in the `written-report.Rmd` file and must be reproducible.  All team members should contribute to the GitHub repository, with regular meaningful commits. 
-
-Before you finalize your write up, make sure the printing of code chunks is off with the option `echo = FALSE`. 
-
-**You will submit the PDF of your final report on Gradescope.**
-
-
-The PDF you submit must match the files in your GitHub repository *exactly*. The mandatory components of the report are below. You are free to add additional sections as necessary. The report, including visualizations, should be **no more than 10 pages long.** There is no minimum page requirement; however, you should comprehensively address all of the aspects mentioned below.
-
-Please be selective in what you include in your final write-up. The goal is to write a cohesive narrative rather than explain every step of the analysis.
-
-The written report is worth 40 points, broken down as follows
-
-Total                                                   | 40 pts
---------------------------------------------------------|--------
-**Introduction/data**                                   | 8 pts
-**Methodology**                                         | 9 pts
-**Results**                                             | 14 pts
-**Discussion + Conclusion**                             | 5 pts
-**Organization + formatting**                          | 4 pts
-
-Each item will be graded as one of the following: 
-
-- Full credit: The item is complete and accurate.
-- Half credit: The item is partially incomplete and/or there are minor inaccuracies.
-- No credit: The item is mostly incomplete and/or there are major inaccuracies.
-
-### Introduction and data
-
-This section includes an introduction to the project motivation, data, and research question. The data and definitions of key variables are described. It should also include some exploratory data analysis (EDA) - visualizations and appropriate summary statistics. All of the EDA won’t fit in the paper, so focus on the EDA for the response variable and other key variables and multivariate relationships.
-
 #### Grading criteria
 
 **(8 pts)** The research question and motivation are clearly stated in the introduction, including citations for any external research. The data are clearly described, including a description about how the data were originally collected and a concise definition of the relevant variables for the analysis. The explanatory data analysis helps the reader better understand the observations in the data set and interesting relationships between the variables. It incorporates appropriate visualizations and summary statistics.
-
-
-### Methodology 
-
-This section includes a brief description of your modeling process. Explain the reasoning for the type of model you&#39;re fitting, predictor variables considered for the model and any interactions. Additionally, discuss how you arrived at the final model by describing the model selection process, any variable transformations (if needed), and any other relevant considerations that were part of the model fitting process. 
-
-
+--&gt;
+&lt;h3 id=&#34;methodology-1&#34;&gt;Methodology&lt;/h3&gt;
+&lt;p&gt;This section includes a brief description of your modeling process. Explain the reasoning for the type of model you&amp;rsquo;re fitting, predictor variables considered for the model including any interactions. Additionally, show how you arrived at the final model by describing the model selection process, interactions considered, variable transformations (if needed), assessment of conditions and diagnostics, and any other relevant considerations that were part of the model fitting process.&lt;/p&gt;
+&lt;!--
 #### Grading criteria
 
 **(9 pts)** The analysis steps are appropriate for the data and research question. The group used a thoughtful approach to select the final model that took into account potential interaction effects and addressed violations in model conditions. The model conditions and diagnostics are thoroughly and accurately assessed as appropriate for the model. If violations of model conditions still exist, there was a reasonable attempt to address them, i.e. based on what we’ve learned this semester.
-
-
-### Results 
-
-This is where you will output the final model with any relevant model fit statistics. 
-
-Describe the key results from the model. The goal is not to interpret every single variable in the model but rather to show that you are proficient in using the model output to address the research questions, using the interpretations to support your conclusions.  Focus on the variables that help you answer the research question and that provide relevant context for the reader. 
-
+--&gt;
+&lt;h3 id=&#34;results-1&#34;&gt;Results&lt;/h3&gt;
+&lt;p&gt;This is where you will output the final model with any relevant model fit statistics.&lt;/p&gt;
+&lt;p&gt;Describe the key results from the model. The goal is not to interpret every single variable in the model but rather to show that you are proficient in using the model output to address the research questions, using the interpretations to support your conclusions.  Focus on the variables that help you answer the research question and that provide relevant context for the reader.&lt;/p&gt;
+&lt;!--
 #### Grading criteria 
 
 **(14 pts)** The model fit is clearly assessed, and interesting findings from the model are clearly described. Interpretations of model coefficients are used to support the key findings and conclusions, rather than merely listing the interpretation of every model coefficient. If the primary modeling objective is prediction, the model’s predictive power is assessed.
-
-### Discussion + Conclusion
-
-In this section you&#39;ll include a summary of what you have learned about your research question along with statistical arguments supporting your conclusions. In addition, discuss the limitations of your analysis and provide suggestions on ways the analysis could be improved. Issues pertaining to the reliability and validity of your data and appropriateness of the statistical analysis should also be discussed here.
-
+--&gt;
+&lt;h3 id=&#34;discussion--conclusion&#34;&gt;Discussion + Conclusion&lt;/h3&gt;
+&lt;p&gt;In this section you&amp;rsquo;ll include a summary of what you have learned about your research question along with statistical arguments supporting your conclusions. In addition, discuss the limitations of your analysis and provide suggestions on ways the analysis could be improved. Any potential issues pertaining to the reliability and validity of your data and appropriateness of the statistical analysis should also be discussed here. Lastly, this section will include ideas for future work.&lt;/p&gt;
+&lt;!--
 #### Grading criteria 
 
 **(5 pts)** Overall conclusions from analysis are clearly described. The group has thoughtfully considered potential limitations of their data and/or analysis and presented potential ideas to address these limitations and avenues to explore in future work. 
-
-### Organization + formatting 
-
-This is an assessment of the overall presentation and formatting of the written report. 
-
+--&gt;
+&lt;h3 id=&#34;organization--formatting&#34;&gt;Organization + formatting&lt;/h3&gt;
+&lt;p&gt;This is an assessment of the overall presentation and formatting of the written report.&lt;/p&gt;
+&lt;!--
 ### Grading criteria 
 
 **(4 pts)** The written report is neatly organized with clear section headers and appropriately sized figures with informative labels. Numerical results are displayed with a reasonable number of digits, and all visualizations are neatly formatted. All code, warnings, and messages are suppressed. Overall, the document would be presentable in a business or research setting.
-
---&gt; 
-&lt;h2 id=&#34;video-presentation--slides&#34;&gt;Video presentation + slides&lt;/h2&gt;
-&lt;!--
-
-### Slides 
-
-In addition to the written report, your team will also create presentation slides that summarize and showcase your project. Introduce your research question and data set, showcase visualizations, and discuss the primary conclusions. These slides should serve as a brief visual addition to your written report and will be graded for content and quality.
-
-**For submission, convert these slides to a .pdf document, and submit the PDF of the slides on Gradescope.**
-
-The slide deck should have no more than 6 content slides + 1 title slide. Here is a *&lt;u&gt;suggested&lt;/u&gt;* outline as you think through the slides; you do *&lt;u&gt;not&lt;/u&gt;* have to use this exact format for the 6 slides.
-
-- Title Slide
-- Slide 1: Introduce the topic and motivation
-- Slide 2: Introduce the data
-- Slide 3: Highlights from EDA
-- Slide 4: Final model
-- Slide 5: Interesting findings from the model
-- Slide 6: Conclusions + future work
-
-## Video presentation
-
-For the video presentation, you can speak over your slide deck, similar to the lecture content videos. **The video presentation must be no longer than 10 minutes.** It is fine if the video is shorter than 10 minutes, but it cannot exceed 10 minutes. You may use can use any platform that works best for your group to record your presentation. Below are a few resources on recording videos:
-
-- [Recording presentations in Zoom](https://kb.siue.edu/61721)
-- [Apple Quicktime for screen recording]( https://support.apple.com/en-gb/guide/quicktime-player/qtp97b08e666/mac)
-- [Windows 10 built-in screen recording functionality](https://www.youtube.com/watch?v=OfPbr1mRDuo)
-- [Kap for screen recording](https://getkap.co/)
-
-Once your video is ready, upload the video to Warpwire, then embed the video in a new discussion for the group.
-
-#### To upload your video to Warpwire:
-
-- Click the Warpwire tab in the course Sakai site.
-- Click the “+” and select “Upload files”.
-- Locate the video on your computer and click to upload.
-- Once you’ve uploaded the video to Warpwire, click to share the video and make
-a copy of the video’s URL. You will need this when you post the video in the
-discussion forum.
-
-#### To post the video to the discussion forum
-
-- Click the Presentations tab in the course Sakai site. 
-- Click the Presentations topic. 
-- Click &#34;Start a new conversation&#34;. 
-- Make the title &#34;Your Team Name: Project Title&#34;. For example, &#34;Teaching Team: Analysis of Cars in the US&#34;.
-- Click the Warpwire icon (between the flag and shopping cart icons).
-- Select your video, then click “Insert 1 item.” This will embed your video in the conversation.
-- Under the video, paste the URL to your video.
-- You’re done! 
-
-You can see the Teaching team example in Sakai. 
 --&gt;
+&lt;h2 id=&#34;video-presentation--slides&#34;&gt;Video presentation + slides&lt;/h2&gt;
+&lt;h3 id=&#34;slides&#34;&gt;Slides&lt;/h3&gt;
+&lt;p&gt;In addition to the written report, your team will also create presentation slides and record a video presentation that summarize and showcase your project. Introduce your research question and data set, showcase visualizations, and discuss the primary conclusions. These slides should serve as a brief visual addition to your written report and will be graded for content and quality.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;For submission, convert these slides to a .pdf document, and submit the PDF of the slides on Gradescope.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The slide deck should have no more than 6 content slides + 1 title slide. Here is a &lt;em&gt;&lt;u&gt;suggested&lt;/u&gt;&lt;/em&gt; outline as you think through the slides; you do &lt;em&gt;&lt;u&gt;not&lt;/u&gt;&lt;/em&gt; have to use this exact format for the 6 slides.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Title Slide&lt;/li&gt;
+&lt;li&gt;Slide 1: Introduce the topic and motivation&lt;/li&gt;
+&lt;li&gt;Slide 2: Introduce the data&lt;/li&gt;
+&lt;li&gt;Slide 3: Highlights from EDA&lt;/li&gt;
+&lt;li&gt;Slide 4: Final model&lt;/li&gt;
+&lt;li&gt;Slide 5: Interesting findings from the model&lt;/li&gt;
+&lt;li&gt;Slide 6: Conclusions + future work&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;video-presentation&#34;&gt;Video presentation&lt;/h2&gt;
+&lt;p&gt;For the video presentation, you can speak over your slide deck, similar to the lecture content videos. &lt;strong&gt;The video presentation must be no longer than 10 minutes.&lt;/strong&gt; It is fine if the video is shorter than 10 minutes, but it cannot exceed 10 minutes. You may use can use any platform that works best for your group to record your presentation. Below are a few resources on recording videos:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://kb.siue.edu/61721&#34;&gt;Recording presentations in Zoom&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://support.apple.com/en-gb/guide/quicktime-player/qtp97b08e666/mac&#34;&gt;Apple Quicktime for screen recording&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=OfPbr1mRDuo&#34;&gt;Windows 10 built-in screen recording functionality&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://getkap.co/&#34;&gt;Kap for screen recording&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Once your video is ready, upload the video to Warpwire, then embed the video in a new discussion for the group.&lt;/p&gt;
+&lt;h4 id=&#34;to-upload-your-video-to-warpwire&#34;&gt;To upload your video to Warpwire:&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Click the Warpwire tab in the course Sakai site.&lt;/li&gt;
+&lt;li&gt;Click the “+” and select “Upload files”.&lt;/li&gt;
+&lt;li&gt;Locate the video on your computer and click to upload.&lt;/li&gt;
+&lt;li&gt;Once you’ve uploaded the video to Warpwire, click to share the video and make
+a copy of the video’s URL. You will need this when you post the video in the
+discussion forum.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;to-post-the-video-to-the-discussion-forum&#34;&gt;To post the video to the discussion forum&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Click the Presentations tab in the course Sakai site.&lt;/li&gt;
+&lt;li&gt;Click the Presentations topic.&lt;/li&gt;
+&lt;li&gt;Click &amp;ldquo;Start a new conversation&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;Make the title &amp;ldquo;Your Team Name: Project Title&amp;rdquo;. For example, &amp;ldquo;Teaching Team: Analysis of Cars in the US&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;Click the Warpwire icon (between the flag and shopping cart icons).&lt;/li&gt;
+&lt;li&gt;Select your video, then click “Insert 1 item.” This will embed your video in the conversation.&lt;/li&gt;
+&lt;li&gt;Under the video, paste the URL to your video.&lt;/li&gt;
+&lt;li&gt;You’re done!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can see the Teaching team example in Sakai.
+&amp;ndash;&amp;gt;&lt;/p&gt;
 &lt;h2 id=&#34;presentation-comments&#34;&gt;Presentation comments&lt;/h2&gt;
 &lt;!--
 Each student will be assigned 1 presentations to watch. [Click here](https://prodduke-my.sharepoint.com/:x:/g/personal/mt324_duke_edu/EfDz1sQBQhRAtfHA9geukg0BRJL3Un1D3dkSRSpaFSw6Yg?e=RnacXD) to see your viewing assignments. 
@@ -537,7 +528,7 @@ You may start posting questions and comments on Fri, Apr 30 12a EDT. **All quest
 **&lt;i&gt;This portion of the project will be assessed individually.&lt;/i&gt;**
 
 --&gt; 
-&lt;h2 id=&#34;reproducibilty---organization&#34;&gt;Reproducibilty +  organization&lt;/h2&gt;
+&lt;h2 id=&#34;reproducibility---organization&#34;&gt;Reproducibility +  organization&lt;/h2&gt;
 &lt;!--
 
 All written work (with exception of presentation slides) should be reproducible, and the GitHub repo should be neatly organized. 
