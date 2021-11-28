@@ -312,7 +312,6 @@ You may start posting questions and comments on Friday, December 10. **All comme
 
 ## Reproducibility +  organization
 
-
 All written work (with exception of presentation slides) should be reproducible, and the GitHub repo should be neatly organized. 
 
 The GitHub repo should have the following structure:
@@ -325,7 +324,6 @@ The GitHub repo should have the following structure:
   - If your presentation slides are online, you can put a link to the slides in a `README.md` file in the `presentation` folder.
   
 Style and format does count for this assignment, so please take the time to make sure everything looks good and your data and code are properly formatted. Additionally, make sure there are no extraneous files in the project rep and that the repo is neatly organized as described above.
-
 
 ## Peer teamwork evaluation
 
@@ -430,7 +428,6 @@ happen, issues will arise, and that’s fine! Commit and push often, and ask que
 
 
 ### Formatting + communication tips
-
 
 #### Suppress Code, Warnings, & Messages
 
