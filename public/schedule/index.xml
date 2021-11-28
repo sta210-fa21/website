@@ -248,8 +248,8 @@ Go to &lt;a href=&#34;http://studentaffairs.duke.edu/dukereach&#34;&gt;studentaf
 Proposal due Friday, October 29
 Draft report due Tuesday, November 16
 Peer review due Wednesday, November 17
-Final report due Friday, December 3
-Video presentation + slides due Thursday, December 9
+Final report due Friday, December 3 (accepted until December 5)
+Video presentation + slides and final GitHub repo due Thursday, December 9
 Presentation comments due Saturday, December 11
 Introduction TL;DR: Pick a data set and do a regression analysis. That is your final project.
 The goal of the final project is for you to use regression analysis to analyze a data set of your own choosing.</description>
@@ -258,8 +258,8 @@ The goal of the final project is for you to use regression analysis to analyze a
 &lt;p&gt;&lt;a href=&#34;#project-proposal&#34;&gt;Proposal&lt;/a&gt; due &lt;strong&gt;Friday, October 29&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;#draft-report&#34;&gt;Draft report&lt;/a&gt; due &lt;strong&gt;Tuesday, November 16&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;#peer-review&#34;&gt;Peer review&lt;/a&gt; due &lt;strong&gt;Wednesday, November 17&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;#written-report&#34;&gt;Final report&lt;/a&gt; due &lt;strong&gt;Friday, December 3&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;#video-presentation--slides&#34;&gt;Video presentation + slides&lt;/a&gt; due &lt;strong&gt;Thursday, December 9&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;#written-report&#34;&gt;Final report&lt;/a&gt; due &lt;strong&gt;Friday, December 3&lt;/strong&gt; (accepted until December 5)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;#video-presentation--slides&#34;&gt;Video presentation + slides&lt;/a&gt; and &lt;a href=&#34;#reproducibility---organization&#34;&gt;final GitHub repo&lt;/a&gt; due &lt;strong&gt;Thursday, December 9&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;#presentation-comments&#34;&gt;Presentation comments&lt;/a&gt; due &lt;strong&gt;Saturday, December 11&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;TL;DR&lt;/strong&gt;: &lt;em&gt;Pick a data set and do a regression analysis. That is your
@@ -343,7 +343,7 @@ final project.&lt;/em&gt;&lt;/p&gt;
 &lt;h3 id=&#34;data-dictionary-aka-code-book&#34;&gt;Data dictionary (aka code book)&lt;/h3&gt;
 &lt;p&gt;Submit a data dictionary for all the variables in your data set in the &lt;code&gt;README&lt;/code&gt; of your project repo.&lt;/p&gt;
 &lt;h3 id=&#34;submission&#34;&gt;Submission&lt;/h3&gt;
-&lt;p&gt;Push all of your final changes to the GitHub repo, and submit the PDF of your propsal to &lt;strong&gt;Gradescope&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Push all of your final changes to the GitHub repo, and submit the PDF of your proposal to &lt;strong&gt;Gradescope&lt;/strong&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;proposal-grading&#34;&gt;Proposal grading&lt;/h3&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -500,7 +500,7 @@ final project.&lt;/em&gt;&lt;/p&gt;
 &lt;li&gt;Click the Warpwire tab in the course Sakai site.&lt;/li&gt;
 &lt;li&gt;Click the “+” and select “Upload files”.&lt;/li&gt;
 &lt;li&gt;Locate the video on your computer and click to upload.&lt;/li&gt;
-&lt;li&gt;Once you’ve uploaded the video to Warpwire, click to share the video and copy the video’s URL. You will need this when you post the video in thediscussion forum.&lt;/li&gt;
+&lt;li&gt;Once you’ve uploaded the video to Warpwire, click to share the video and copy the video’s URL. You will need this when you post the video in the discussion forum.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;to-post-the-video-to-the-discussion-forum&#34;&gt;To post the video to the discussion forum&lt;/h4&gt;
 &lt;ul&gt;
@@ -525,15 +525,15 @@ final project.&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;README&lt;/code&gt;: Short project description and data dictionary&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;written-report.Rmd&lt;/code&gt; &amp;amp; &lt;code&gt;written-report.pdf&lt;/code&gt;: Final written report&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;/data/*&lt;/code&gt;: Data set in the &lt;code&gt;/data&lt;/code&gt; folder.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;/previous-work&lt;/code&gt;: Folder that includes the &lt;code&gt;topic-ideas&lt;/code&gt; and &lt;code&gt;project-proposal&lt;/code&gt; files.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/data&lt;/code&gt;: Folder that contains the data set for the final project.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/previous-work&lt;/code&gt;: Folder that contains the &lt;code&gt;topic-ideas&lt;/code&gt; and &lt;code&gt;project-proposal&lt;/code&gt; files.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;/presentation&lt;/code&gt;: Folder with the presentation slides.
 &lt;ul&gt;
 &lt;li&gt;If your presentation slides are online, you can put a link to the slides in a &lt;code&gt;README.md&lt;/code&gt; file in the &lt;code&gt;presentation&lt;/code&gt; folder.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Style and format does count for this assignment, so please take the time to make sure everything looks good and your data and code are properly formatted. Additionally, make sure there are no extraneous files in the project rep and that the repo is neatly organized as described above.&lt;/p&gt;
+&lt;p&gt;Points for reproducibility + organization will be based on the reproducibility of the written report and the organization of the project GitHub repo. The repo should be neatly organized as described above, there should be no extraneous files, all text in the README should be easily readable.&lt;/p&gt;
 &lt;h2 id=&#34;peer-teamwork-evaluation&#34;&gt;Peer teamwork evaluation&lt;/h2&gt;
 &lt;p&gt;You will be asked to fill out a survey where you rate the contribution and teamwork of each team member by assigning a contribution percentage for each team member. Filling out the survey is a prerequisite for getting credit on the team member evaluation. If you are suggesting that an individual did less than  half the expected contribution given your team size (e.g., for a team of four students, if a student contributed less than 12.5% of the total effort), please
 provide some explanation. If any individual gets an average peer score

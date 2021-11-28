@@ -15,9 +15,9 @@ title: "STA 210 Final Project"
 
 [Peer review](#peer-review) due **Wednesday, November 17**
 
-[Final report](#written-report) due **Friday, December 3** 
+[Final report](#written-report) due **Friday, December 3** (accepted until December 5) 
 
-[Video presentation + slides](#video-presentation--slides) due **Thursday, December 9**
+[Video presentation + slides](#video-presentation--slides) and [final GitHub repo](#reproducibility---organization) due **Thursday, December 9**
 
 [Presentation comments](#presentation-comments) due **Saturday, December 11**
 
@@ -120,7 +120,7 @@ Submit a data dictionary for all the variables in your data set in the `README` 
  
 ### Submission
 
-Push all of your final changes to the GitHub repo, and submit the PDF of your propsal to **Gradescope**. 
+Push all of your final changes to the GitHub repo, and submit the PDF of your proposal to **Gradescope**. 
 
 ### Proposal grading
 
@@ -285,7 +285,7 @@ Once your video is ready, upload the video to Warpwire, then embed the video in 
 - Click the Warpwire tab in the course Sakai site.
 - Click the “+” and select “Upload files”.
 - Locate the video on your computer and click to upload.
-- Once you’ve uploaded the video to Warpwire, click to share the video and copy the video’s URL. You will need this when you post the video in thediscussion forum.
+- Once you’ve uploaded the video to Warpwire, click to share the video and copy the video’s URL. You will need this when you post the video in the discussion forum.
 
 #### To post the video to the discussion forum
 
@@ -318,12 +318,12 @@ The GitHub repo should have the following structure:
 
 - `README`: Short project description and data dictionary
 - `written-report.Rmd` & `written-report.pdf`: Final written report
-- `/data/*`: Data set in the `/data` folder.
-- `/previous-work`: Folder that includes the `topic-ideas` and `project-proposal` files.
+- `/data`: Folder that contains the data set for the final project.
+- `/previous-work`: Folder that contains the `topic-ideas` and `project-proposal` files.
 - `/presentation`: Folder with the presentation slides. 
   - If your presentation slides are online, you can put a link to the slides in a `README.md` file in the `presentation` folder.
   
-Style and format does count for this assignment, so please take the time to make sure everything looks good and your data and code are properly formatted. Additionally, make sure there are no extraneous files in the project rep and that the repo is neatly organized as described above.
+Points for reproducibility + organization will be based on the reproducibility of the written report and the organization of the project GitHub repo. The repo should be neatly organized as described above, there should be no extraneous files, all text in the README should be easily readable.
 
 ## Peer teamwork evaluation
 
