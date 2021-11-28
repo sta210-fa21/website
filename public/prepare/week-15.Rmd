@@ -1,0 +1,21 @@
+---
+title: "Prepare: Week 15"
+output: 
+  html_document:
+    css: "prepare.css"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## For November 29
+
+### Required
+
+No prepare assignment
+
+## For December 01
+
+No prepare assignment

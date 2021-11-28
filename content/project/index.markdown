@@ -2,6 +2,9 @@
 title: "STA 210 Final Project"
 ---
 
+
+
+
 ## Timeline 
 
 [Topic ideas](#topic-ideas) due **Monday, October 11**
@@ -275,71 +278,60 @@ For the video presentation, you can speak over your slide deck, similar to the l
 - [Windows 10 built-in screen recording functionality](https://www.youtube.com/watch?v=OfPbr1mRDuo)
 - [Kap for screen recording](https://getkap.co/)
 
-Once your video is ready, upload the video to Warpwire, then embed the video in a new discussion for the group.
+Once your video is ready, upload the video to Warpwire, then embed the video in an new discussion post on Sakai.
 
-<!--
 #### To upload your video to Warpwire:
 
 - Click the Warpwire tab in the course Sakai site.
 - Click the “+” and select “Upload files”.
 - Locate the video on your computer and click to upload.
-- Once you’ve uploaded the video to Warpwire, click to share the video and make
-a copy of the video’s URL. You will need this when you post the video in the
-discussion forum.
+- Once you’ve uploaded the video to Warpwire, click to share the video and copy the video’s URL. You will need this when you post the video in thediscussion forum.
 
 #### To post the video to the discussion forum
 
 - Click the Presentations tab in the course Sakai site. 
 - Click the Presentations topic. 
 - Click "Start a new conversation". 
-- Make the title "Your Team Name: Project Title". For example, "Teaching Team: Analysis of Cars in the US".
-- Click the Warpwire icon (between the flag and shopping cart icons).
+- Make the title "Your Team Name: Project Title". For example, "Teaching Team: Our Awesome Presentation".
+- Click the Warpwire icon (between the table and shopping cart icons).
 - Select your video, then click “Insert 1 item.” This will embed your video in the conversation.
 - Under the video, paste the URL to your video.
 - You’re done! 
 
-You can see the Teaching team example in Sakai. 
--->
+You can see the Teaching Team example link in Sakai.
 
 ## Presentation comments 
 
-<!--
-Each student will be assigned 1 presentations to watch. [Click here](https://prodduke-my.sharepoint.com/:x:/g/personal/mt324_duke_edu/EfDz1sQBQhRAtfHA9geukg0BRJL3Un1D3dkSRSpaFSw6Yg?e=RnacXD) to see your viewing assignments. 
+Each student will be assigned 2 presentations to watch. [Click here](https://prodduke-my.sharepoint.com/:x:/g/personal/mt324_duke_edu/EdJpsc-oSeZMp44DfunZJXoBHi-46BOCUh44JoILIoekMg?e=Up1ZJS) to see your viewing assignments. 
 
 Watch the group's video, then click "Reply" to post a question for the group. You may not post a question that's already been asked on the discussion thread. Additionally, the question should be (i) substantive (i.e. it shouldn't be "Why did you use a bar plot instead of a pie chart"?), (ii) demonstrate your understanding of the content from the course, and (iii) relevant to that group's specific presentation, i.e demonstrating that you've watched the presentation. 
 
-You may start posting questions and comments on Fri, Apr 30 12a EDT. **All questions must be posted by Sat, May 01 at 11:59p ESDT**. 
+You may start posting questions and comments on Friday, December 10. **All comments must be posted by Saturday, December 11 at 11:59pm.** 
 
 **<i>This portion of the project will be assessed individually.</i>**
 
---> 
-
 ## Reproducibility +  organization
 
-<!--
 
 All written work (with exception of presentation slides) should be reproducible, and the GitHub repo should be neatly organized. 
 
-The GitHub repo should include the following: 
+The GitHub repo should have the following structure:
 
 - `README`: Short project description and data dictionary
+- `written-report.Rmd` & `written-report.pdf`: Final written report
 - `/data/*`: Data set in the `/data` folder.
-- `/topic-ideas`: Potential topics and data sets from earlier in the semester
-- `/proposal`: Proposal from earlier in the semester
-- `/written-report`: Written report 
-- `/presentation`: Presentation slides 
+- `/previous-work`: Folder that includes the `topic-ideas` and `project-proposal` files.
+- `/presentation`: Folder with the presentation slides. 
+  - If your presentation slides are online, you can put a link to the slides in a `README.md` file in the `presentation` folder.
+  
+Style and format does count for this assignment, so please take the time to make sure everything looks good and your data and code are properly formatted. Additionally, make sure there are no extraneous files in the project rep and that the repo is neatly organized as described above.
 
-Style and format does count for this assignment, so please take the time to make sure everything looks good and your data and code are properly formatted.
--->
 
 ## Peer teamwork evaluation
-
-<!--
 
 You will be asked to fill out a survey where you rate the contribution and teamwork of each team member by assigning a contribution percentage for each team member. Filling out the survey is a prerequisite for getting credit on the team member evaluation. If you are suggesting that an individual did less than  half the expected contribution given your team size (e.g., for a team of four students, if a student contributed less than 12.5% of the total effort), please
 provide some explanation. If any individual gets an average peer score 
 indicating that this was the case, their grade will be assessed accordingly.
--->
 
 ## Overall grading
 
@@ -437,8 +429,7 @@ happen, issues will arise, and that’s fine! Commit and push often, and ask que
 - All team members are expected to contribute equally to the completion of this assignment and group assessments will be given at its completion - anyone judged to not have sufficient contributed to the final product will have their grade penalized. While different teams members may have different backgrounds and abilities, it is the responsibility of every team member to understand how and why all code and approaches in  the assignment works.
 
 
-<!--
-### Formatting + communication 
+### Formatting + communication tips
 
 
 #### Suppress Code, Warnings, & Messages
@@ -505,14 +496,16 @@ Be sure all plot titles and axis labels are visible and easy to read.
 ❌ **NO! The x-axis is hard to read because the names overlap.**
 
 
+
 ```r
 ggplot(data = mpg, aes(x = manufacturer)) +
   geom_bar()
 ```
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-3-1.png" width="672" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-2-1.png" width="672" />
 
 ✅ **YES! Names are readable**
+
 
 
 ```r
@@ -521,7 +514,7 @@ ggplot(data = mpg, aes(x = manufacturer)) +
   coord_flip()
 ```
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-4-1.png" width="672" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-3-1.png" width="672" />
 
 #### Do a little more to make the plot look professional!
 
@@ -531,6 +524,7 @@ ggplot(data = mpg, aes(x = manufacturer)) +
 - Capitalized manufacturer names
 - *Optional: Added color - Use a coordinated color scheme throughout paper / presentation*
 - *Optional: Applied a theme - Use same theme throughout paper / presentation*
+
 
 
 ```r
@@ -546,7 +540,7 @@ mpg %>%
   theme_bw() 
 ```
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-5-1.png" width="672" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-4-1.png" width="672" />
 
 
 #### Tables and model output
@@ -554,6 +548,7 @@ mpg %>%
 - Use the `kable` function from the knitr package to neatly output all tables and model output. This will also ensure all model coefficients are displayed. 
   - Use the `digits` argument to display only 3 or 4 significant digits. 
   - Use the `caption` argument to add captions to your table. 
+
 
 
 
@@ -595,4 +590,3 @@ tidy(model) %>%
   - [ggplot2: Elegant Graphics for Data Analysis](https://ggplot2-book.org/)
   - [Data Visualization: A Practice Introduction](https://socviz.co/index.html)
   - [Patchwork R Package](https://patchwork.data-imaginist.com/index.html)
-  -->
