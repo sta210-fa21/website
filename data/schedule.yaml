@@ -230,6 +230,7 @@ lessons:
     date: "Mon, Nov 29"
     title: "Writing reports and presentations in R Markdown"
     prepare: "week-15.html"
+    ae: "ae-29-rmarkdown.html"
   - date: "Wed, Dec 01"
     title: "Beyond linear regression"
     prepare: "week-15.html"
