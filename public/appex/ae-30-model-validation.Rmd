@@ -1,0 +1,46 @@
+---
+title: "AE 30: Model validation" 
+subtitle: ""
+date: "`r Sys.Date()`"
+output: 
+  html_document: 
+    fig_height: 3
+    fig_width: 6
+    theme: readable
+    code_folding: hide
+---
+
+```{r include = F}
+knitr::opts_chunk$set(warning = F, 
+                      message = F)
+```
+
+
+## Announcements
+
+- Ed Discussion for this class: https://edstem.org/us/courses/8350/discussion/909832
+
+- **Project due dates:** 
+  - [Written report](https://sta210-fa21.netlify.app/project/#written-report) due **Fri, Dec 03** (accepted until Sun, Dec 05 with no late penalty)
+  - [Video presentation + slides](https://sta210-fa21.netlify.app/project/#video-presentation--slides) due **Thu, Dec 09 at 11:59pm**
+  - [GitHub repo](https://sta210-fa21.netlify.app/project/#reproducibility---organization) **due Thu, Dec 09 at 11:59pm**
+  - [Presentation comments](https://sta210-fa21.netlify.app/project/#presentation-comments) **Fri, Dec 10 - Sat, Dec 11 at 11:59pm**
+  
+- **Other due dates:**
+  - [Statistics experience](https://sta210-fa21.netlify.app/hw/stats-experience.html) due **Fri, Dec 03 at 11:59pm** on Gradescope
+  - Team Feedback #2 **due Fri, Dec 03 at 11:59pm**
+
+## Surveys + Forms
+
+- **Consent form**: Please take a moment and fill out consent from on Sakai. There is also a link to the consent from posted in Ed Discussion.
+- **Course evaluations**: Please take a moment to fill out the course and TA evaluations for this course by **Mon, Dec 06 at 11:59pm**. 
+  - **If we have an 80% response rate on both TA and course evals, everyone will receive +1% (.5 out of 50) on Exam 02.**
+
+##  AE 30: Model validation
+
+- Go to the ae-30-[GITHUB USERNAME] repo in the GitHub course organization: https://github.com/sta210-fa21
+
+- Access the RStudio Docker containers at https://vm-manage.oit.duke.edu/containers
+
+- See the [Lab 01 instructions](https://sta210-fa21.netlify.app/labs/lab-01-ikea.html) for details on cloning the repo and starting a new project in RStudio.
+
