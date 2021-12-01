@@ -427,7 +427,7 @@ final project.&lt;/em&gt;&lt;/p&gt;
 &lt;td&gt;14 pts&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;Discussion + Conclusion&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Discussion + conclusion&lt;/strong&gt;&lt;/td&gt;
 &lt;td&gt;6 pts&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -438,40 +438,25 @@ final project.&lt;/em&gt;&lt;/p&gt;
 &lt;/table&gt;
 &lt;h3 id=&#34;introduction-and-data-2&#34;&gt;Introduction and data&lt;/h3&gt;
 &lt;p&gt;This section includes an introduction to the project motivation, data, and research question. Describe the data and definitions of key variables. It should also include some exploratory data analysis. All of the EDA won’t fit in the paper, so focus on the EDA for the response variable and a few other interesting variables and relationships.&lt;/p&gt;
-&lt;!--
-#### Grading criteria
-
-**(8 pts)** The research question and motivation are clearly stated in the introduction, including citations for any external research. The data are clearly described, including a description about how the data were originally collected and a concise definition of the relevant variables for the analysis. The explanatory data analysis helps the reader better understand the observations in the data set and interesting relationships between the variables. It incorporates appropriate visualizations and summary statistics.
---&gt;
+&lt;p&gt;&lt;strong&gt;Grading criteria&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The research question and motivation are clearly stated in the introduction, including citations for the data source and any external research. The data are clearly described, including a description about how the data were originally collected and a concise definition of the variables relevant to understanding the report. The data cleaning process is clearly described, including any decisions made in the process (e.g., creating new variables, removing observations, etc.) The explanatory data analysis helps the reader better understand the observations in the data along with interesting and relevant relationships between the variables. It incorporates appropriate visualizations and summary statistics.&lt;/p&gt;
 &lt;h3 id=&#34;methodology-1&#34;&gt;Methodology&lt;/h3&gt;
 &lt;p&gt;This section includes a brief description of your modeling process. Explain the reasoning for the type of model you&amp;rsquo;re fitting, predictor variables considered for the model including any interactions. Additionally, show how you arrived at the final model by describing the model selection process, interactions considered, variable transformations (if needed), assessment of conditions and diagnostics, and any other relevant considerations that were part of the model fitting process.&lt;/p&gt;
-&lt;!--
-#### Grading criteria
-
-**(9 pts)** The analysis steps are appropriate for the data and research question. The group used a thoughtful approach to select the final model that took into account potential interaction effects and addressed violations in model conditions. The model conditions and diagnostics are thoroughly and accurately assessed as appropriate for the model. If violations of model conditions still exist, there was a reasonable attempt to address them, i.e. based on what we’ve learned this semester.
---&gt;
+&lt;p&gt;&lt;strong&gt;Grading criteria&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The analysis steps are appropriate for the data and research question. The group used a thorough and careful approach to select the final model; the approach is clearly described in the report. The model selection process took into account potential interaction effects and addressed any violations in model conditions. The model conditions and diagnostics are thoroughly and accurately assessed for their model. If violations of model conditions are still present, there was a reasonable attempt to address the violations based on the course content.&lt;/p&gt;
 &lt;h3 id=&#34;results-1&#34;&gt;Results&lt;/h3&gt;
 &lt;p&gt;This is where you will output the final model with any relevant model fit statistics.&lt;/p&gt;
 &lt;p&gt;Describe the key results from the model. The goal is not to interpret every single variable in the model but rather to show that you are proficient in using the model output to address the research questions, using the interpretations to support your conclusions.  Focus on the variables that help you answer the research question and that provide relevant context for the reader.&lt;/p&gt;
-&lt;!--
-#### Grading criteria 
-
-**(14 pts)** The model fit is clearly assessed, and interesting findings from the model are clearly described. Interpretations of model coefficients are used to support the key findings and conclusions, rather than merely listing the interpretation of every model coefficient. If the primary modeling objective is prediction, the model’s predictive power is assessed.
---&gt;
+&lt;p&gt;&lt;strong&gt;Grading criteria&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The model fit is clearly assessed, and interesting findings from the model are clearly described. Interpretations of model coefficients are used to support the key findings and conclusions, rather than merely listing the interpretation of every model coefficient. If the primary modeling objective is prediction, the model’s predictive power is thoroughly assessed.&lt;/p&gt;
 &lt;h3 id=&#34;discussion--conclusion&#34;&gt;Discussion + Conclusion&lt;/h3&gt;
 &lt;p&gt;In this section you&amp;rsquo;ll include a summary of what you have learned about your research question along with statistical arguments supporting your conclusions. In addition, discuss the limitations of your analysis and provide suggestions on ways the analysis could be improved. Any potential issues pertaining to the reliability and validity of your data and appropriateness of the statistical analysis should also be discussed here. Lastly, this section will include ideas for future work.&lt;/p&gt;
-&lt;!--
-#### Grading criteria 
-
-**(5 pts)** Overall conclusions from analysis are clearly described. The group has thoughtfully considered potential limitations of their data and/or analysis and presented potential ideas to address these limitations and avenues to explore in future work. 
---&gt;
+&lt;p&gt;&lt;strong&gt;Grading criteria&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Overall conclusions from analysis are clearly described, and the model results are put into the larger context of the subject matter and original research question. There is thoughtful consideration of potential limitations of the data and/or analysis, and ideas for future work are clearly described.&lt;/p&gt;
 &lt;h3 id=&#34;organization--formatting&#34;&gt;Organization + formatting&lt;/h3&gt;
 &lt;p&gt;This is an assessment of the overall presentation and formatting of the written report.&lt;/p&gt;
-&lt;!--
-### Grading criteria 
-
-**(4 pts)** The written report is neatly organized with clear section headers and appropriately sized figures with informative labels. Numerical results are displayed with a reasonable number of digits, and all visualizations are neatly formatted. All code, warnings, and messages are suppressed. Overall, the document would be presentable in a business or research setting.
---&gt;
+&lt;p&gt;&lt;strong&gt;Grading criteria&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The report neatly written and organized with clear section headers and appropriately sized figures with informative labels. Numerical results are displayed with a reasonable number of digits, and all visualizations are neatly formatted. All citations and links are properly formatted. If there is an appendix, it is reasonably organized and easy for the reader to find relevant information. All code, warnings, and messages are suppressed. The main body of the written report (not including the appendix) is no longer than 10 pages.&lt;/p&gt;
 &lt;h2 id=&#34;video-presentation--slides&#34;&gt;Video presentation + slides&lt;/h2&gt;
 &lt;h3 id=&#34;slides&#34;&gt;Slides&lt;/h3&gt;
 &lt;p&gt;In addition to the written report, your team will also create presentation slides and record a video presentation that summarize and showcase your project. Introduce your research question and data set, showcase visualizations, and discuss the primary conclusions. These slides should serve as a brief visual addition to your written report and will be graded for content and quality.&lt;/p&gt;
@@ -513,7 +498,7 @@ final project.&lt;/em&gt;&lt;/p&gt;
 &lt;li&gt;Under the video, paste the URL to your video.&lt;/li&gt;
 &lt;li&gt;You’re done!&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;You can see the Teaching Team example link in Sakai.&lt;/p&gt;
+&lt;p&gt;You can see the Teaching Team example in Sakai.&lt;/p&gt;
 &lt;h2 id=&#34;presentation-comments&#34;&gt;Presentation comments&lt;/h2&gt;
 &lt;p&gt;Each student will be assigned 2 presentations to watch. &lt;a href=&#34;https://prodduke-my.sharepoint.com/:x:/g/personal/mt324_duke_edu/EdJpsc-oSeZMp44DfunZJXoBHi-46BOCUh44JoILIoekMg?e=Up1ZJS&#34;&gt;Click here&lt;/a&gt; to see your viewing assignments.&lt;/p&gt;
 &lt;p&gt;Watch the group&amp;rsquo;s video, then click &amp;ldquo;Reply&amp;rdquo; to post a question for the group. You may not post a question that&amp;rsquo;s already been asked on the discussion thread. Additionally, the question should be (i) substantive (i.e. it shouldn&amp;rsquo;t be &amp;ldquo;Why did you use a bar plot instead of a pie chart&amp;rdquo;?), (ii) demonstrate your understanding of the content from the course, and (iii) relevant to that group&amp;rsquo;s specific presentation, i.e demonstrating that you&amp;rsquo;ve watched the presentation.&lt;/p&gt;
