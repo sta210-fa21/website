@@ -1,5 +1,5 @@
 # Description for social sharing and search engines.
-description = "Website for STA 210: Regression Analysis at Duke University"
+description = "Tutorials of Analyzing Health Effects of Chemical Exposure using R"
 
 # Default image for social sharing and search engines. Place image in `static/images/` folder and specify image name here.
 sharing_image = ""
@@ -30,7 +30,7 @@ MathJaxVersion = "2.7.1"
 [footer]
     github_url = "https://www.github.com/sta210-fa20"
     twitter_url = ""
-    support = "This website was derived from [tidymodels.org](https://tidymodels.org) with inspiration from [datavizm20](https://datavizm20.classes.andrewheiss.com/) and [introds.org](https://introds.org/)."
+    support = "This website was derived from Maria Tackett's [course website](https://sta210-fa21.netlify.app/)."
 
 # leave blank in quotes for the default = true
 # to turn off, set = false (no quotes)

@@ -3,8 +3,8 @@
 
 [[main]]
    # pre = "<i class=\"fa fa-info-circle\"></i>"
-    name = "Syllabus"
-    url = "/syllabus/"
+    name = "Description"
+    url = "/description/"
     weight = 10
     
 [[main]]
@@ -19,42 +19,18 @@
     url = "/project/"
     weight = 30
 
-
-[[main]]
-    # pre = "<i class=\"fa fa-graduation-cap\" aria-hidden=\"true\"></i>"
-    url = "https://sakai.duke.edu"
-    name = " Sakai"
-    weight = 40
-
-[[main]]
-    # pre = "<i class=\"fa fa-check-square\" aria-hidden=\"true\"></i>"
-    url = "https://www.gradescope.com"
-    name = "Gradescope"
-    weight = 50
-    
     
 [[main]]
    # pre = "<i class=\"fa fa-question-circle\" aria-hidden=\"true\"></i>"
-    name = "Help"
-    url = "/help/"
+    name = "Resources"
+    url = "/resources/"
     weight = 60
     
-
-[[main]]
-    url = "https://vm-manage.oit.duke.edu/containers"
-    name = "<i class=\"fab fa-r-project fa-lg\"></i>"
-    weight = 70
     
 [[main]]
-    url = "https://www.github.com/sta210-fa21"
+    url = "https://github.com/YunranChen/muser"
     name  = "<i class='fab fa-github fa-lg'></i>"
     weight = 80
-    
-[[main]]
-    url = "https://edstem.org/us/courses/8350/discussion/"
-    name = "<i class=\"fas fa-comments fa-lg\"></i>"
-    weight = 90
-
     
 
 

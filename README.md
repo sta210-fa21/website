@@ -1,8 +1,5 @@
-# Website for STA 210 at Duke University (Fall 2021)
+# Tutorials of Analyzing Health Effects of Chemical Exposure using R
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/09b4769a-9ba0-44f8-8b3b-8ce933095dd6/deploy-status)](https://app.netlify.com/sites/sta210-fa21/deploys)
-
-:link: [sta210-fa21.netlify.app](https://sta210-fa21.netlify.app/)
 
 ## Colors
 
@@ -15,7 +12,7 @@
 
 ## Attribution
 
-- The website design is derived from [tidymodels.org](https://www.tidymodels.org) with inspiration from [datavizm20](https://datavizm20.classes.andrewheiss.com) and [introds.org](https://introds.org/).
+- The website design is derived from Maria Tackett's [course website](https://sta210-fa21.netlify.app/).
 
 <hr> 
 

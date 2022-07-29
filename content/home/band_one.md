@@ -5,7 +5,7 @@ title: ""
 <style>
 .pull-left{
 float: left;
-width: 30%;
+width: 35%;
 }
 
 .pull-right{
@@ -15,13 +15,12 @@ width: 65%;
 </style> 
 
 <div class = "pull-left">
-  <img src = "img/sta210_sticker.png">
+  <img src = "img/chemical_mixtures_trans.png">
   
 </div>
 
 <div class ="pull-right">
-<h2 style = "color: white">STA 210: Regression Analysis</h2>
+<h2 style = "color: white">Chemical Mixtures Analysis</h2>
 
-
-Learn approaches for analyzing multivariate data sets, emphasizing analysis of variance, linear regression, and logistic regression. Learn techniques for checking the appropriateness of proposed models, such as residual analyses and case influence diagnostics, and techniques for selecting models. Gain experience dealing with the challenges that arise in practice through assignments that utilize real-world data. This class emphasizes data analysis over mathematical theory.
+Tutorials summarizing advanced statistical approaches analyzing chemical mixtures with applications using R. We aim to make advanced statistical approaches accessible to researchers without a solid mathematics background. Our first goal is using jupyter notebook to build a workflow to collect data and merge data automatically. Our second goal is to create online tutorials to introduce advanced statistical approaches to the general public and provide examples to realize these methods.
 </div>

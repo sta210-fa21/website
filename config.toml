@@ -1,5 +1,5 @@
 # Title of your site
-title = "STA 210"
+title = "Chemical Exposure"
 
 # The URL of your site.
 # End your URL with a `/` trailing slash, e.g. `https://example.com/`.
@@ -15,7 +15,7 @@ googleAnalytics = ""
 
 relativeurls = false
 languageCode = "en-us"
-description = "Website for STA 210: Regression Analysis at Duke University"
+description = "Tutorials of Analyzing Health Effects of Chemical Exposure using R"
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
 # below is critical for non-authors to show up in article listing
