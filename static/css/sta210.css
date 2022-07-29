@@ -103,7 +103,7 @@ a {
 .article-content ul li::before, 
 .learn-top-nav ul li::before {
   content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: #00b3b3; /* Change the color */
+  color: #2f7031; /* Change the color */
   display: inline-block; /* Needed to add space between the bullet and the text */
   width: 1.5em; /* Also needed for space (tweak if needed) */
   margin-left: -1.5em; /* Also needed for space (tweak if needed) */
@@ -128,7 +128,7 @@ div.tagline {
   font-size: 1.3em !important;
   font-weight: bold;
   letter-spacing: 2px;
-  color: #00b3b3
+  color: #2f7031
 ;
 }
 
@@ -146,7 +146,7 @@ div.tagline {
 .article-title,               /* Most page titles */
 .column75 div.sectionTitle {  /* Learn page section title */
   font-family: 'Lato', sans-serif;
-  color: #00b3b3;
+  color: #2f7031;
   font-weight: normal;
   text-transform: none;
   letter-spacing: normal;
@@ -180,7 +180,7 @@ h3 {
 }
 
 h3 a {
-  color: #00b3b3;
+  color: #2f7031;
   text-transform: none;
   font-size: 1.5em;
   letter-spacing: normal;
@@ -217,7 +217,7 @@ h4 code {
 }
 
   .sectionTitle, .sectionTitle a{
-    color: #00b3b3;
+    color: #2f7031;
   }
   
  /* #TOC a { */ /* Get Started Page TOC */
@@ -288,7 +288,7 @@ h4 code {
 }
 
 .column25-left .sectionTitle.current {
-  color: #00b3b3;
+  color: #2f7031;
   text-decoration: none;
 }
 
@@ -541,7 +541,7 @@ a.learn-top-nav-item,
 
 a.learn-top-nav-item:hover,
 .tutorial #TableOfContents a:hover {
-  color: #00b3b3;
+  color: #2f7031;
   text-decoration: none;
 }
 
@@ -590,7 +590,7 @@ a.learn-top-nav-item:hover,
 
 .tutorial #TableOfContents ul li::before {
 	content: "\2022";
-	color: #00b3b3;
+	color: #2f7031;
 	display: inline-block;
 	width: 1.5em;
 	margin-left: -1.5em; 
@@ -706,12 +706,12 @@ sup {
 
 
 #homeContent .blurb .event {
-	border: 1pt solid #00b3b3;
+	border: 1pt solid #2f7031;
 	background-color: #ffffff;
 }
 
 #homeContent .blurb .event a {
-	color: #00b3b3;
+	color: #2f7031;
 }
 
 #homeContent .blurb .event .eventTitle,
@@ -719,7 +719,7 @@ sup {
  /* text-transform: uppercase; */
   letter-spacing: 2pt;
   font-weight: bold !important;
-  color: #00b3b3;
+  color: #2f7031;
   font-size: 1em;
 }
 
@@ -731,12 +731,12 @@ sup {
 
 
 #homeContent .blurb2 .event {
-	border: 1pt solid #00b3b3;
+	border: 1pt solid #2f7031;
 	background-color: #ffffff;
 }
 
 #homeContent .blurb2 .event a {
-	color: #00b3b3;
+	color: #2f7031;
 }
 
 #homeContent  .blurb2 .event .eventTitle,
@@ -744,14 +744,14 @@ sup {
  /* text-transform: uppercase; */
   letter-spacing: 2pt;
   font-weight: bold !important;
-  color: #00b3b3;
+  color: #2f7031;
   font-size: 1em;
 }
 
 
 
 #homeContent .event .eventTitle a:hover {
-  color: #00b3b3;
+  color: #2f7031;
   text-decoration: underline;
 }
 
@@ -772,7 +772,7 @@ sup {
 
 
 #homeContent .blurb2 .event .eventTitle a:hover {
-  color: #00b3b3;
+  color: #2f7031;
   text-decoration: underline;
 }
 
@@ -1142,7 +1142,7 @@ pre {
 .test-drive-btn {
   background-color: #eab0c46b;
   border: solid 1pt #00b3b347;
-  color: #00b3b3;
+  color: #2f7031;
   padding: 12px 16px;
   font-size: 16px;
   cursor: pointer;
@@ -1153,7 +1153,7 @@ pre {
 
 /* Darker background on mouse-over */
 .test-drive-btn:hover {
-  background-color: #00b3b3;
+  background-color: #2f7031;
   color: #fcfcfc;
   border: 1pt solid;
 }
