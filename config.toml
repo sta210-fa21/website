@@ -15,7 +15,7 @@ googleAnalytics = ""
 
 relativeurls = false
 languageCode = "en-us"
-description = "Tutorials of Analyzing Health Effects of Chemical Exposure using R"
+description = "Analyzing Health Effects of Chemical Exposure using R Markdown"
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
 # below is critical for non-authors to show up in article listing

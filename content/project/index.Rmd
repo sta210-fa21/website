@@ -18,7 +18,7 @@ library(broom)
 
 ## Introduction 
 
-The tutorials will mainly be based on materials from NIEHS 2015 workshop and PRIME program. 
+The tutorials will mainly be based on materials from NIEHS 2015 workshop and PRIME program. This research project is supported by [Superfund Research Center at Duke University](https://sites.nicholas.duke.edu/superfund/).
 
 ### NIEHS 2015 workshop
 
@@ -26,5 +26,5 @@ In 2015, the National Institute of Environmental Health Sciences (NIEHS) convene
 
 ### PRIME Program
 
-NIEHS also launched a funding to address the analytical challenges of environmental mixtures research, called Powering Research through Innovative methods for Mixtures in Epidemiology (PRIME) program. Thirty-seven new statistical methods supported by the NIEHS PRIME Program are available in [Github](https://github.com/niehs-prime/).
+NIEHS also launched a funding initiative to **address the analytical challenges of environmental mixtures research**, called Powering Research through Innovative methods for Mixtures in Epidemiology (PRIME) program. Various new statistical methods supported by the NIEHS PRIME Program are available in [Github](https://github.com/niehs-prime/).
 
