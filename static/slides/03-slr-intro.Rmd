@@ -188,6 +188,16 @@ $$\begin{aligned} Y &= \mathbf{\beta_0 + \beta_1 X} + \epsilon \end{aligned}$$
 
 $$\boldsymbol{\beta}_1: \text{Slope} \hspace{20mm} \boldsymbol{\beta}_0: \text{Intercept}$$
 
+## Simple linear regression
+
+$$\Large{\hat{Y} = \hat{\beta}_0 + \hat{\beta}_1 X}$$
+
+$\hat{\beta}_1$: Estimated slope of the relationship between $X$ and $Y$
+
+$\hat{\beta}_0$: Estimated intercept of the relationship between $X$ and $Y$
+
+No error term!
+
 ---
 
 class: middle, center

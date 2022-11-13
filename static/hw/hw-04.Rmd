@@ -34,7 +34,7 @@ No R packages are needed for this assignment.
 
 # Exercises
 
-## Use the following student for Exercises 1 - 2
+## Use the following study for Exercises 1 - 2
 
 The 2016 article ["Tea consumption reduces the incidence of neurocognitive disorders: Findings from the Singapore longitudinal aging study"](https://link.springer.com/article/10.1007/s12603-016-0687-0) by Feng et al. examined the association between tea consumption habits and  neurocognitive disorders (NCD), such as Alzheimer's disease, in adults age 55 and older. Portions of the abstract are below:
 
